@@ -1,0 +1,1023 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>8.C++入门 | ♪张小佑</title><meta name="keywords" content="C++"><meta name="author" content="♪张小佑"><meta name="copyright" content="♪张小佑"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="8.C++入门"><meta name="application-name" content="8.C++入门"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta name="description" content="积极学习C++吧！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="8.C++入门">
+<meta property="og:url" content="http://acall.love/2023/02/01/day08%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="♪张小佑">
+<meta property="og:description" content="积极学习C++吧！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/9dzr8w.webp">
+<meta property="article:published_time" content="2023-01-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-01-31T16:00:00.000Z">
+<meta property="article:author" content="♪张小佑">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="后端开发">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/9dzr8w.webp"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://acall.love/2023/02/01/day08%E7%AC%94%E8%AE%B0/"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  friends_vue_info: undefined,
+  navMusic: true,
+  changeMainColorPost: undefined,
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#3b70fc","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '8.C++入门',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2023-02-01 00:00:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/1.jpg"/><div class="loading-image-dot"></div><div id="loading-percentage">0%</div></div></div><script>const loadingPercentage = document.getElementById("loading-percentage");
+let loadingPercentageTimer = setInterval(function() {
+  var progressBar = document.querySelector(".pace-progress");
+  if (!progressBar) return
+  var currentValue = progressBar.getAttribute("data-progress-text");
+  if (currentValue !== loadingPercentage.textContent) {
+    loadingPercentage.textContent = currentValue;
+    if (currentValue === "100%") {
+      clearInterval(loadingPercentageTimer);
+    }
+  }
+}, 100);
+const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+    Pace.restart()
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/progress_bar/progress_bar.css"/><script async="async" src="https://npm.elemecdn.com/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div id="web_box"><div id="web_container"><div id="menu-mask"></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://acall.love/" title="博客" target="_blank"><img class="back-menu-item-icon" src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" href="https://image.anheyu.com/" title="安知鱼图床" target="_blank"><img class="back-menu-item-icon" src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">♪张小佑</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:17px;"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192211377.png" target="_blank"><img class="post-qr-code-img" alt="wechat" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192211377.png"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192207910.png" target="_blank"><img class="post-qr-code-img" alt="alipayautoh" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192207910.png"/></a><div class="post-qr-code-desc">alipayautoh</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments" onclick="anzhiyu.hideConsole()"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> <span>最新评论</span></span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags" onclick="anzhiyu.hideConsole()"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/C/" style="font-size: 1.05rem;">C++<sup>12</sup></a><a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" style="font-size: 1.05rem;">后端开发<sup>12</sup></a></div></div><hr/></div></div><div class="console-card history" onclick="anzhiyu.hideConsole()"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">一月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">7</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" onclick="anzhiyu.switchDarkMode()" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF/">后端</a><i class="anzhiyufont anzhiyu-icon-angle-right post-meta-separator"></i><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%90%8E%E7%AB%AF/%E5%A4%A7%E5%AD%A6/">大学</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/C/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>C++</span></a><a class="article-meta__tags" href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>后端开发</span></a></span></div></div><h1 class="post-title">8.C++入门</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-31T16:00:00.000Z" title="发表于 2023-02-01 00:00:00">2023-02-01</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-31T16:00:00.000Z" title="更新于 2023-02-01 00:00:00">2023-02-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">3.8k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>17分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="8.C++入门"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为郑州"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>郑州</span></div></div></div><article class="post-content" id="article-container"><h2 id="01-模版的概念（了解）"><a href="#01-模版的概念（了解）" class="headerlink" title="01.模版的概念（了解）"></a>01.模版的概念（了解）</h2><p>1.函数或类是通用，但是里面的数据类型的多种状态</p>
+<p>2.模版有：函数和类</p>
+<h2 id="02-函数模版（重点）"><a href="#02-函数模版（重点）" class="headerlink" title="02.函数模版（重点）"></a>02.函数模版（重点）</h2><p>1.什么是函数模版</p>
+<p>函数模板，<strong>实际上是建立一个通用函数，其函数类型和形参类型不具体制定，用一个虚拟的类型来代表。这个通用函数就成为函数模板</strong></p>
+<p>2.怎么编写函数模版</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//T代表泛型的数据类型，不是只能写T，</span><br><span class="line">template&lt;class T&gt;//让编译器看到这句话后面紧跟着的函数里有T不要报错</span><br><span class="line">void mySwap(T &amp;a,T &amp;b)</span><br><span class="line">&#123;</span><br><span class="line">	T tmp = a;</span><br><span class="line">	a = b;</span><br><span class="line">	b = tmp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//可以这样定义函数模版</span><br><span class="line">template&lt;typename T&gt;</span><br><span class="line">void func2(T a,T b)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>3.怎么使用函数模版</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//T代表泛型的数据类型，不是只能写T，</span><br><span class="line">template&lt;class T&gt;//让编译器看到这句话后面紧跟着的函数里有T不要报错</span><br><span class="line">void mySwap(T &amp;a,T &amp;b)</span><br><span class="line">&#123;</span><br><span class="line">	T tmp = a;</span><br><span class="line">	a = b;</span><br><span class="line">	b = tmp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">template&lt;class T&gt;</span><br><span class="line">void mySwap2()</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//使用函数模版</span><br><span class="line">void test02()</span><br><span class="line">&#123;</span><br><span class="line">	int a = 10;</span><br><span class="line">	int b = 20;</span><br><span class="line"></span><br><span class="line">	//1.编译器会根据实参来自动推导数据类型</span><br><span class="line">	mySwap(a,b);</span><br><span class="line">	cout &lt;&lt; &quot;a=&quot; &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	cout &lt;&lt; &quot;b=&quot; &lt;&lt; b &lt;&lt; endl;</span><br><span class="line">	char c = &#x27;c&#x27;;</span><br><span class="line">	//mySwap(a, c);err,数据类型要一致</span><br><span class="line"></span><br><span class="line">	//2.显示的指定类型</span><br><span class="line">	mySwap&lt;int&gt;(a, b);//&lt;&gt;用参数列表告诉编译器我只传int类</span><br><span class="line">	//mySwap&lt;double&gt;(a, b);//注意：指定类型，传入时不能不一致</span><br><span class="line"></span><br><span class="line">	mySwap&lt;&gt;(a,b);</span><br><span class="line">	//mySwap2&lt;&gt;();//err 调用时，必须让编译器知道泛型T具体是什么类型</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>4.编译器会对函数模版和类模版进行二次编译</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//T代表泛型的数据类型，不是只能写T，</span><br><span class="line">template&lt;class T&gt;//让编译器看到这句话后面紧跟着的函数里有T不要报错</span><br><span class="line">void mySwap(T &amp;a,T &amp;b)//第一次编译</span><br><span class="line">&#123;</span><br><span class="line">	T tmp = a;</span><br><span class="line">	a= b;</span><br><span class="line">	b = tmp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//使用函数模版</span><br><span class="line">void test02()</span><br><span class="line">&#123;</span><br><span class="line">	int a = 10;</span><br><span class="line">	int b = 20;</span><br><span class="line"></span><br><span class="line">	//1.编译器会根据实参来自动推导数据类型</span><br><span class="line">	mySwap(a,b);//编译器在函数模版被调用时，进行第二次编译</span><br><span class="line">	/*</span><br><span class="line">	void mySwap(int &amp;a,int &amp;b)</span><br><span class="line">	&#123;</span><br><span class="line">		int tmp = a;</span><br><span class="line">		a= b;</span><br><span class="line">		b = tmp;</span><br><span class="line">	&#125;</span><br><span class="line">	*/</span><br><span class="line">	cout &lt;&lt; &quot;a=&quot; &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	cout &lt;&lt; &quot;b=&quot; &lt;&lt; b &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.隐式转换</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">template&lt;class T&gt;</span><br><span class="line">T func(T a, T b)</span><br><span class="line">&#123;</span><br><span class="line">	return a + b;</span><br><span class="line">&#125;</span><br><span class="line">void test03()</span><br><span class="line">&#123;</span><br><span class="line">	int a = 10;</span><br><span class="line">	double b = 20.2;</span><br><span class="line">	//如果使用参数列表指定数据类型，那么实参中可以隐式转换，</span><br><span class="line">	//如果转换成功，就调用，转换不成功就报错</span><br><span class="line">	cout &lt;&lt; func&lt;int&gt;(10,20.2) &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="03-普通函数与函数模板区别（重点）"><a href="#03-普通函数与函数模板区别（重点）" class="headerlink" title="03.普通函数与函数模板区别（重点）"></a>03.普通函数与函数模板区别（重点）</h2><p>1.普通函数可以进行隐式转换,函数模版不能直接的进行隐式转换</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//普通函数</span><br><span class="line">int myPlus(int a, int b)</span><br><span class="line">&#123;</span><br><span class="line">	return a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">template&lt;class T&gt;</span><br><span class="line">int myPlus2(T a, T b)</span><br><span class="line">&#123;</span><br><span class="line">	return a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test()</span><br><span class="line">&#123;</span><br><span class="line">	int a = 10;</span><br><span class="line">	int b = 20;</span><br><span class="line">	char c = &#x27;a&#x27;;</span><br><span class="line">	//普通函数可以进行隐式转换</span><br><span class="line">	myPlus(a, c);</span><br><span class="line">	//函数模版不能直接的进行隐式转换</span><br><span class="line">	//myPlus2(a, c);</span><br><span class="line">	myPlus2&lt;int&gt;(a, c);//如果要进行隐性转换，必须加上参数列表</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="04-普通函数与函数模板的调用规则（重点）"><a href="#04-普通函数与函数模板的调用规则（重点）" class="headerlink" title="04.普通函数与函数模板的调用规则（重点）"></a>04.普通函数与函数模板的调用规则（重点）</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//普通函数</span><br><span class="line">void myPlus(int a, int b)</span><br><span class="line">&#123;</span><br><span class="line">	cout &lt;&lt; &quot;普通函数&quot; &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">template&lt;class T&gt;</span><br><span class="line">void myPlus(T a, T b)</span><br><span class="line">&#123;</span><br><span class="line">	cout &lt;&lt; &quot;函数模版&quot; &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">template&lt;class T&gt;</span><br><span class="line">void myPlus(T a, T b, T c)</span><br><span class="line">&#123;</span><br><span class="line">	cout &lt;&lt; &quot;函数模版 T c&quot; &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">//1.函数模版和普通函数可以重载</span><br><span class="line">void test()</span><br><span class="line">&#123;</span><br><span class="line">	int a = 10;</span><br><span class="line">	int b = 20;</span><br><span class="line">	//2.如果普通函数和函数模版都可以实现的功能，普通函数优先调用</span><br><span class="line">	myPlus(a, b);</span><br><span class="line"></span><br><span class="line">	//3.可以使用&lt;&gt;空参数列表强制调用函数模版</span><br><span class="line">	myPlus&lt;&gt;(a, b);</span><br><span class="line"></span><br><span class="line">	//4.函数模版之间也可以进行重载</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	//5.如果函数模版可以产生更好的匹配，那么优先使用函数模版</span><br><span class="line">	char c1 = &#x27;a&#x27;;</span><br><span class="line">	char c2 = &#x27;b&#x27;;</span><br><span class="line">	myPlus(c1, c2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="05-模版实现机制（了解）"><a href="#05-模版实现机制（了解）" class="headerlink" title="05.模版实现机制（了解）"></a>05.模版实现机制（了解）</h2><p>l  <strong>编译器并不是把函数模板处理成能够处理任何类型的函数</strong></p>
+<p>l  <strong>函数模板通过具体类型产生不同的函数</strong></p>
+<p>l  <strong>编译器会对函数模板进行两次编译，在声明的地方对模板代码本身进行编译，在调用的地方对参数替换后的代码进行编译。</strong></p>
+<h2 id="06-模版的局限性及解决方法（了解）"><a href="#06-模版的局限性及解决方法（了解）" class="headerlink" title="06.模版的局限性及解决方法（了解）"></a>06.模版的局限性及解决方法（了解）</h2><p>1.模版的局限性</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">template&lt;class T&gt;</span><br><span class="line">void func(T a, T b)</span><br><span class="line">&#123;</span><br><span class="line">	if (a &gt; b)</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;a&gt;b&quot; &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;a&lt;=b&quot; &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void test()</span><br><span class="line">&#123;</span><br><span class="line">//如果传入的是数组名，那么函数模版中比较函数名的大小就没有意义</span><br><span class="line">	int arr[20];</span><br><span class="line">	int arr2[10];</span><br><span class="line"></span><br><span class="line">	func(arr, arr2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.解决方法，使用函数模版具体化</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//不建议具体化函数模版，因为没有通用性</span><br><span class="line">class Maker</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	Maker(string name,int age)</span><br><span class="line">	&#123;</span><br><span class="line">		this-&gt;age = age;</span><br><span class="line">		this-&gt;name = name;</span><br><span class="line">	&#125;</span><br><span class="line">public:</span><br><span class="line">	string name;</span><br><span class="line">	int age;</span><br><span class="line">&#125;;</span><br><span class="line">template&lt;class T&gt;</span><br><span class="line">void myfunc(T &amp;a, T &amp;b)</span><br><span class="line">&#123;</span><br><span class="line">	if (a &gt; b)</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;a&gt;b&quot; &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;a&lt;=b&quot; &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">//不建议具体化函数模版，因为没有通用性</span><br><span class="line">//具体化函数模版，注意上面的函数模版要有，才能具体化</span><br><span class="line">template&lt;&gt;void myfunc&lt;Maker&gt;(Maker &amp;a, Maker &amp;b)</span><br><span class="line">&#123;</span><br><span class="line">	cout &lt;&lt; &quot;函数模版的具体化&quot; &lt;&lt; endl;</span><br><span class="line">	if (a.age &gt; b.age)</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;a&gt;b&quot; &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;a&lt;=b&quot; &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test02()</span><br><span class="line">&#123;</span><br><span class="line">	Maker m1(&quot;aaa&quot;, 10);</span><br><span class="line">	Maker m2(&quot;bbb&quot;, 20);</span><br><span class="line"></span><br><span class="line">	myfunc(m1, m2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="07-类模版（重点）"><a href="#07-类模版（重点）" class="headerlink" title="07.类模版（重点）"></a>07.类模版（重点）</h2><p>1.类模版是把类中的数据类型参数化</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">template&lt;class NameType,class AgeType&gt;</span><br><span class="line">class Maekr</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	Maekr(NameType name, AgeType age)</span><br><span class="line">	&#123;</span><br><span class="line">		this-&gt;name = name;</span><br><span class="line">		this-&gt;age = age;</span><br><span class="line">	&#125;</span><br><span class="line">public:</span><br><span class="line">	NameType name;</span><br><span class="line">	AgeType age;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>2.类模版的使用</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">void test()</span><br><span class="line">&#123;</span><br><span class="line">	//1.类模版不会自动推导数据类型，要显示的告诉编译器是什么类型</span><br><span class="line">	Maker&lt;string,int&gt; m(&quot;悟空&quot;,18);</span><br><span class="line">	m.printMaker();</span><br><span class="line"></span><br><span class="line">	//2.注意传入的参数,传入参数类型要程序员自己把握</span><br><span class="line">	Maker&lt;int, int&gt; m2(18, 20);</span><br><span class="line">	m2.printMaker();</span><br><span class="line"></span><br><span class="line">	//Maker&lt;&gt; m3(&quot;aaa&quot;,18);err,必须通过参数列表告诉编译器是什么类型</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>3.类模版和函数模版的区别</p>
+<p>类模版不会自动推导数据类型，要显示的告诉编译器是什么类型</p>
+<p>函数模版可以根据实参来推导数据类型</p>
+<p>4.类模版的默认参数(了解)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//类模版的默认类型</span><br><span class="line">template&lt;class NameType, class AgeType=int&gt;</span><br><span class="line">class Maker2</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	Maker2(NameType name, AgeType age)</span><br><span class="line">	&#123;</span><br><span class="line">		this-&gt;name = name;</span><br><span class="line">		this-&gt;age = age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	void printMaker()</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;Name:&quot; &lt;&lt; this-&gt;name &lt;&lt; &quot; Age:&quot; &lt;&lt; this-&gt;age &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">public:</span><br><span class="line">	NameType name;</span><br><span class="line">	AgeType age;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void test02()</span><br><span class="line">&#123;</span><br><span class="line">	//如果有默认类型，那么&lt;&gt;里可以少写类型</span><br><span class="line">	Maker2&lt;string&gt; m(&quot;贝吉塔&quot;, 20);</span><br><span class="line"></span><br><span class="line">	m.printMaker();</span><br><span class="line">	//以传入的类型为准</span><br><span class="line">	Maker2&lt;string, double&gt; m2(&quot;wukong&quot;, 20.22);</span><br><span class="line">	m2.printMaker();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.类模版的默认参数注意</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//默认类型后面的泛型类型都必须有默认类型</span><br><span class="line">template&lt;class NameType, class AgeType = int,class T=int&gt;</span><br><span class="line">class Maker3</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	Maker3(NameType name, AgeType age)</span><br><span class="line">	&#123;</span><br><span class="line">		this-&gt;name = name;</span><br><span class="line">		this-&gt;age = age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	void printMaker()</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;Name:&quot; &lt;&lt; this-&gt;name &lt;&lt; &quot; Age:&quot; &lt;&lt; this-&gt;age &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">public:</span><br><span class="line">	NameType name;</span><br><span class="line">	AgeType age;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="08-复数的模板类（了解）"><a href="#08-复数的模板类（了解）" class="headerlink" title="08.复数的模板类（了解）"></a>08.复数的模板类（了解）</h2><p>1.目的：对象c1(3,4) ，对象c2(5,-10) ，对象c3&#x3D;c1.Maker_add(c2) ，c3里的两个成员变量会等于a&#x3D;3+5,b&#x3D;4+(-10)并且数据类型可以不同</p>
+<p>2.通过成员函数实现</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">template&lt;class T&gt;</span><br><span class="line">class Maker</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	Maker()</span><br><span class="line">	&#123;</span><br><span class="line">		a = 0;</span><br><span class="line">		b = 0;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	Maker(T r,T i)</span><br><span class="line">	&#123;</span><br><span class="line">		a = r;</span><br><span class="line">		b = i;</span><br><span class="line">	&#125;</span><br><span class="line">	Maker Maker_add(Maker &amp;c2)</span><br><span class="line">	&#123;</span><br><span class="line">		Maker&lt;T&gt; c;</span><br><span class="line">		c.a = this-&gt;a + c2.a;</span><br><span class="line">		c.b = this-&gt;b + c2.b;</span><br><span class="line">		return c;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	void printMaker()</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;(&quot; &lt;&lt; a &lt;&lt; &quot;,&quot; &lt;&lt; b &lt;&lt; &quot;)&quot; &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">private:</span><br><span class="line">	T a;</span><br><span class="line">	T b;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void test()</span><br><span class="line">&#123;</span><br><span class="line">	Maker&lt;int&gt; c1(3, 4);</span><br><span class="line">	Maker&lt;int&gt; c2(5, -10);</span><br><span class="line">	Maker&lt;int&gt; c3;</span><br><span class="line">	c3 = c1.Maker_add(c2);</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; &quot;c1+c2=&quot;;</span><br><span class="line">	c3.printMaker();</span><br><span class="line"></span><br><span class="line">	Maker&lt;double&gt; d1(3.3, 4.4);</span><br><span class="line">	Maker&lt;double&gt; d2(5.5, -10.1);</span><br><span class="line">	Maker&lt;double&gt; d3;</span><br><span class="line">	d3 = d1.Maker_add(d2);</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; &quot;d1+d2=&quot;;</span><br><span class="line">	d3.printMaker();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>3.通过重载运算符实现</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">	Maker operator+(Maker &amp;c2)</span><br><span class="line">	&#123;</span><br><span class="line">		Maker tmp(this-&gt;a + c2.a, this-&gt;b + c2.b);</span><br><span class="line">		return tmp;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">void test02()</span><br><span class="line">&#123;</span><br><span class="line">	Maker&lt;int&gt; c1(3, 4);</span><br><span class="line">	Maker&lt;int&gt; c2(5, -10);</span><br><span class="line">	Maker&lt;int&gt; c3;</span><br><span class="line">	c3 = c1 + c2;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; &quot;c1+c2=&quot;;</span><br><span class="line">	c3.printMaker();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="09-类模版做函数参数（重点）"><a href="#09-类模版做函数参数（重点）" class="headerlink" title="09.类模版做函数参数（重点）"></a>09.类模版做函数参数（重点）</h2><p>1.指定传入类型</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//1.指定传入的数据类型</span><br><span class="line">void func(Maker&lt;string,int&gt; &amp;m)</span><br><span class="line">&#123;</span><br><span class="line">	m.printMaker();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.参数模板化</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//2.参数模版化（常用）</span><br><span class="line">template&lt;class T1,class T2&gt;</span><br><span class="line">void func2(Maker&lt;T1,T2&gt; &amp;m)</span><br><span class="line">&#123;</span><br><span class="line">	m.printMaker();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>3.整个类 模板化</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//3.整个类 模版化</span><br><span class="line">template&lt;class T&gt;</span><br><span class="line">void func3(T &amp;m)</span><br><span class="line">&#123;</span><br><span class="line">	m.printMaker();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="10-类模版的继承（重点）"><a href="#10-类模版的继承（重点）" class="headerlink" title="10.类模版的继承（重点）"></a>10.类模版的继承（重点）</h2><p>1.普通类继承类模版</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//普通类继承类模版</span><br><span class="line">template&lt;class T&gt;</span><br><span class="line">class Father</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	Father()</span><br><span class="line">	&#123;</span><br><span class="line">		m = 20;</span><br><span class="line">	&#125;</span><br><span class="line">public:</span><br><span class="line">	T m;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">//普通类 继承 类模版</span><br><span class="line">class Son :public Father&lt;int&gt;//要告诉编译器父类的泛型数据类型具体是什么类型</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>2.类模版 继承 类模版</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//类模版 继承 类模版</span><br><span class="line">template&lt;class T1,class T2&gt;</span><br><span class="line">class Son2 :public Father&lt;T2&gt;//要告诉编译器父类的泛型数据类型具体是什么类型</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>3.必须告诉编译器父类的泛型类型是什么数据类型</p>
+<h2 id="11-类模版的成员函数类内类外实现（重点）"><a href="#11-类模版的成员函数类内类外实现（重点）" class="headerlink" title="11.类模版的成员函数类内类外实现（重点）"></a>11.类模版的成员函数类内类外实现（重点）</h2><p>1.类内实现</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">template&lt;class NameType, class AgeType&gt;</span><br><span class="line">class Maker</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	Maker(NameType name, AgeType age)</span><br><span class="line">	&#123;</span><br><span class="line">		this-&gt;name = name;</span><br><span class="line">		this-&gt;age = age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	void printMaker()</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;Name:&quot; &lt;&lt; this-&gt;name &lt;&lt; &quot; Age:&quot; &lt;&lt; this-&gt;age &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">public:</span><br><span class="line">	NameType name;</span><br><span class="line">	AgeType age;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>2.类外实现，成员函数必须写成函数模版，并且写上参数列表</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">template&lt;class NameType, class AgeType&gt;</span><br><span class="line">class Maker</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	Maker(NameType name, AgeType age);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	void printMaker();</span><br><span class="line">	</span><br><span class="line">public:</span><br><span class="line">	NameType name;</span><br><span class="line">	AgeType age;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">//类模版的成员函数类外实现</span><br><span class="line">//要写成函数模版</span><br><span class="line">template&lt;class NameType, class AgeType&gt;</span><br><span class="line">Maker&lt;NameType, AgeType&gt;::Maker(NameType name, AgeType age)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">	cout &lt;&lt; &quot;构造函数&quot; &lt;&lt; endl;</span><br><span class="line">	this-&gt;name = name;</span><br><span class="line">	this-&gt;age = age;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">template&lt;class NameType, class AgeType&gt;</span><br><span class="line">void Maker&lt;NameType, AgeType&gt;::printMaker()</span><br><span class="line">&#123;</span><br><span class="line">	cout &lt;&lt; &quot;Name:&quot; &lt;&lt; this-&gt;name &lt;&lt; &quot; Age:&quot; &lt;&lt; this-&gt;age &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="12-类模版分文件编写问题及解决方法（重点难点）"><a href="#12-类模版分文件编写问题及解决方法（重点难点）" class="headerlink" title="12.类模版分文件编写问题及解决方法（重点难点）"></a>12.类模版分文件编写问题及解决方法（重点难点）</h2><p>1.调用类模版时，要进行第二次编译，要把泛型的数据类型替换为具体的类型，这时需要知道函数体，但是函数的实现在.cpp中，那么调用类模版的.cpp没有引入实现.cpp，只引入.h，所以报错</p>
+<p>2.解决方法：把成员函数放到.h中，然后把.h改为.hpp,然后在调用成员函数的地方，引入.hpp</p>
+<p>3.为什么.hpp中有成员的实现，然后在调用类模版的地方引入.hpp，不会报重定义</p>
+<p>类的成员函数默认申请为内联函数，在链接时，链接器会对重复的成员函数进行处理，只保留一份成员函数，所以不会进行报错</p>
+<h2 id="13-类模版碰到友元（重点难点）"><a href="#13-类模版碰到友元（重点难点）" class="headerlink" title="13.类模版碰到友元（重点难点）"></a>13.类模版碰到友元（重点难点）</h2><p>1.友元类内实现</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">template&lt;class NameType, class AgeType&gt;</span><br><span class="line">class Maker</span><br><span class="line">&#123;</span><br><span class="line">	friend void printMaker(Maker&lt;NameType, AgeType&gt; &amp;p)</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;类内实现&quot; &lt;&lt; p.name &lt;&lt; &quot; &quot; &lt;&lt; p.age &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">public:</span><br><span class="line">	Maker(NameType name, AgeType age)</span><br><span class="line">	&#123;</span><br><span class="line">		this-&gt;name = name;</span><br><span class="line">		this-&gt;age = age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">private:</span><br><span class="line">	NameType name;</span><br><span class="line">	AgeType age;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void test01()</span><br><span class="line">&#123;</span><br><span class="line">	Maker&lt;string, int&gt; m(&quot;悟空&quot;, 18);</span><br><span class="line"></span><br><span class="line">	printMaker(m);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.友元类外实现</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//1.声类模版</span><br><span class="line">template&lt;class NameType, class AgeType&gt;</span><br><span class="line">class Maker2;</span><br><span class="line">//2.声明函数模版</span><br><span class="line">//告诉编译器下面有printMaker2的实现</span><br><span class="line">template&lt;class NameType, class AgeType&gt;</span><br><span class="line">void printMaker2(Maker2&lt;NameType, AgeType&gt; &amp;p);</span><br><span class="line"></span><br><span class="line">template&lt;class NameType, class AgeType&gt;</span><br><span class="line">class Maker2</span><br><span class="line">&#123;</span><br><span class="line">	//3.在函数名和()之间加上&lt;&gt;。</span><br><span class="line">	friend void printMaker2&lt;&gt;(Maker2&lt;NameType, AgeType&gt; &amp;p);</span><br><span class="line">	//编译器不知道printMaker2下面有没有实现，需要知道函数的结构</span><br><span class="line">public:</span><br><span class="line">	Maker2(NameType name, AgeType age)</span><br><span class="line">	&#123;</span><br><span class="line">		this-&gt;name = name;</span><br><span class="line">		this-&gt;age = age;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">private:</span><br><span class="line">	NameType name;</span><br><span class="line">	AgeType age;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">//4.友元在类外实现要写成函数模版</span><br><span class="line">template&lt;class NameType, class AgeType&gt;</span><br><span class="line">void printMaker2(Maker2&lt;NameType, AgeType&gt; &amp;p)</span><br><span class="line">&#123;</span><br><span class="line">	cout &lt;&lt; &quot;类外实现的友元函数 &quot; &lt;&lt; p.name &lt;&lt; &quot; &quot; &lt;&lt; p.age &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test02()</span><br><span class="line">&#123;</span><br><span class="line">	Maker2&lt;string, int&gt; m(&quot;贝吉塔&quot;, 18);</span><br><span class="line"></span><br><span class="line">	printMaker2(m);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="14-类模版实现数组"><a href="#14-类模版实现数组" class="headerlink" title="14.类模版实现数组"></a>14.类模版实现数组</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">MyArray.hpp</span><br><span class="line">#pragma once</span><br><span class="line"></span><br><span class="line">template&lt;class T&gt;</span><br><span class="line">class MyArray</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	MyArray(int capacity)</span><br><span class="line">	&#123;</span><br><span class="line">		this-&gt;mCapacity = capacity;</span><br><span class="line">		this-&gt;mSize = 0;</span><br><span class="line">		//T如果是Maker,这里要调用什么构造函数，要调用无参构造</span><br><span class="line">		p = new T[this-&gt;mCapacity];</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	//拷贝构造</span><br><span class="line">	MyArray(const MyArray &amp;arr)</span><br><span class="line">	&#123;</span><br><span class="line">		this-&gt;mCapacity = arr.mCapacity;</span><br><span class="line">		this-&gt;mSize = arr.mSize;</span><br><span class="line">		p = new T[arr.mCapacity];</span><br><span class="line"></span><br><span class="line">		for (int i = 0; i &lt; this-&gt;mSize; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			p[i] = arr.p[i];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	//赋值函数</span><br><span class="line">	MyArray &amp;operator=(const MyArray &amp;arr)</span><br><span class="line">	&#123;</span><br><span class="line">		if (this-&gt;p != NULL)</span><br><span class="line">		&#123;</span><br><span class="line">			delete[] this-&gt;p;</span><br><span class="line">			this-&gt;p = NULL;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		p = new T[arr.mCapacity];</span><br><span class="line">		this-&gt;mSize = arr.mSize;</span><br><span class="line">		this-&gt;mCapacity = arr.mCapacity;</span><br><span class="line">		for (int i = 0; i &lt; this-&gt;mSize; i++)</span><br><span class="line">		&#123;</span><br><span class="line">			p[i] = arr.p[i];</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		return *this;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	//重载[]</span><br><span class="line">	T &amp;operator[](int index)</span><br><span class="line">	&#123;</span><br><span class="line">		return this-&gt;p[index];</span><br><span class="line">	&#125;</span><br><span class="line">	//尾插</span><br><span class="line">	void Push_Back(const T &amp;val)</span><br><span class="line">	&#123;</span><br><span class="line">		if (this-&gt;mSize == this-&gt;mCapacity)</span><br><span class="line">		&#123;</span><br><span class="line">			return;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		this-&gt;p[this-&gt;mSize] = val;</span><br><span class="line">		this-&gt;mSize++;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	//尾删</span><br><span class="line">	void Pop_Back()</span><br><span class="line">	&#123;</span><br><span class="line">		if (this-&gt;mSize == 0)</span><br><span class="line">		&#123;</span><br><span class="line">			return;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		this-&gt;mSize--;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	~MyArray()</span><br><span class="line">	&#123;</span><br><span class="line">		if (this-&gt;p != NULL)</span><br><span class="line">		&#123;</span><br><span class="line">			delete[] p;</span><br><span class="line">			p = NULL;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	int getSize()</span><br><span class="line">	&#123;</span><br><span class="line">		return this-&gt;mSize;</span><br><span class="line">	&#125;</span><br><span class="line">private:</span><br><span class="line">	T *p;</span><br><span class="line">	int mCapacity;</span><br><span class="line">	int mSize;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">//类模版实现数组.cpp</span><br><span class="line">#define _CRT_SECURE_NO_WARNINGS</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">#include&quot;MyArray.hpp&quot;</span><br><span class="line">#include&lt;string&gt;</span><br><span class="line">class Maker</span><br><span class="line">&#123;</span><br><span class="line">public:</span><br><span class="line">	Maker()&#123;&#125;</span><br><span class="line">	Maker(string name, int age)</span><br><span class="line">	&#123;</span><br><span class="line">		this-&gt;name = name;</span><br><span class="line">		this-&gt;age = age;</span><br><span class="line">	&#125;</span><br><span class="line">public:</span><br><span class="line">	string name;</span><br><span class="line">	int age;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">void printMaker(MyArray&lt;Maker&gt; &amp;arr)</span><br><span class="line">&#123;</span><br><span class="line">	for (int i = 0; i &lt; arr.getSize(); i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; &quot;姓名:&quot; &lt;&lt; arr[i].name &lt;&lt; &quot; 年龄:&quot; &lt;&lt; arr[i].age &lt;&lt; endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void test()</span><br><span class="line">&#123;</span><br><span class="line">	MyArray&lt;Maker&gt; myarr(4);</span><br><span class="line">	Maker m1(&quot;悟空&quot;, 18);</span><br><span class="line">	Maker m2(&quot;贝吉塔&quot;, 30);</span><br><span class="line">	Maker m3(&quot;短笛&quot;, 200);</span><br><span class="line">	Maker m4(&quot;小林&quot;, 19);</span><br><span class="line">	myarr.Push_Back(m1);</span><br><span class="line">	myarr.Push_Back(m2);</span><br><span class="line">	myarr.Push_Back(m3);</span><br><span class="line">	myarr.Push_Back(m4);</span><br><span class="line"></span><br><span class="line">	printMaker(myarr);</span><br><span class="line"></span><br><span class="line">	MyArray&lt;int&gt; myint(10);</span><br><span class="line">	for (int i = 0; i &lt; 10; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		myint.Push_Back(i + 1);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	for (int i = 0; i &lt; 10; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; myint[i] &lt;&lt;&quot; &quot;;</span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	test();</span><br><span class="line"></span><br><span class="line">	system(&quot;pause&quot;);</span><br><span class="line">	return EXIT_SUCCESS;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+</article><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192211377.png" target="_blank"><img class="post-qr-code-img" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192211377.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192207910.png" target="_blank"><img class="post-qr-code-img" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192207910.png" alt="alipayautoh"/></a><div class="post-qr-code-desc">alipayautoh</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://acall.love/2023/02/01/day08%E7%AC%94%E8%AE%B0/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=undefined&amp;url=http://acall.love/2023/02/01/day08%E7%AC%94%E8%AE%B0/&amp;pic=undefined" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/C/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>C++<span class="tagsPageCount">12</span></a><a class="post-meta__box__tags" href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>后端开发<span class="tagsPageCount">12</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/85gxdy.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div></div><div class="post-copyright"><i class="anzhiyufont anzhiyu-icon-copyright"></i><div class="post-copyright__author"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://acall.love/2023/02/01/day08%E7%AC%94%E8%AE%B0/">原创</a><a class="post-copyright-title"><span>8.C++入门</span></a></div><div class="post-copyright-info-box"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"></span><a class="link" href="http://acall.love">♪张小佑</a></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a class="link" href="http://acall.love/2023/02/01/day08%E7%AC%94%E8%AE%B0/">http://acall.love/2023/02/01/day08%E7%AC%94%E8%AE%B0/</a></span><span class="copy-button" onclick="rm.copyPageUrl('http://acall.love/2023/02/01/day08%E7%AC%94%E8%AE%B0/')"><i class="anzhiyufont anzhiyu-icon-copy"></i></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://acall.love" target="_blank">♪张小佑</a>！</span></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/01/30/day07%E7%AC%94%E8%AE%B0/"><img class="prev-cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/9d5wmx.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">7.C++入门</div></div></a></div><div class="next-post pull-right"><a href="/2023/02/05/day09%E7%AC%94%E8%AE%B0/"><img class="next-cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/13xxjg.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">9.C++入门</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/01/01/day01%E7%AC%94%E8%AE%B0/" title="1.C++入门"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307191620620.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-01-01</div><div class="title">1.C++入门</div></div></a></div><div><a href="/2023/01/10/day03%E7%AC%94%E8%AE%B0/" title="3.C++入门"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/1pqq1w.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-01-10</div><div class="title">3.C++入门</div></div></a></div><div><a href="/2023/01/05/day02%E7%AC%94%E8%AE%B0/" title="2.C++入门"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/001.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-01-05</div><div class="title">2.C++入门</div></div></a></div><div><a href="/2023/01/15/day04%E7%AC%94%E8%AE%B0/" title="4.C++入门"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/640dc67e55bf0.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-01-15</div><div class="title">4.C++入门</div></div></a></div><div><a href="/2023/01/20/day05%E7%AC%94%E8%AE%B0/" title="5.C++入门"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/2yz3m9.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-01-20</div><div class="title">5.C++入门</div></div></a></div><div><a href="/2023/01/30/day07%E7%AC%94%E8%AE%B0/" title="7.C++入门"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/9d5wmx.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-01-30</div><div class="title">7.C++入门</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#01-%E6%A8%A1%E7%89%88%E7%9A%84%E6%A6%82%E5%BF%B5%EF%BC%88%E4%BA%86%E8%A7%A3%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">01.模版的概念（了解）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#02-%E5%87%BD%E6%95%B0%E6%A8%A1%E7%89%88%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">02.函数模版（重点）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#03-%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E4%B8%8E%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E5%8C%BA%E5%88%AB%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">03.普通函数与函数模板区别（重点）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#04-%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E4%B8%8E%E5%87%BD%E6%95%B0%E6%A8%A1%E6%9D%BF%E7%9A%84%E8%B0%83%E7%94%A8%E8%A7%84%E5%88%99%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">04.普通函数与函数模板的调用规则（重点）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#05-%E6%A8%A1%E7%89%88%E5%AE%9E%E7%8E%B0%E6%9C%BA%E5%88%B6%EF%BC%88%E4%BA%86%E8%A7%A3%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">05.模版实现机制（了解）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#06-%E6%A8%A1%E7%89%88%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%88%E4%BA%86%E8%A7%A3%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">06.模版的局限性及解决方法（了解）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#07-%E7%B1%BB%E6%A8%A1%E7%89%88%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">07.类模版（重点）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#08-%E5%A4%8D%E6%95%B0%E7%9A%84%E6%A8%A1%E6%9D%BF%E7%B1%BB%EF%BC%88%E4%BA%86%E8%A7%A3%EF%BC%89"><span class="toc-number">8.</span> <span class="toc-text">08.复数的模板类（了解）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#09-%E7%B1%BB%E6%A8%A1%E7%89%88%E5%81%9A%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">9.</span> <span class="toc-text">09.类模版做函数参数（重点）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E7%B1%BB%E6%A8%A1%E7%89%88%E7%9A%84%E7%BB%A7%E6%89%BF%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">10.</span> <span class="toc-text">10.类模版的继承（重点）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E7%B1%BB%E6%A8%A1%E7%89%88%E7%9A%84%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E7%B1%BB%E5%86%85%E7%B1%BB%E5%A4%96%E5%AE%9E%E7%8E%B0%EF%BC%88%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">11.</span> <span class="toc-text">11.类模版的成员函数类内类外实现（重点）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-%E7%B1%BB%E6%A8%A1%E7%89%88%E5%88%86%E6%96%87%E4%BB%B6%E7%BC%96%E5%86%99%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%88%E9%87%8D%E7%82%B9%E9%9A%BE%E7%82%B9%EF%BC%89"><span class="toc-number">12.</span> <span class="toc-text">12.类模版分文件编写问题及解决方法（重点难点）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-%E7%B1%BB%E6%A8%A1%E7%89%88%E7%A2%B0%E5%88%B0%E5%8F%8B%E5%85%83%EF%BC%88%E9%87%8D%E7%82%B9%E9%9A%BE%E7%82%B9%EF%BC%89"><span class="toc-number">13.</span> <span class="toc-text">13.类模版碰到友元（重点难点）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-%E7%B1%BB%E6%A8%A1%E7%89%88%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84"><span class="toc-number">14.</span> <span class="toc-text">14.类模版实现数组</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By ♪张小佑</div></div></footer></div></div></div><div id="sidebar"><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:17px;"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li></ul></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script><div><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.4.0/source/js/utils.js"></script><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.4.0/source/js/main.js"></script><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.4.0/source/js/tw_cn.js"></script><script src="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.umd.js"></script><script src="https://npm.elemecdn.com/instant.page@5.1.1/instantpage.js" type="module"></script><script src="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://npm.elemecdn.com/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("09/01/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2022 By 安知鱼 1.4.0",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 ♪张小佑 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "visitor@anheyu.com";</script><script>//动态标题
+let leaveTitle = '♪张小佑 - 分享思考与科技生活';
+let backTitle = '♪张小佑 - 分享思考与科技生活';
+let OriginTitile = document.title
+let titleTime
+document.addEventListener('visibilitychange', function () {
+  if (document.hidden) {
+    //离开当前页面时标签显示内容
+    document.title = leaveTitle
+    clearTimeout(titleTime)
+  } else {
+    //返回当前页面时标签显示内容
+    document.title = backTitle + OriginTitile
+    //两秒后变回正常标题
+    titleTime = setTimeout(function () {
+      document.title = OriginTitile
+    }, 2000)
+  }
+})</script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script>// 初始化函数
+let rm = {};
+
+//禁止图片与超链接拖拽
+let aElements = document.getElementsByTagName("a");
+for (let i = 0; i < aElements.length; i++) {
+  aElements[i].setAttribute("draggable", "false");
+  let imgElements = aElements[i].getElementsByTagName("img");
+  for (let j = 0; j < imgElements.length; j++) {
+    imgElements[j].setAttribute("draggable", "false");
+  }
+}
+
+// 显示菜单
+rm.showRightMenu = function (isTrue, x = 0, y = 0) {
+  console.info(x, y)
+  let rightMenu = document.getElementById("rightMenu");
+  rightMenu.style.top = x + "px";
+  rightMenu.style.left = y + "px";
+  if (isTrue) {
+    rightMenu.style.display = "block";
+    stopMaskScroll();
+  } else {
+    rightMenu.style.display = "none";
+  }
+};
+
+// 隐藏菜单
+rm.hideRightMenu = function () {
+  rm.showRightMenu(false);
+  let rightMenuMask = document.querySelector("#rightmenu-mask");
+  rightMenuMask.style.display = "none";
+};
+
+// 尺寸
+let rmWidth = document.getElementById("rightMenu").offsetWidth;
+let rmHeight = document.getElementById("rightMenu").offsetHeight;
+
+// 重新定义尺寸
+rm.reloadrmSize = function () {
+  rightMenu.style.visibility = "hidden";
+  rightMenu.style.display = "block";
+  // 获取宽度和高度
+  rmWidth = document.getElementById("rightMenu").offsetWidth;
+  rmHeight = document.getElementById("rightMenu").offsetHeight;
+  rightMenu.style.visibility = "visible";
+};
+
+// 获取点击的href
+let domhref = "";
+let domImgSrc = "";
+let globalEvent = null;
+
+var oncontextmenuFunction = function (event) {
+  if (document.body.clientWidth > 768) {
+    let pageX = event.clientX + 10; //加10是为了防止显示时鼠标遮在菜单上
+    let pageY = event.clientY;
+
+    //其他额外菜单
+    const $rightMenuOther = document.querySelector(".rightMenuOther");
+    const $rightMenuPlugin = document.querySelector(".rightMenuPlugin");
+    const $rightMenuCopyText = document.querySelector("#menu-copytext");
+    const $rightMenuPasteText = document.querySelector("#menu-pastetext");
+    const $rightMenuCommentText = document.querySelector("#menu-commenttext");
+    const $rightMenuNewWindow = document.querySelector("#menu-newwindow");
+    const $rightMenuNewWindowImg = document.querySelector("#menu-newwindowimg");
+    const $rightMenuCopyLink = document.querySelector("#menu-copylink");
+    const $rightMenuCopyImg = document.querySelector("#menu-copyimg");
+    const $rightMenuDownloadImg = document.querySelector("#menu-downloadimg");
+    const $rightMenuSearch = document.querySelector("#menu-search");
+    const $rightMenuSearchBaidu = document.querySelector("#menu-searchBaidu");
+    const $rightMenuMusicToggle = document.querySelector("#menu-music-toggle");
+    const $rightMenuMusicBack = document.querySelector("#menu-music-back");
+    const $rightMenuMusicForward = document.querySelector("#menu-music-forward");
+    const $rightMenuMusicPlaylist = document.querySelector("#menu-music-playlist");
+    const $rightMenuMusicCopyMusicName = document.querySelector("#menu-music-copyMusicName");
+
+    let href = event.target.href;
+    let imgsrc = event.target.currentSrc;
+
+    // 判断模式 扩展模式为有事件
+    let pluginMode = false;
+    $rightMenuOther.style.display = "block";
+    globalEvent = event;
+
+    // 检查是否需要复制 是否有选中文本
+    if (selectTextNow && window.getSelection()) {
+      pluginMode = true;
+      $rightMenuCopyText.style.display = "block";
+      $rightMenuCommentText.style.display = "block";
+      $rightMenuSearch.style.display = "block";
+      $rightMenuSearchBaidu.style.display = "block";
+    } else {
+      $rightMenuCopyText.style.display = "none";
+      $rightMenuCommentText.style.display = "none";
+      $rightMenuSearchBaidu.style.display = "none";
+      $rightMenuSearch.style.display = "none";
+    }
+
+    //检查是否右键点击了链接a标签
+    if (href) {
+      pluginMode = true;
+      $rightMenuNewWindow.style.display = "block";
+      $rightMenuCopyLink.style.display = "block";
+      domhref = href;
+    } else {
+      $rightMenuNewWindow.style.display = "none";
+      $rightMenuCopyLink.style.display = "none";
+    }
+
+    //检查是否需要复制图片
+    if (imgsrc) {
+      pluginMode = true;
+      $rightMenuCopyImg.style.display = "block";
+      $rightMenuDownloadImg.style.display = "block";
+      $rightMenuNewWindowImg.style.display = "block";
+      document.getElementById("rightMenu").style.width="12rem"
+      domImgSrc = imgsrc;
+    } else {
+      $rightMenuCopyImg.style.display = "none";
+      $rightMenuDownloadImg.style.display = "none";
+      $rightMenuNewWindowImg.style.display = "none";
+    }
+
+    // 判断是否为输入框
+    if (event.target.tagName.toLowerCase() === "input" || event.target.tagName.toLowerCase() === "textarea") {
+      pluginMode = true;
+      $rightMenuPasteText.style.display = "block";
+    } else {
+      $rightMenuPasteText.style.display = "none";
+    }
+    const navMusicEl = document.querySelector("#nav-music");
+    //判断是否是音乐
+    if (navMusicEl && navMusicEl.contains(event.target)) {
+      pluginMode = true;
+      $rightMenuMusicToggle.style.display = "block";
+      $rightMenuMusicBack.style.display = "block";
+      $rightMenuMusicForward.style.display = "block";
+      $rightMenuMusicPlaylist.style.display = "block";
+      $rightMenuMusicCopyMusicName.style.display = "block";
+    } else {
+      $rightMenuMusicToggle.style.display = "none";
+      $rightMenuMusicBack.style.display = "none";
+      $rightMenuMusicForward.style.display = "none";
+      $rightMenuMusicPlaylist.style.display = "none";
+      $rightMenuMusicCopyMusicName.style.display = "none";
+    }
+
+    // 如果不是扩展模式则隐藏扩展模块
+    if (pluginMode) {
+      $rightMenuOther.style.display = "none";
+      $rightMenuPlugin.style.display = "block";
+    } else {
+      $rightMenuPlugin.style.display = "none";
+    }
+
+    rm.reloadrmSize();
+
+    // 鼠标默认显示在鼠标右下方，当鼠标靠右或靠下时，将菜单显示在鼠标左方\上方
+    if (pageX + rmWidth > window.innerWidth) {
+      pageX -= rmWidth + 10;
+    }
+    if (pageY + rmHeight > window.innerHeight) {
+      pageY -= pageY + rmHeight - window.innerHeight;
+    }
+
+    rm.showRightMenu(true, pageY, pageX);
+    document.getElementById("rightmenu-mask").style.display = "flex";
+    return false;
+  }
+};
+
+// 监听右键初始化
+window.oncontextmenu = oncontextmenuFunction
+
+// 下载图片状态
+rm.downloadimging = false;
+
+// 复制图片到剪贴板
+rm.writeClipImg = function (imgsrc) {
+  console.log("按下复制");
+  rm.hideRightMenu();
+  anzhiyu.snackbarShow("正在下载中，请稍后", false, 10000);
+  if (rm.downloadimging == false) {
+    rm.downloadimging = true;
+    setTimeout(function () {
+      copyImage(imgsrc);
+      anzhiyu.snackbarShow("复制成功！图片已添加盲水印，请遵守版权协议");
+      rm.downloadimging = false;
+    }, "10000");
+  }
+};
+
+function imageToBlob(imageURL) {
+  const img = new Image();
+  const c = document.createElement("canvas");
+  const ctx = c.getContext("2d");
+  img.crossOrigin = "";
+  img.src = imageURL;
+  return new Promise(resolve => {
+    img.onload = function () {
+      c.width = this.naturalWidth;
+      c.height = this.naturalHeight;
+      ctx.drawImage(this, 0, 0);
+      c.toBlob(
+        blob => {
+          // here the image is a blob
+          resolve(blob);
+        },
+        "image/png",
+        0.75
+      );
+    };
+  });
+}
+
+async function copyImage(imageURL) {
+  const blob = await imageToBlob(imageURL);
+  const item = new ClipboardItem({ "image/png": blob });
+  navigator.clipboard.write([item]);
+}
+
+rm.copyUrl = function (id) {
+  const input = document.createElement("input"); // Create a new <input> element
+  input.id = "copyVal"; // Set the id of the new element to "copyVal"
+  document.body.appendChild(input); // Append the new element to the end of the <body> element
+  
+  const text = id;
+  input.value = text;
+  input.select();
+  input.setSelectionRange(0, input.value.length);
+  document.execCommand("copy");
+  
+  input.remove(); // Remove the <input> element from the DOM
+};
+
+function stopMaskScroll() {
+  if (document.getElementById("rightmenu-mask")) {
+    let xscroll = document.getElementById("rightmenu-mask");
+    xscroll.addEventListener(
+      "mousewheel",
+      function (e) {
+        //阻止浏览器默认方法
+        rm.hideRightMenu();
+        // e.preventDefault();
+      },
+      { passive: true }
+    );
+  }
+  if (document.getElementById("rightMenu")) {
+    let xscroll = document.getElementById("rightMenu");
+    xscroll.addEventListener(
+      "mousewheel",
+      function (e) {
+        //阻止浏览器默认方法
+        rm.hideRightMenu();
+        // e.preventDefault();
+      },
+      { passive: true }
+    );
+  }
+}
+
+rm.rightmenuCopyText = function (txt) {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(txt);
+  }
+  rm.hideRightMenu();
+};
+
+rm.copyPageUrl = function (url) {
+  if (!url) {
+    url = window.location.href;
+  }
+  rm.copyUrl(url);
+  anzhiyu.snackbarShow("复制本页链接地址成功", false, 2000);
+  rm.hideRightMenu();
+};
+
+rm.sharePage = function () {
+  var content = window.location.href;
+  rm.copyUrl(url);
+  anzhiyu.snackbarShow("复制本页链接地址成功", false, 2000);
+  rm.hideRightMenu();
+};
+
+// 复制当前选中文本
+var selectTextNow = "";
+document.onmouseup = document.ondblclick = selceText;
+
+function selceText() {
+  var txt;
+  if (document.selection) {
+    txt = document.selection.createRange().text;
+  } else {
+    txt = window.getSelection().toString();
+  }
+  selectTextNow = txt !== "" ? txt : "";
+}
+
+// 读取剪切板
+rm.readClipboard = function () {
+  if (navigator.clipboard) {
+    navigator.clipboard.readText().then(clipText => rm.insertAtCaret(globalEvent.target, clipText));
+  }
+};
+
+// 粘贴文本到焦点
+rm.insertAtCaret = function (elemt, value) {
+  const startPos = elemt.selectionStart,
+    endPos = elemt.selectionEnd;
+  if (document.selection) {
+    elemt.focus();
+    var sel = document.selection.createRange();
+    sel.text = value;
+    elemt.focus();
+  } else {
+    if (startPos || startPos == "0") {
+      var scrollTop = elemt.scrollTop;
+      elemt.value = elemt.value.substring(0, startPos) + value + elemt.value.substring(endPos, elemt.value.length);
+      elemt.focus();
+      elemt.selectionStart = startPos + value.length;
+      elemt.selectionEnd = startPos + value.length;
+      elemt.scrollTop = scrollTop;
+    } else {
+      elemt.value += value;
+      elemt.focus();
+    }
+  }
+};
+
+//粘贴文本
+rm.pasteText = function () {
+  const result = rm.readClipboard() || "";
+  rm.hideRightMenu();
+};
+
+//引用到评论
+rm.rightMenuCommentText = function (txt) {
+  rm.hideRightMenu();
+  const postCommentDom = document.getElementById("post-comment");
+  var domTop = postCommentDom.offsetTop;
+  window.scrollTo(0, domTop - 80);
+  if (txt == "undefined" || txt == "null") txt = "好棒！";
+  function setText() {
+    setTimeout(() => {
+      var input = document.getElementsByClassName("el-textarea__inner")[0];
+      if (!input) setText();
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("input", true, true);
+      let inputValue = replaceAll(txt, "\n", "\n> ");
+      input.value = "> " + inputValue + "\n\n";
+      input.dispatchEvent(evt);
+      input.focus();
+      input.setSelectionRange(-1, -1);
+      if (document.getElementById("comment-tips")) {
+        document.getElementById("comment-tips").classList.add("show");
+      }
+    }, 100);
+  }
+  setText();
+};
+
+//替换所有内容
+function replaceAll(string, search, replace) {
+  return string.split(search).join(replace);
+}
+
+// 百度搜索
+rm.searchBaidu = function () {
+  anzhiyu.snackbarShow("即将跳转到百度搜索", false, 2000);
+  setTimeout(function () {
+    window.open("https://www.baidu.com/s?wd=" + selectTextNow);
+  }, "2000");
+  rm.hideRightMenu();
+};
+
+//分享链接
+rm.copyLink = function () {
+  rm.rightmenuCopyText(domhref);
+  anzhiyu.snackbarShow("已复制链接地址");
+};
+
+function addRightMenuClickEvent() {
+  // 添加点击事件
+  document.getElementById("menu-backward").addEventListener("click", function () {
+  window.history.back();
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-forward").addEventListener("click", function () {
+    window.history.forward();
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-refresh").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  document.getElementById("menu-top").addEventListener("click", function () {
+    anzhiyu.scrollToDest(0, 500);
+    rm.hideRightMenu();
+  });
+
+  const menuLinks = document.querySelectorAll(".menu-link");
+  menuLinks.forEach(function (link) {
+    link.addEventListener("click", rm.hideRightMenu);
+  });
+
+  document.getElementById("menu-darkmode").addEventListener("click", anzhiyu.switchDarkMode);
+
+  document.getElementById("menu-home") && document.getElementById("menu-home").addEventListener("click", function () {
+    window.location.href = window.location.origin;
+  });
+
+  document.getElementById("menu-randomPost").addEventListener("click", function () {
+    toRandomPost();
+  });
+
+  document.getElementById("menu-commentBarrage").addEventListener("click", anzhiyu.switchCommentBarrage);
+
+  document.getElementById("rightmenu-mask").addEventListener("click", rm.hideRightMenu);
+
+  document.getElementById("rightmenu-mask").addEventListener("contextmenu", function (event) {
+    rm.hideRightMenu();
+    event.preventDefault(); // Prevent the default context menu from appearing
+  });
+
+  document.getElementById("menu-copy").addEventListener("click", rm.copyPageUrl);
+
+  document.getElementById("menu-pastetext").addEventListener("click", rm.pasteText);
+
+  document.getElementById("menu-copytext").addEventListener("click", function () {
+    rm.rightmenuCopyText(selectTextNow);
+    anzhiyu.snackbarShow("复制成功，复制和转载请标注本文地址");
+  });
+
+  document.getElementById("menu-commenttext").addEventListener("click", function () {
+    rm.rightMenuCommentText(selectTextNow);
+  });
+
+  document.getElementById("menu-newwindow").addEventListener("click", function () {
+    window.open(domhref, "_blank");
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-copylink").addEventListener("click", rm.copyLink);
+
+  document.getElementById("menu-downloadimg").addEventListener("click", function () {
+    anzhiyu.downloadImage(domImgSrc, "anzhiyu");
+  });
+
+  document.getElementById("menu-newwindowimg").addEventListener("click", function () {
+    window.open(domImgSrc, "_blank");
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-copyimg").addEventListener("click", function () {
+    rm.writeClipImg(domImgSrc);
+  });
+
+  document.getElementById("menu-searchBaidu").addEventListener("click", rm.searchBaidu);
+
+  //音乐
+  document.getElementById("menu-music-toggle").addEventListener("click", anzhiyu.musicToggle);
+
+  document.getElementById("menu-music-back").addEventListener("click", anzhiyu.musicSkipBack);
+
+  document.getElementById("menu-music-forward").addEventListener("click", anzhiyu.musicSkipForward);
+
+  document.getElementById("menu-music-copyMusicName").addEventListener("click", function () {
+    rm.rightmenuCopyText(anzhiyu.musicGetName());
+    anzhiyu.snackbarShow("复制歌曲名称成功", false, 3000);
+  });
+
+}
+
+addRightMenuClickEvent();</script><script data-pjax>var themeColorMeta = document.querySelector('meta[name="theme-color"]');
+var pageHeaderEl = document.getElementById("page-header");
+var navMusicEl = document.getElementById("nav-music");
+var consoleEl = document.getElementById("console");
+// 已随机的歌曲
+var selectRandomSong = [];
+// 音乐默认声音大小
+var musicVolume = 0.8;
+// 是否切换了周杰伦音乐列表
+var changeMusicListFlag = false;
+// 当前默认播放列表
+var defaultPlayMusicList = [];
+
+document.getElementById("page-name").innerText = document.title.split(" | ♪张小佑")[0];
+anzhiyu.initIndexEssay();
+anzhiyu.changeTimeInEssay();
+anzhiyu.removeBodyPaceClass();
+anzhiyu.qrcodeCreate();
+anzhiyu.changeTimeInAlbumDetail();
+anzhiyu.reflashEssayWaterFall();
+anzhiyu.sayhi();
+anzhiyu.stopImgRightDrag();
+anzhiyu.addNavBackgroundInit();
+anzhiyu.setValueToBodyType();
+anzhiyu.catalogActive();
+anzhiyu.tagsPageActive();
+anzhiyu.categoriesBarActive();
+anzhiyu.topCategoriesBarScroll();
+anzhiyu.switchRightClickMenuHotReview();
+anzhiyu.getCustomPlayList();
+anzhiyu.addEventListenerConsoleMusicList(false);
+setTimeout(() => {
+  if (typeof addFriendLinksInFooter === "function") {
+    addFriendLinksInFooter();
+  }
+}, 200)</script><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.1.4/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://npm.elemecdn.com/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://npm.elemecdn.com/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div></body></html>
