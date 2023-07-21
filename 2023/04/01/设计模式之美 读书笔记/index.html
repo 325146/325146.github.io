@@ -1,0 +1,2021 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>设计模式之美 读书心得 | ♪张小佑</title><meta name="keywords" content="C++"><meta name="author" content="🎵张小佑♪"><meta name="copyright" content="🎵张小佑♪"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="设计模式之美 读书心得"><meta name="application-name" content="设计模式之美 读书心得"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta name="description" content="积极学习C++吧！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="设计模式之美 读书心得">
+<meta property="og:url" content="http://acall.love/2023/04/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%BE%8E%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="♪张小佑">
+<meta property="og:description" content="积极学习C++吧！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/jx5yq5.webp">
+<meta property="article:published_time" content="2023-03-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-03-31T16:00:00.000Z">
+<meta property="article:author" content="🎵张小佑♪">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="后端开发">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/jx5yq5.webp"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://acall.love/2023/04/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%BE%8E%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  friends_vue_info: undefined,
+  navMusic: true,
+  changeMainColorPost: undefined,
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#3b70fc","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '设计模式之美 读书心得',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2023-04-01 00:00:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/1.jpg"/><div class="loading-image-dot"></div><div id="loading-percentage">0%</div></div></div><script>const loadingPercentage = document.getElementById("loading-percentage");
+let loadingPercentageTimer = setInterval(function() {
+  var progressBar = document.querySelector(".pace-progress");
+  if (!progressBar) return
+  var currentValue = progressBar.getAttribute("data-progress-text");
+  if (currentValue !== loadingPercentage.textContent) {
+    loadingPercentage.textContent = currentValue;
+    if (currentValue === "100%") {
+      clearInterval(loadingPercentageTimer);
+    }
+  }
+}, 100);
+const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+    Pace.restart()
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/progress_bar/progress_bar.css"/><script async="async" src="https://npm.elemecdn.com/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div id="web_box"><div id="web_container"><div id="menu-mask"></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://acall.love/" title="博客" target="_blank"><img class="back-menu-item-icon" src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" href="https://image.anheyu.com/" title="安知鱼图床" target="_blank"><img class="back-menu-item-icon" src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">♪张小佑</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:17px;"><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-dice-d20 faa-tada" style="font-size: 0.9em;"></i><span> 我的装备</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192211377.png" target="_blank"><img class="post-qr-code-img" alt="wechat" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192211377.png"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192207910.png" target="_blank"><img class="post-qr-code-img" alt="alipayautoh" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192207910.png"/></a><div class="post-qr-code-desc">alipayautoh</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments" onclick="anzhiyu.hideConsole()"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> <span>最新评论</span></span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags" onclick="anzhiyu.hideConsole()"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/C/" style="font-size: 1.05rem;">C++<sup>23</sup></a><a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" style="font-size: 1.05rem;">后端开发<sup>22</sup></a><a href="/tags/%E9%9D%A2%E7%BB%8F/" style="font-size: 1.05rem;">面经<sup>1</sup></a><a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 1.05rem;">面试<sup>3</sup></a></div></div><hr/></div></div><div class="console-card history" onclick="anzhiyu.hideConsole()"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">六月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">一月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">7</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" onclick="anzhiyu.switchDarkMode()" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B6%AF/">大学生涯</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/C/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>C++</span></a><a class="article-meta__tags" href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>后端开发</span></a></span></div></div><h1 class="post-title">设计模式之美 读书心得</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-31T16:00:00.000Z" title="发表于 2023-04-01 00:00:00">2023-04-01</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-31T16:00:00.000Z" title="更新于 2023-04-01 00:00:00">2023-04-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">37.1k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>109分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="设计模式之美 读书心得"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为郑州"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>郑州</span></div></div></div><article class="post-content" id="article-container"><h2 id="设计模式之美-读书笔记"><a href="#设计模式之美-读书笔记" class="headerlink" title="设计模式之美 读书笔记"></a>设计模式之美 读书笔记</h2><h3 id="设计模式学习导读-3讲"><a href="#设计模式学习导读-3讲" class="headerlink" title="设计模式学习导读 (3讲)"></a>设计模式学习导读 (3讲)</h3><h4 id="02-从哪些维度评判代码质量的好坏？如何具备写出高质量代码的能力？"><a href="#02-从哪些维度评判代码质量的好坏？如何具备写出高质量代码的能力？" class="headerlink" title="02 | 从哪些维度评判代码质量的好坏？如何具备写出高质量代码的能力？"></a>02 | 从哪些维度评判代码质量的好坏？如何具备写出高质量代码的能力？</h4><ul>
+<li><p>如何评价代码质量的高低？</p>
+<ul>
+<li>代码质量高低也是一个综合各种因素得到的结论。我们并不能通过单一的维度去评价一段代码写的好坏。比如，即使一段代码的可扩展性很好，但可读性很差，那我们也不能说这段代码质量高。</li>
+<li>不同的评价维度也并不是完全独立的，有些是具有包含关系、重叠关系或者可以互相影响的。比如，代码的可读性好、可扩展性好，就意味着代码的可维护性好。而且，各种评价维度也不是非黑即白的。比如，我们不能简单地将代码分为可读与不可读。如果用数字来量化代码的可读性的话，它应该是一个连续的区间值，而非 0、1 这样的离散值。</li>
+<li>对一段代码的质量评价，常常有很强的主观性。比如，怎么样的代码才算可读性好，每个人的评判标准都不大一样。这就好比我们去评价一本小说写得是否精彩，本身就是一个很难量化的、非常主观的事情。越是有经验的工程师，给出的评价也就越准确。相反，资历比较浅的工程师就常常会觉得，没有一个可执行的客观的评价标准作为参考，很难准确地判断一段代码写得好与坏。</li>
+</ul>
+</li>
+<li><p>最常用的评价标准有哪几个？</p>
+<ul>
+<li>可维护性（maintainability）<ul>
+<li>落实到编码开发，所谓的“维护”无外乎就是修改 bug、修改老的代码、添加新的代码之类的工作。所谓“代码易维护”就是指，在不破坏原有代码设计、不引入新的 bug 的情况下，能够快速地修改或者添加代码。所谓“代码不易维护”就是指，修改或者添加代码需要冒着极大的引入新 bug 的风险，并且需要花费很长的时间才能完成。</li>
+<li>实际上，可维护性也是一个很难量化、偏向对代码整体的评价标准，它有点类似之前提到的“好”“坏”“优雅”之类的笼统评价。代码的可维护性是由很多因素协同作用的结果。代码的可读性好、简洁、可扩展性好，就会使得代码易维护；相反，就会使得代码不易维护。更细化地讲，如果代码分层清晰、模块化好、高内聚低耦合、遵从基于接口而非实现编程的设计原则等等，那就可能意味着代码易维护。除此之外，代码的易维护性还跟项目代码量的多少、业务的复杂程度、利用到的技术的复杂程度、文档是否全面、团队成员的开发水平等诸多因素有关。</li>
+<li>可以从侧面上给出一个比较主观但又比较准确的感受。如果 bug 容易修复，修改、添加功能能够轻松完成，那我们就可以主观地认为代码对我们来说易维护。相反，如果修改一个 bug，修改、添加一个功能，需要花费很长的时间，那我们就可以主观地认为代码对我们来说不易维护。</li>
+<li>不同水平的人对于同一份代码的维护能力并不是相同的。对于同样一个系统，熟悉它的资深工程师会觉得代码的可维护性还不错，而一些新人因为不熟悉代码，修改 bug、修改添加代码要花费很长的时间，就有可能会觉得代码的可维护性不那么好。</li>
+</ul>
+</li>
+<li>可读性（readability）<ul>
+<li>代码的可读性应该是评价代码质量最重要的指标之一。我们在编写代码的时候，时刻要考虑到代码是否易读、易理解。除此之外，代码的可读性在非常大程度上会影响代码的可维护性。毕竟，不管是修改 bug，还是修改添加功能代码，我们首先要做的事情就是读懂代码。代码读不大懂，就很有可能因为考虑不周全，而引入新的 bug。</li>
+<li>需要看代码是否符合编码规范、命名是否达意、注释是否详尽、函数是否长短合适、模块划分是否清晰、是否符合高内聚低耦合等等；code review 是一个很好的测验代码可读性的手段。</li>
+</ul>
+</li>
+<li>可扩展性（extensibility）<ul>
+<li>可扩展性也是一个评价代码质量非常重要的标准。它表示我们的代码应对未来需求变化的能力。跟可读性一样，代码是否易扩展也很大程度上决定代码是否易维护</li>
+<li>代码的可扩展性表示，我们在不修改或少量修改原有代码的情况下，通过扩展的方式添加新的功能代码。说直白点就是，代码预留了一些功能扩展点，你可以把新功能代码，直接插到扩展点上，而不需要因为要添加一个功能而大动干戈，改动大量的原始代码</li>
+</ul>
+</li>
+<li>灵活性（flexibility）<ul>
+<li>如果一段代码易扩展、易复用或者易用，我们都可以称这段代码写得比较灵活。所以，灵活这个词的含义非常宽泛，很多场景下都可以使用。</li>
+</ul>
+</li>
+<li>简洁性（simplicity）<ul>
+<li>KISS 原则：“Keep It Simple，Stupid”。这个原则说的意思就是，尽量保持代码简单。代码简单、逻辑清晰，也就意味着易读、易维护。我们在编写代码的时候，往往也会把简单、清晰放到首位。</li>
+<li>思从深而行从简，真正的高手能云淡风轻地用最简单的方法解决最复杂的问题。这也是一个编程老手跟编程新手的本质区别之一。</li>
+</ul>
+</li>
+<li>可复用性（reusability）<ul>
+<li>代码的可复用性可以简单地理解为，尽量减少重复代码的编写，复用已有的代码</li>
+<li>当讲到面向对象特性的时候，我们会讲到继承、多态存在的目的之一，就是为了提高代码的可复用性；当讲到设计原则的时候，我们会讲到单一职责原则也跟代码的可复用性相关；当讲到重构技巧的时候，我们会讲到解耦、高内聚、模块化等都能提高代码的可复用性。可见，可复用性也是一个非常重要的代码评价标准，是很多设计原则、思想、模式等所要达到的最终效果。</li>
+<li>代码可复用性跟 DRY（Don’t Repeat Yourself）这条设计原则的关系挺紧密的</li>
+</ul>
+</li>
+<li>可测试性（testability）<ul>
+<li>代码可测试性的好坏，能从侧面上非常准确地反应代码质量的好坏。代码的可测试性差，比较难写单元测试，那基本上就能说明代码设计得有问题。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>如何才能写出高质量的代码？</p>
+<ul>
+<li>要写出满足这些评价标准的高质量代码，我们需要掌握一些更加细化、更加能落地的编程方法论，包括面向对象设计思想、设计原则、设计模式、编码规范、重构技巧等。而所有这些编程方法论的最终目的都是为了编写出高质量的代码</li>
+<li>比如，面向对象中的继承、多态能让我们写出可复用的代码；编码规范能让我们写出可读性好的代码；设计原则中的单一职责、DRY、基于接口而非实现、里式替换原则等，可以让我们写出可复用、灵活、可读性好、易扩展、易维护的代码；设计模式可以让我们写出易扩展的代码；持续重构可以时刻保持代码的可维护性等等</li>
+</ul>
+</li>
+</ul>
+<h4 id="03-面向对象、设计原则、设计模式、编程规范、重构，这五者有何关系？"><a href="#03-面向对象、设计原则、设计模式、编程规范、重构，这五者有何关系？" class="headerlink" title="03 | 面向对象、设计原则、设计模式、编程规范、重构，这五者有何关系？"></a>03 | 面向对象、设计原则、设计模式、编程规范、重构，这五者有何关系？</h4><ul>
+<li><p>面向对象</p>
+<ul>
+<li>主流的编程范式或者是编程风格有三种，它们分别是面向过程、面向对象和函数式编程。面向对象这种编程风格又是这其中最主流的。现在比较流行的编程语言大部分都是面向对象编程语言。大部分项目也都是基于面向对象编程风格开发的。面向对象编程因为其具有丰富的特性（封装、抽象、继承、多态），可以实现很多复杂的设计思路，是很多设计原则、设计模式编码实现的基础。</li>
+<li>掌握下面这 7 个大的知识点<ul>
+<li>面向对象的四大特性：封装、抽象、继承、多态</li>
+<li>面向对象编程与面向过程编程的区别和联系</li>
+<li>面向对象分析、面向对象设计、面向对象编程</li>
+<li>接口和抽象类的区别以及各自的应用场景</li>
+<li>基于接口而非实现编程的设计思想</li>
+<li>多用组合少用继承的设计思想</li>
+<li>面向过程的贫血模型和面向对象的充血模型</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>设计原则</p>
+<ul>
+<li>设计原则是指导我们代码设计的一些经验总结。设计原则这块儿的知识有一个非常大的特点，那就是这些原则听起来都比较抽象，定义描述都比较模糊，不同的人会有不同的解读。所以，如果单纯地去记忆定义，对于编程、设计能力的提高，意义并不大。对于每一种设计原则，我们需要掌握它的设计初衷，能解决哪些编程问题，有哪些应用场景。只有这样，我们才能在项目中灵活恰当地应用这些原则。</li>
+<li>需要透彻理解并且掌握，如何应用下面这样几个常用的设计原则：<ul>
+<li>SOLID 原则 -SRP 单一职责原则</li>
+<li>SOLID 原则 -OCP 开闭原则</li>
+<li>SOLID 原则 -LSP 里式替换原则</li>
+<li>SOLID 原则 -ISP 接口隔离原则</li>
+<li>SOLID 原则 -DIP 依赖倒置原则</li>
+<li>DRY 原则、KISS 原则、YAGNI 原则、LOD 法则</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>设计模式</p>
+<ul>
+<li>设计模式是针对软件开发中经常遇到的一些设计问题，总结出来的一套解决方案或者设计思路。大部分设计模式要解决的都是代码的可扩展性问题。设计模式相对于设计原则来说，没有那么抽象，而且大部分都不难理解，代码实现也并不复杂。这一块的学习难点是了解它们都能解决哪些问题，掌握典型的应用场景，并且懂得不过度应用。</li>
+<li>经典的设计模式有 23 种。随着编程语言的演进，一些设计模式（比如 Singleton）也随之过时，甚至成了反模式，一些则被内置在编程语言中（比如 Iterator），另外还有一些新的模式诞生（比如 Monostate）。</li>
+<li>它们又可以分为三大类：创建型、结构型、行为型<ul>
+<li>创建型常用的有：单例模式、工厂模式（工厂方法和抽象工厂）、建造者模式。不常用的有：原型模式。</li>
+<li>结构型常用的有：代理模式、桥接模式、装饰者模式、适配器模式。不常用的有：门面模式、组合模式、享元模式。</li>
+<li>行为型常用的有：观察者模式、模板模式、策略模式、职责链模式、迭代器模式、状态模式。不常用的有：访问者模式、备忘录模式、命令模式、解释器模式、中介模式。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>编程规范</p>
+<ul>
+<li>编程规范主要解决的是代码的可读性问题。编码规范相对于设计原则、设计模式，更加具体、更加偏重代码细节。即便你可能对设计原则不熟悉、对设计模式不了解，但你最起码要掌握基本的编码规范，比如，如何给变量、类、函数命名，如何写代码注释，函数不宜过长、参数不能过多等等。</li>
+</ul>
+</li>
+<li><p>代码重构</p>
+<ul>
+<li>在软件开发中，只要软件在不停地迭代，就没有一劳永逸的设计。随着需求的变化，代码的不停堆砌，原有的设计必定会存在这样那样的问题。针对这些问题，我们就需要进行代码重构。重构是软件开发中非常重要的一个环节。持续重构是保持代码质量不下降的有效手段，能有效避免代码腐化到无可救药的地步。</li>
+<li>重构的工具就是我们前面罗列的那些面向对象设计思想、设计原则、设计模式、编码规范。实际上，设计思想、设计原则、设计模式一个最重要的应用场景就是在重构的时候。我们前面讲过，虽然使用设计模式可以提高代码的可扩展性，但过度不恰当地使用，也会增加代码的复杂度，影响代码的可读性。在开发初期，除非特别必须，我们一定不要过度设计，应用复杂的设计模式。而是当代码出现问题的时候，我们再针对问题，应用原则和模式进行重构。这样就能有效避免前期的过度设计。</li>
+<li>需要掌握以下几个知识点：<ul>
+<li>重构的目的（why）、对象（what）、时机（when）、方法（how）；</li>
+<li>保证重构不出错的技术手段：单元测试和代码的可测试性；</li>
+<li>两种不同规模的重构：大重构（大规模高层次）和小重构（小规模低层次）。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>五者之间的联系</p>
+<ul>
+<li>面向对象编程因为其具有丰富的特性（封装、抽象、继承、多态），可以实现很多复杂的设计思路，是很多设计原则、设计模式等编码实现的基础。</li>
+<li>设计原则是指导我们代码设计的一些经验总结，对于某些场景下，是否应该应用某种设计模式，具有指导意义。比如，“开闭原则”是很多设计模式（策略、模板等）的指导<br>原则。</li>
+<li>设计模式是针对软件开发中经常遇到的一些设计问题，总结出来的一套解决方案或者设计思路。应用设计模式的主要目的是提高代码的可扩展性。从抽象程度上来讲，设计原则比设计模式更抽象。设计模式更加具体、更加可执行。</li>
+<li>编程规范主要解决的是代码的可读性问题。编码规范相对于设计原则、设计模式，更加具体、更加偏重代码细节、更加能落地。持续的小重构依赖的理论基础主要就是编程规范。</li>
+<li>重构作为保持代码质量不下降的有效手段，利用的就是面向对象、设计原则、设计模式、编码规范这些理论。</li>
+<li>面向对象、设计原则、设计模式、编程规范、代码重构，这五者都是保持或者提高代码质量的方法论，本质上都是服务于编写高质量代码这一件事的</li>
+</ul>
+</li>
+</ul>
+<h3 id="设计原则与思想：面向对象-11讲"><a href="#设计原则与思想：面向对象-11讲" class="headerlink" title="设计原则与思想：面向对象 (11讲)"></a>设计原则与思想：面向对象 (11讲)</h3><h4 id="04丨理论一：当谈论面向对象的时候，我们到底在谈论什么？"><a href="#04丨理论一：当谈论面向对象的时候，我们到底在谈论什么？" class="headerlink" title="04丨理论一：当谈论面向对象的时候，我们到底在谈论什么？"></a>04丨理论一：当谈论面向对象的时候，我们到底在谈论什么？</h4><ul>
+<li><p>什么是面向对象编程和面向对象编程语言？</p>
+<ul>
+<li>面向对象编程的英文缩写是 OOP，全称是 Object Oriented Programming。对应地，面向对象编程语言的英文缩写是 OOPL，全称是 Object Oriented Programming Language。面向对象编程中有两个非常重要、非常基础的概念，那就是类（class）和对象（object）。</li>
+<li>面向对象编程是一种编程范式或编程风格。它以类或对象作为组织代码的基本单元，并将封装、抽象、继承、多态四个特性，作为代码设计和实现的基石 。</li>
+<li>面向对象编程语言是支持类或对象的语法机制，并有现成的语法机制，能方便地实现面向对象编程四大特性（封装、抽象、继承、多态）的编程语言</li>
+<li>面向对象编程都是通过使用面向对象编程语言来进行的，但是，不用面向对象编程语言，我们照样可以进行面向对象编程。反过来讲，即便我们使用面向对象编程语言，写出来的代码也不一定是面向对象编程风格的，也有可能是面向过程编程风格的</li>
+<li>在技术圈里，封装、抽象、继承、多态也并不是固定地被叫作“四大特性”（features），也有人称它们为面向对象编程的四大概念（concepts）、四大基石（cornerstones）、四大基础（fundamentals）、四大支柱（pillars）等等</li>
+</ul>
+</li>
+<li><p>如何判定某编程语言是否是面向对象编程语言？</p>
+<ul>
+<li>面向对象编程从字面上，按照最简单、最原始的方式来理解，就是将对象或类作为代码组织的基本单元，来进行编程的一种编程范式或者编程风格，并不一定需要封装、抽象、继承、多态这四大特性的支持。但是，在进行面向对象编程的过程中，人们不停地总结发现，有了这四大特性，我们就能更容易地实现各种面向对象的代码设计思路</li>
+<li>只要某种编程语言支持类或对象的语法概念，并且以此作为组织代码的基本单元，那就可以被粗略地认为它就是面向对象编程语言了。至于是否有现成的语法机制，完全地支持了面向对象编程的四大特性、是否对四大特性有所取舍和优化，可以不作为判定的标准。基于此，我们才有了前面的说法，按照严格的定义，很多语言都不能算得上面向对象编程语言，但按照不严格的定义来讲，现在流行的大部分编程语言都是面向对象编程语言。</li>
+</ul>
+</li>
+<li><p>什么是面向对象分析和面向对象设计？</p>
+<ul>
+<li>面向对象分析英文缩写是 OOA，全称是 Object Oriented Analysis；面向对象设计的英文缩写是OOD，全称是 Object Oriented Design。OOA、OOD、OOP 三个连在一起就是面向对象分析、设计、编程（实现），正好是面向对象软件开发要经历的三个阶段</li>
+<li>分析和设计两个阶段最终的产出是类的设计，包括程序被拆解为哪些类，每个类有哪些属性方法，类与类之间如何交互等等。它们比其他的分析和设计更加具体、更加落地、更加贴近编码，更能够顺利地过渡到面向对象编程环节。这也是面向对象分析和设计，与其他分析和设计最大的不同点。</li>
+<li>面向对象分析就是要搞清楚做什么，面向对象设计就是要搞清楚怎么做，面向对象编程就是将分析和设计的的结果翻译成代码的过程。</li>
+</ul>
+</li>
+<li><p>什么是 UML？我们是否需要 UML？</p>
+<ul>
+<li>UML（Unified Model Language），统一建模语言。常用它来画图表达面向对象或设计模式的设计思路。实际上，UML 是一种非常复杂的东西。它不仅仅包含常提到类图，还有用例图、顺序图、活动图、状态图、组件图等</li>
+<li>UML 在互联网公司的项目开发中，用处可能并不大。为了文档化软件设计或者方便讨论软件设计，大部分情况下，我们随手画个不那么规范的草图，能够达意，方便沟通就够了，而完全按照 UML 规范来将草图标准化，所付出的代价是不值得的。</li>
+</ul>
+</li>
+</ul>
+<h4 id="05-理论二：封装、抽象、继承、多态分别可以解决哪些编程问题？"><a href="#05-理论二：封装、抽象、继承、多态分别可以解决哪些编程问题？" class="headerlink" title="05 | 理论二：封装、抽象、继承、多态分别可以解决哪些编程问题？"></a>05 | 理论二：封装、抽象、继承、多态分别可以解决哪些编程问题？</h4><ul>
+<li><p>封装（Encapsulation）</p>
+<ul>
+<li>封装也叫作信息隐藏或者数据访问保护。类通过暴露有限的访问接口，授权外部仅能通过类提供的方式（或者叫函数）来访问内部信息或者数据</li>
+<li>对于封装这个特性，需要编程语言本身提供一定的语法机制来支持。这个语法机制就是访问权限控制</li>
+<li>如果对类中属性的访问不做限制，那任何代码都可以访问、修改类中的属性，虽然这样看起来更加灵活，但从另一方面来说，过度灵活也意味着不可控，属性可以随意被以各种奇葩的方式修改，而且修改逻辑可能散落在代码中的各个角落，势必影响代码的可读性、可维护性</li>
+<li>类仅仅通过有限的方法暴露必要的操作，也能提高类的易用性。如果把类属性都暴露给类的调用者，调用者想要正确地操作这些属性，就势必要对业务细节有足够的了解。而这对于调用者来说也是一种负担。相反，如果将属性封装起来，暴露少许的几个必要的方法给调用者使用，调用者就不需要了解太多背后的业务细节，用错的概率就减少很多</li>
+</ul>
+</li>
+<li><p>抽象（Abstraction）</p>
+<ul>
+<li>抽象讲的是如何隐藏方法的具体实现，让调用者只需要关心方法提供了哪些功能，并不需要知道这些功能是如何实现的</li>
+<li>在面向对象编程中，常借助编程语言提供的接口类（或者抽象类这两种语法机制，来实现抽象</li>
+<li>抽象这个特性是非常容易实现的，并不需要非得依靠接口类或者抽象类这些特殊语法机制来支持。换句话说，并不是说一定要为实现类抽象出接口类，才叫作抽象。即便不编写 接口类，单纯的类本身就满足抽象特性,因为类的方法是通过编程语言中的“函数”这一语法机制来实现的。通过函数包裹具体的实现逻辑，这本身就是一种抽象<ul>
+<li>抽象这个概念是一个非常通用的设计思想，并不单单用在面向对象编程中，也可以用来指导架构设计等。而且这个特性也并不需要编程语言提供特殊的语法机制来支持，只需要提供“函数”这一非常基础的语法机制，就可以实现抽象特性、所以，它没有很强的“特异性”，有时候并不被看作面向对象编程的特性之一。</li>
+</ul>
+</li>
+<li>抽象及其前面讲到的封装都是人类处理复杂性的有效手段。在面对复杂系统的时候，人脑能承受的信息复杂程度是有限的，所以我们必须忽略掉一些非关键性的实现细节。而抽象作为一种只关注功能点不关注实现的设计思路，正好帮我们的大脑过滤掉许多非必要的信息。</li>
+<li>抽象作为一个非常宽泛的设计思想，在代码设计中，起到非常重要的指导作用。很多设计原则都体现了抽象这种设计思想，比如基于接口而非实现编程、开闭原则（对扩展开放、对修改关闭）、代码解耦（降低代码的耦合性）等</li>
+<li>在定义（或者叫命名）类的方法的时候，也要有抽象思维，不要在方法定义中，暴露太多的实现细节，以保证在某个时间点需要改变方法的实现逻辑的时候，不用去修改其定义</li>
+</ul>
+</li>
+<li><p>继承（Inheritance）</p>
+<ul>
+<li>继承是用来表示类之间的is-a 关系。从继承关系上来讲，继承可以分为两种模式，单继承和多继承。单继承表示一个子类只继承一个父类，多继承表示一个子类可以继承多个父类</li>
+<li>为了实现继承这个特性，编程语言需要提供特殊的语法机制来支持，比如 Java 使用extends 关键字来实现继承，C++ 使用冒号（class B : public A）</li>
+<li>继承最大的一个好处就是代码复用。假如两个类有一些相同的属性和方法，就可以将这些相同的部分，抽取到父类中，让两个子类继承父类。这样，两个子类就可以重用父类中的代码，避免代码重复写多遍。不过，这一点也并不是继承所独有的，也可以通过其他方式来解决这个代码复用的问题，比如利用组合关系而不是继承关系。</li>
+<li>过度使用继承，继承层次过深过复杂，就会导致代码可读性、可维护性变差。为了了解一个类的功能，我们不仅需要查看这个类的代码，还需要按照继承关系一层一层地往上查看“父类、父类的父类……”的代码。还有，子类和父类高度耦合，修改父类的代码，会直接影响到子类。</li>
+</ul>
+</li>
+<li><p>多态（Polymorphism）</p>
+<ul>
+<li>多态是指，子类可以替换父类，在实际的代码运行过程中，调用子类的方法实现</li>
+<li>多态这种特性也需要编程语言提供特殊的语法机制来实现。第一个语法机制是编程语言要支持父类对象可以引用子类对象，第二个语法机制是编程语言要支持继承，第三个语法机制是编程语言要支持子类可以重写（override）父类中的方法</li>
+<li>对于多态特性的实现方式，除了利用“继承加方法重写”这种实现方式之外，还有其他两种比较常见的的实现方式，一个是利用接口类语法，另一个是利用 duck-typing 语法。</li>
+<li>多态特性能提高代码的可扩展性和复用性<ul>
+<li>如果不使用多态特性，就无法将不同的集合类型（Array、LinkedList）传递给相同的函数（print(Iterator iterator) 函数）。我们需要针对每种要遍历打印的集合，分别实现不同的 print() 函数.而利用多态特性，我们只需要实现一个 print() 函数的打印逻辑，就能应对各种集合数据的打印操作，这显然提高了代码的复用性。</li>
+</ul>
+</li>
+<li>多态也是很多设计模式、设计原则、编程技巧的代码实现基础，比如策略模式、基于接口而非实现编程、依赖倒置原则、里式替换原则、利用多态去掉冗长的 if-else 语句等等</li>
+</ul>
+</li>
+</ul>
+<h4 id="07丨理论四：哪些代码设计看似是面向对象，实际是面向过程的？"><a href="#07丨理论四：哪些代码设计看似是面向对象，实际是面向过程的？" class="headerlink" title="07丨理论四：哪些代码设计看似是面向对象，实际是面向过程的？"></a>07丨理论四：哪些代码设计看似是面向对象，实际是面向过程的？</h4><ul>
+<li><p>在用面向对象编程语言进行软件开发的时候，我们有时候会写出面向过程风格的代码。有些是有意为之，并无不妥；而有些是无意为之，会影响到代码的质量</p>
+<ul>
+<li>滥用 getter、setter 方法，违反了面向对象编程的封装特性，相当于将面向对象编程风格退化成了面向过程编程风格<ul>
+<li>面向对象封装的定义是：通过访问权限控制，隐藏内部数据，外部仅能通过类提供的有限的接口访问、修改内部数据。所以，暴露不应该暴露的 setter 方法，明显违反了面向对象的封装特性。数据没有访问权限控制，任何代码都可以随意修改它，代码就退化成了面向过程编程风格的了</li>
+<li>在设计实现类的时候，除非真的需要，否则，尽量不要给属性定义 setter 方法。除此之外，尽管 getter 方法相对 setter 方法要安全些，但是如果返回的是集合容器，也要防范集合内部数据被修改的危险</li>
+</ul>
+</li>
+<li>滥用全局变量和全局方法<ul>
+<li>在面向对象编程中，常见的全局变量有单例类对象、静态成员变量、常量等，常见的全局方法有静态方法。单例类对象在全局代码中只有一份，所以，它相当于一个全局变量。静态成员变量归属于类上的数据，被所有的实例化对象所共享，也相当于一定程度上的全局变量。而常量是一种非常常见的全局变量，比如一些代码中的配置参数，一般都设置为常量，放到一个 Constants 类中。静态方法一般用来操作静态变量或者外部数据。静态方法将方法与数据分离，破坏了封装特性，是典型的面向过程风格</li>
+<li>定义一个大而全的 Constants 类会影响代码的可维护性，往这个类里添加常量，那这个类就会变得越来越大，成百上千行都有可能，查找修改某个常量也会变得比较费时，而且还会增加提交代码冲突的概率；还会增加代码的编译时间：当 Constants 类中包含很多常量定义的时候，依赖这个类的代码就会很多。那每次修改Constants 类，都会导致依赖它的类文件重新编译，因此会浪费很多不必要的编译时间。这样的设计还会影响代码的复用性，如果要在另一个项目中，复用本项目开发的某个类，将引入了很多无关的常量到新的项目</li>
+<li>Utils 类的出现是基于这样一个问题背景：如果有两个类 A 和 B，它们要用到一块相同的功能逻辑，为了避免代码重复，不应该在两个类中，将这个相同的功能逻辑，重复地实现两遍。实际上，只包含静态方法不包含任何属性的 Utils 类，是彻彻底底的面向过程的编程风格；要尽量避免滥用，不要不加思考地随意去定义 Utils 类</li>
+</ul>
+</li>
+<li>定义数据和方法分离的类<ul>
+<li>传统的 MVC 结构分为 Model 层、Controller 层、View 层这三层。不过，在做前后端分离之后，三层结构在后端开发中，会稍微有些调整，被分为 Controller 层、Service 层、Repository 层。Controller 层负责暴露接口给前端调用，Service 层负责核心业务逻辑，Repository 层负责数据读写。而在每一层中，又会定义相应的 VO（View Object）、BO（Business Object）、Entity。一般情况下，VO、BO、Entity 中只会定义数据，不会定义方法，所有操作这些数据的业务逻辑都定义在对应的 Controller 类、Service 类、Repository 类中。这就是典型的面向过程的编程风格。</li>
+<li>这种开发模式叫作基于贫血模型的开发模式，也是现在非常常用的一种 Web项目的开发模式</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>在面向对象编程中，为什么容易写出面向过程风格的代码？</p>
+<ul>
+<li>面向过程编程风格恰恰符合人的流程化思维方式。而面向对象编程风格正好相反。它是一种自底向上的思考方式。它不是先去按照执行流程来分解任务，而是将任务翻译成一个一个的小的模块（也就是类），设计类之间的交互，最后按照流程将类组装起来，完成整个任务</li>
+<li>面向对象编程要比面向过程编程难一些。在面向对象编程中，类的设计还是挺需要技巧，挺需要一定设计经验的</li>
+</ul>
+</li>
+<li><p>面向过程编程及面向过程编程语言就真的无用武之地了吗？</p>
+<ul>
+<li>如果开发的是微小程序，或者是一个数据处理相关的代码，以算法为主，数据为辅，那脚本式的面向过程的编程风格就更适合一些。</li>
+<li>实际上，面向过程编程是面向对象编程的基础，面向对象编程离不开基础的面向过程编程</li>
+<li>面向对象和面向过程两种编程风格，也并不是非黑即白、完全对立的。在用面向对象编程语言开发的软件中，面向过程风格的代码并不少见，甚至在一些标准的开发库（比如 JDK、Apache Commons、Google Guava）中，也有很多面向过程风格的代码。</li>
+<li>不管使用面向过程还是面向对象哪种风格来写代码，最终的目的还是写出易维护、易读、易复用、易扩展的高质量代码。只要能避免面向过程编程风格的一些弊端，控制好它的副作用，在掌控范围内为我们所用，就大可不用避讳在面向对象编程中写面向过程风格的代码。</li>
+</ul>
+</li>
+</ul>
+<h4 id="08丨理论五：接口vs抽象类的区别？如何用普通的类模拟抽象类和接口？"><a href="#08丨理论五：接口vs抽象类的区别？如何用普通的类模拟抽象类和接口？" class="headerlink" title="08丨理论五：接口vs抽象类的区别？如何用普通的类模拟抽象类和接口？"></a>08丨理论五：接口vs抽象类的区别？如何用普通的类模拟抽象类和接口？</h4><ul>
+<li><p>在面向对象编程中，抽象类和接口是两个经常被用到的语法概念，是面向对象四大特性，以及很多设计模式、设计思想、设计原则编程实现的基础。比如，我们可以使用接口来实现面向对象的抽象特性、多态特性和基于接口而非实现的设计原则，使用抽象类来实现面向对象的继承特性和模板设计模式等等。</p>
+</li>
+<li><p>什么是抽象类和接口？区别在哪里？</p>
+<ul>
+<li><p>抽象类具有哪些特性</p>
+<ul>
+<li>抽象类不允许被实例化，只能被继承。不能 new 一个抽象类的对象出来; 会报编译错误。</li>
+<li>抽象类可以包含属性和方法。方法既可以包含代码实现，也可以不包含代码实现。不包含代码实现的方法叫作抽象方法</li>
+<li>子类继承抽象类，必须实现抽象类中的所有抽象方法。</li>
+</ul>
+</li>
+<li><p>接口：</p>
+<ul>
+<li>接口不能包含属性（也就是成员变量）。</li>
+<li>接口只能声明方法，方法不能包含代码实现。</li>
+<li>类实现接口的时候，必须实现接口中声明的所有方法。</li>
+</ul>
+</li>
+<li><p>从语法特性上对比，这两者有比较大的区别，比如抽象类中可以定义属性、方法的实现，而接口中不能定义属性，方法也不能包含代码实现等等。除了语法特性，从设计的角度，两者也有比较大的区别</p>
+</li>
+<li><p>抽象类实际上就是类，只不过是一种特殊的类，这种类不能被实例化为对象，只能被子类继承。继承关系是一种 is-a 的关系，那抽象类既然属于类，也表示一种 is-a 的关系。相对于抽象类的 is-a 关系来说，接口表示一种 has-a 关系，表示具有某些功能。对于接口，有一个更加形象的叫法，那就是协议（contract）。</p>
+</li>
+</ul>
+</li>
+<li><p>抽象类和接口能解决什么编程问题？</p>
+<ul>
+<li>抽象类不能实例化，只能被继承。继承能解决代码复用的问题。所以，抽象类也是为代码复用而生的。多个子类可以继承抽象类中定义的属性和方法，避免在子类中，重复编写相同的代码<ul>
+<li>在类中定义一个空的方法，会影响代码的可读性。</li>
+<li>当创建一个新的子类继承父类的时候，我们有可能会忘记重新实现方法。基于抽象类的设计思路，编译器会强制要求子类重写方法，否则会报编译错误</li>
+<li>Logger 可以被实例化，换句话说，我们可以 new 一个 Logger 出来，并且调用空的log() 方法。这也增加了类被误用的风险。</li>
+</ul>
+</li>
+<li>接口就更侧重于解耦。接口是对行为的一种抽象，相当于<br>一组协议或者契约，你可以联想类比一下 API 接口。调用者只需要关注抽象的接口，不需要了解具体的实现，具体的实现代码对调用者透明。接口实现了约定和实现相分离，可以降低代码间的耦合性，提高代码的可扩展性。</li>
+</ul>
+</li>
+<li><p>如何模拟抽象类和接口两个语法概念？</p>
+<ul>
+<li>接口中没有成员变量，只有方法声明，没有方法实现，实现<br>接口的类必须实现接口中的所有方法。只要满足这样几点，从设计的角度上来说，我们就可以把它叫作接口。实际上，要满足接口的这些语法特性并不难</li>
+<li>抽象类 Strategy 没有定义任何属性，并且所有的方法都声明为 virtual 类型，这样，所有的方法都不能有代码实现，并且所有继承这个抽象类的子类，都要实现这些方法。从语法特性上来看，这个抽象类就相当于一个接口。</li>
+</ul>
+</li>
+<li><p>如何决定该用抽象类还是接口？</p>
+<ul>
+<li>如果我们要表示一种 is-a 的关系，并且是为了解决代码复用的问题，我们就用抽象类；如果我们要表示一种 has-a 关系，并且是为了解决抽象而非代码复用的问题，那我们就可以使用接口。</li>
+<li>从类的继承层次上来看，抽象类是一种自下而上的设计思路，先有子类的代码重复，然后再抽象成上层的父类（也就是抽象类）。而接口正好相反，它是一种自上而下的设计思路。我们在编程的时候，一般都是先设计接口，再去考虑具体的实现。</li>
+</ul>
+</li>
+</ul>
+<h4 id="09丨理论六：为什么基于接口而非实现编程？有必要为每个类都定义接口吗？"><a href="#09丨理论六：为什么基于接口而非实现编程？有必要为每个类都定义接口吗？" class="headerlink" title="09丨理论六：为什么基于接口而非实现编程？有必要为每个类都定义接口吗？"></a>09丨理论六：为什么基于接口而非实现编程？有必要为每个类都定义接口吗？</h4><ul>
+<li>如何解读原则中的“接口”二字？<ul>
+<li>“基于接口而非实现编程”这条原则的英文描述是：“Program to an interface, not an implementation”。理解这条原则的时候，千万不要一开始就与具体的编程语言挂钩，局限在编程语言的“接口”语法中，其是一条比较抽象、泛化的设计思想</li>
+<li>理解这条原则的关键，就是理解其中的“接口”两个字。从本质上来看，“接口”就是一组“协议”或者“约定”，是功能提<br>供者提供给使用者的一个“功能列表”。“接口”在不同的应用场景下会有不同的解读，比如服务端与客户端之间的“接口”，类库提供的“接口”，甚至是一组通信的协议都可以叫作“接口”。刚刚对“接口”的理解，都比较偏上层、偏抽象，与实际的写代码离得有点远。如果落实到具体的编码，“基于接口而非实现编程”这条原则中的“接口”，可以理解为编程语言中的接口或者抽象类。</li>
+<li>应用这条原则，可以将接口和实现相分离，封装不稳定的实现，暴露稳定的接口。上游系统面向接口而非实现编程，不依赖不稳定的实现细节，这样当实现发生变化的时候，上游系统的代码基本上不需要做改动，以此来降低耦合性，提高扩展性。</li>
+<li>“基于接口而非实现编程”这条原则的另一个表述方式，是“基于抽象而非实现编程”。在软件开发中，最大的挑战之一就是需求的不断变化，这也是考验代码设计好坏的一个标准。越抽象、越顶层、越脱离具体某一实现的设计，越能提高代码的灵活性，越能应对未来的需求变化。好的代码设计，不仅能应对当下的需求，而且在将来需求发生变化的时候，仍然能够在不破坏原有代码设计的情况下灵活应对。而抽象就是提高代码扩展性、灵活性、可维护性最有效的手段之一。</li>
+</ul>
+</li>
+<li>如何将这条原则应用到实战中？<ul>
+<li>函数的命名不能暴露任何实现细节。比如，uploadToAliyun() 就不符合要求，应该改为去掉 aliyun 这样的字眼，改为更加抽象的命名方式，比如：upload()</li>
+<li>封装具体的实现细节。比如，跟阿里云相关的特殊上传（或下载）流程不应该暴露给调用者。我们对上传（或下载）流程进行封装，对外提供一个包裹所有上传（或下载）细节的方法，给调用者使用。</li>
+<li>为实现类定义抽象的接口。具体的实现类都依赖统一的接口定义，遵从一致的上传功能协议。使用者依赖接口，而不是具体的实现类来编程。</li>
+<li>很多人在定义接口的时候，希望通过实现类来反推接口的定义。先把实现类写好，然后看实现类中有哪些方法，照抄到接口定义中。如果按照这种思考方式，就有可能导致接口定义不够抽象，依赖具体的实现。这样的接口设计就没有意义了。不过，如果你觉得这种思考方式更加顺畅，那也没问题，只是将实现类的方法搬移到接口定义中的时候，要有选择性的搬移，不要将跟具体实现相关的方法搬移到接口中</li>
+<li>在做软件开发的时候，一定要有抽象意识、封装意识、接口意识。在定义接口的时候，不要暴露任何实现细节。接口的定义只表明做什么，而不是怎么做。而且，在设计接口的时候，我们要多思考一下，这样的接口设计是否足够通用，是否能够做到在替换具体的接口实现的时候，不需要任何接口定义的改动。</li>
+</ul>
+</li>
+<li>是否需要为每个类定义接口？<ul>
+<li>做任何事情都要讲求一个“度”，过度使用这条原则，非得给每个类都定义接口，接口满天飞，也会导致不必要的开发负担。至于什么时候，该为某个类定义接口，实现基于接口的编程，什么时候不需要定义接口，直接使用实现类编程，做权衡的根本依据，还是要回归到设计原则诞生的初衷上来。<ul>
+<li>这条原则的设计初衷是，将接口和实现相分离，封装不稳定的实现，暴露稳定的接口。上游系统面向接口而非实现编程，不依赖不稳定的实现细节，这样当实现发生变化的时候，上游系统的代码基本上不需要做改动，以此来降低代码间的耦合性，提高代码的扩展性</li>
+</ul>
+</li>
+<li>从这个设计初衷上来看，如果在业务场景中，某个功能只有一种实现方式，未来也不可能被其他实现方式替换，那就没有必要为其设计接口，也没有必要基于接口编程，直接使用实现类就可以了。</li>
+<li>除此之外，越是不稳定的系统，越是要在代码的扩展性、维护性上下功夫。相反，如果某个系统特别稳定，在开发完之后，基本上不需要做维护，那就没有必要为其扩展性，投入不必要的开发时间。</li>
+</ul>
+</li>
+</ul>
+<h4 id="10丨理论七：为何说要多用组合少用继承？如何决定该用组合还是继承？"><a href="#10丨理论七：为何说要多用组合少用继承？如何决定该用组合还是继承？" class="headerlink" title="10丨理论七：为何说要多用组合少用继承？如何决定该用组合还是继承？"></a>10丨理论七：为何说要多用组合少用继承？如何决定该用组合还是继承？</h4><ul>
+<li><p>为什么不推荐使用继承？</p>
+<ul>
+<li>继承是面向对象的四大特性之一，用来表示类之间的 is-a 关系，可以解决代码复用的问题。虽然继承有诸多作用，但继承层次过深、过复杂，也会影响到代码的可维护性。</li>
+<li>这种层次很深、很复杂的继承关系，一方面，会导致代码的可读性变差。因为我们要搞清楚某个类具有哪些方法、属性，必须阅读父类的代码、父类的父类的代码……一直追溯到最顶层父类的代码。另一方面，这也破坏了类的封装特性，将父类的实现细节暴露给了子类。子类的实现依赖父类的实现，两者高度耦合，一旦父类代码修改，就会影响所有子类的逻辑。</li>
+</ul>
+</li>
+<li><p>组合相比继承有哪些优势？</p>
+<ul>
+<li>可以利用组合（composition）、接口、委托（delegation）三个技术手段，一块儿来解决刚刚继承存在的问题</li>
+<li>通过组合和委托技术来消除代码重复</li>
+<li>继承主要有三个作用：表示 is-a 关系，支持多态特性，代码复用。而这三个作用都可以通过其他技术手段来达成。比如 is-a 关系，我们可以通过组合和接口的 has-a 关系来替代；多态特性我们可以利用接口来实现；代码复用我们可以通过组合和委托来实现。所以，从理论上讲，通过组合、接口、委托三个技术手段，我们完全可以替换掉继承，在项目中不用或者少用继承关系，特别是一些复杂的继承关系。</li>
+</ul>
+</li>
+<li><p>如何判断该用组合还是继承？</p>
+<ul>
+<li>继承改写成组合意味着要做更细粒度的类的拆分。这也就意味着，我们要定义更多的类和接口。类和接口的增多也就或多或少地增加代码的复杂程度和维护成本。所以，在实际的项目开发中，我们还是要根据具体的情况，来具体选择该用继承还是组合。</li>
+<li>如果类之间的继承结构稳定（不会轻易改变），继承层次比较浅（比如，最多有两层继承关系），继承关系不复杂，我们就可以大胆地使用继承。反之，系统越不稳定，继承层次很深，继承关系复杂，我们就尽量使用组合来替代继承。</li>
+<li>还有一些设计模式会固定使用继承或者组合。比如，装饰者模式（decorator pattern）、策略模式（strategy pattern）、组合模式（composite pattern）等都使用了组合关系，而模板模式（template pattern）使用了继承关系</li>
+<li>利用继承特性，我们把相同的属性和方法，抽取出来，定义到父类中。子类复用父类中的属性和方法，达到代码复用的目的。但是，有的时候，从业务含义上，A 类和 B 类并不一定具有继承关系。这个时候，使用组合就更加合理、更加灵活</li>
+<li>还有一些特殊的场景要求我们必须使用继承。如果你不能改变一个函数的入参类型，而入参又非接口，为了支持多态，只能采用继承来实现。</li>
+</ul>
+</li>
+</ul>
+<h4 id="11丨实战一（上）：业务开发常用的基于贫血模型的MVC架构违背OOP吗？"><a href="#11丨实战一（上）：业务开发常用的基于贫血模型的MVC架构违背OOP吗？" class="headerlink" title="11丨实战一（上）：业务开发常用的基于贫血模型的MVC架构违背OOP吗？"></a>11丨实战一（上）：业务开发常用的基于贫血模型的MVC架构违背OOP吗？</h4><ul>
+<li><p>很多业务系统都是基于 MVC 三层架构来开发的。实际上，更确切点讲，这是一种基于贫血模型的 MVC 三层架构开发模式;虽然这种开发模式已经成为标准的 Web 项目的开发模式，但它却违反了面向对象编程风格，是一种彻彻底底的面向过程的编程风格，因此而被有些人称为反模式（antipattern）。特别是领域驱动设计（Domain Driven Design，简称 DDD）盛行之后，这种基于贫血模型的传统的开发模式就更加被人诟病。而基于充血模型的 DDD 开发模式越来越被人提倡。</p>
+</li>
+<li><p>什么是基于贫血模型的传统开发模式？</p>
+<ul>
+<li>MVC 三层架构中的 M 表示 Model，V 表示 View，C 表示 Controller。它将整个项目分为三层：展示层、逻辑层、数据层。MVC 三层开发架构是一个比较笼统的分层方式，落实到具体的开发层面，很多项目也并不会 100% 遵从 MVC 固定的分层方式，而是会根据具体的项目需求，做适当的调整</li>
+<li>现在很多 Web 或者 App 项目都是前后端分离的，后端负责暴露接口给前端调用。这种情况下，一般就将后端项目分为 Repository 层、Service 层、Controller 层。其中，Repository 层负责数据访问，Service 层负责业务逻辑，Controller 层负责暴露接口。当然，这只是其中一种分层和命名方式。不同的项目、不同的团队，可能会对此有所调整。不过，万变不离其宗，只要是依赖数据库开发的 Web 项目，基本的分层思路都大差不差。</li>
+<li>实际上，你可能一直都在用贫血模型做开发，只是自己不知道而已。不夸张地讲，目前几乎所有的业务后端系统，都是基于贫血模型的<ul>
+<li>平时开发 Web 后端项目的时候，基本上都是这么组织代码的。其中，UserEntity 和UserRepository 组成了数据访问层，UserBo 和 UserService 组成了业务逻辑层，UserVo和 UserController 在这里属于接口层。</li>
+<li>UserBo 是一个纯粹的数据结构，只包含数据，不包含任何业务逻辑。业务逻辑集中在 UserService 中。我们通过 UserService 来操作 UserBo。换句话说，Service 层的数据和业务逻辑，被分割为 BO 和 Service 两个类中。像 UserBo 这样，只包含数据，不包含业务逻辑的类，就叫作贫血模型（Anemic Domain Model）。同理，UserEntity、UserVo 都是基于贫血模型设计的。这种贫血模型将数据与操作分离，破坏了面向对象的封装特性，是一种典型的面向过程的编程风格。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>什么是基于充血模型的 DDD 开发模式？</p>
+<ul>
+<li>在贫血模型中，数据和业务逻辑被分割到不同的类中。充血模型（Rich Domain Model）正好相反，数据和对应的业务逻辑被封装到同一个类中。因此，这种充血模型满足面向对象的封装特性，是典型的面向对象编程风格。</li>
+<li>什么是领域驱动设计？领域驱动设计，即 DDD，主要是用来指导如何解耦业务系统，划分业务模块，定义业务领域模型及其交互。领域驱动设计这个概念并不新颖，早在 2004 年就被提出了，到现在已经有十几年的历史了。不过，它被大众熟知，还是基于另一个概念的兴起，那就是微服务<ul>
+<li>除了监控、调用链追踪、API 网关等服务治理系统的开发之外，微服务还有另外一个更加重要的工作，那就是针对公司的业务，合理地做微服务拆分。而领域驱动设计恰好就是用来指导划分服务的。所以，微服务加速了领域驱动设计的盛行</li>
+</ul>
+</li>
+<li>实际上，基于充血模型的 DDD 开发模式实现的代码，也是按照 MVC 三层架构分层的。Controller 层还是负责暴露接口，Repository 层还是负责数据存取，Service 层负责核心业务逻辑。它跟基于贫血模型的传统开发模式的区别主要在 Service 层<ul>
+<li>在基于贫血模型的传统开发模式中，Service 层包含 Service 类和 BO 类两部分，BO 是贫血模型，只包含数据，不包含具体的业务逻辑。业务逻辑集中在 Service 类中。在基于充血模型的 DDD 开发模式中，Service 层包含 Service 类和 Domain 类两部分。Domain 就相<br>当于贫血模型中的 BO。不过，Domain 与 BO 的区别在于它是基于充血模型开发的，既包含数据，也包含业务逻辑。而 Service 类变得非常单薄。</li>
+<li>总结一下的话就是，基于贫血模型的传统的开发模式，重 Service 轻 BO；基于充血模型的 DDD 开发模式，轻 Service 重Domain。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>为什么基于贫血模型的传统开发模式如此受欢迎？</p>
+<ul>
+<li>第一点原因是，大部分情况下，开发的系统业务可能都比较简单，简单到就是基于SQL 的 CRUD 操作，所以，根本不需要动脑子精心设计充血模型，贫血模型就足以应付这种简单业务的开发工作。除此之外，因为业务比较简单，即便使用充血模型，那模型本身包含的业务逻辑也并不会很多，设计出来的领域模型也会比较单薄，跟贫血模型差不多，没有太大意义。</li>
+<li>第二点原因是，充血模型的设计要比贫血模型更加有难度。因为充血模型是一种面向对象的编程风格。从一开始就要设计好针对数据要暴露哪些操作，定义哪些业务逻辑。而不是像贫血模型那样，我们只需要定义数据，之后有什么功能开发需求，就在 Service 层定义什么操作，不需要事先做太多设计。</li>
+<li>第三点原因是，思维已固化，转型有成本。基于贫血模型的传统开发模式经历了这么多年，已经深得人心、习以为常。随便问一个旁边的大龄同事，基本上他过往参与的所有 Web项目应该都是基于这个开发模式的，而且也没有出过啥大问题。如果转向用充血模型、领域驱动设计，那势必有一定的学习成本、转型成本。很多人在没有遇到开发痛点的情况下，是不愿意做这件事情的。</li>
+</ul>
+</li>
+<li><p>什么项目应该考虑使用基于充血模型的 DDD 开发模式？</p>
+<ul>
+<li>基于充血模型的 DDD 开发模式，更适合业务复杂的系统开发。比如，包含各种利息计算模型、还款模型等复杂业务的金融系统</li>
+<li>除了能看到的代码层面的区别之外（一个业务逻辑放到 Service 层，一个放到领域模型中），还有一个非常重要的区别，那就是两种不同的开发模式会导致不同的开发流程。基于充血模型的 DDD 开发模式的开发流程，在应对复杂业务系统的开发的时候更加有优势。<ul>
+<li>平时的开发，大部分都是 SQL 驱动（SQL-Driven）的开发模式。接到一个后端接口的开发需求的时候，就去看接口需要的数据对应到数据库中，需要哪张表或者哪几张表，然后思考如何编写 SQL 语句来获取数据。之后就是定义 Entity、BO、VO，然后模板式地往对应的 Repository、Service、Controller 类中添加代码。</li>
+<li>业务逻辑包裹在一个大的 SQL 语句中，而 Service 层可以做的事情很少。SQL 都是针对特定的业务功能编写的，复用性差。当要开发另一个业务功能的时候，只能重新写个满足新需求的 SQL 语句，这就可能导致各种长得差不多、区别很小的 SQL 语句满天飞。</li>
+<li>在这个过程中，很少有人会应用领域模型、OOP 的概念，也很少有代码复用意识。对于简单业务系统来说，这种开发方式问题不大。但对于复杂业务系统的开发来说，这样的开发方式会让代码越来越混乱，最终导致无法维护。</li>
+</ul>
+</li>
+<li>如果在项目中，应用基于充血模型的 DDD 的开发模式，那对应的开发流程就完全不一样了。在这种开发模式下，需要事先理清楚所有的业务，定义领域模型所包含的属性和方法。领域模型相当于可复用的业务中间层。新功能需求的开发，都基于之前定义好的这些领域模型来完成。</li>
+<li>越复杂的系统，对代码的复用性、易维护性要求就越高，我们就越应该花更多的时间和精力在前期设计上。而基于充血模型的 DDD 开发模式，正好需要前期做大量的业务调研、领域模型设计，所以它更加适合这种复杂系统的开发。</li>
+</ul>
+</li>
+</ul>
+<h4 id="12丨实战一（下）：如何利用基于充血模型的DDD开发一个虚拟钱包系统？"><a href="#12丨实战一（下）：如何利用基于充血模型的DDD开发一个虚拟钱包系统？" class="headerlink" title="12丨实战一（下）：如何利用基于充血模型的DDD开发一个虚拟钱包系统？"></a>12丨实战一（下）：如何利用基于充血模型的DDD开发一个虚拟钱包系统？</h4><ul>
+<li><p>钱包业务背景介绍</p>
+<ul>
+<li>一般来讲，每个虚拟钱包账户都会对应用户的一个真实的支付账户，有可能是银行卡账户，也有可能是三方支付账户（比如支付宝、微信钱包）</li>
+<li>限定钱包暂时只支持充值、提现、支付、查询余额、查询交易流水这五个核心的功能</li>
+<li>充值<ul>
+<li>通过三方支付渠道，把自己银行卡账户内的钱，充值到虚拟钱包账号中。这整个过程，可以分解为三个主要的操作流程：</li>
+<li>第一个操作是从用户的银行卡账户转账到应用的公共银行卡账户；</li>
+<li>第二个操作是将用户的充值金额加到虚拟钱包余额上；</li>
+<li>第三个操作是记录刚刚这笔交易流水。</li>
+</ul>
+</li>
+<li>支付<ul>
+<li>用户用钱包内的余额，支付购买应用内的商品。实际上，支付的过程就是一个转账的过程，从用户的虚拟钱包账户划钱到商家的虚拟钱包账户上，然后触发真正的银行转账操作，从应用的公共银行账户转钱到商家的银行账户</li>
+<li>除此之外，我们也需要记录这笔支付的交易流水信息。</li>
+</ul>
+</li>
+<li>提现<ul>
+<li>除了充值、支付之外，用户还可以将虚拟钱包中的余额，提现到自己的银行卡中。这个过程实际上就是扣减用户虚拟钱包中的余额，并且触发真正的银行转账操作，从应用的公共银行账户转钱到用户的银行账户。</li>
+<li>同样，也需要记录这笔提现的交易流水信息。</li>
+</ul>
+</li>
+<li>查询余额<ul>
+<li>查询余额功能比较简单，看一下虚拟钱包中的余额数字即可</li>
+</ul>
+</li>
+<li>查询交易流水<ul>
+<li>查询交易流水也比较简单。只支持三种类型的交易流水：充值、支付、提现。在用户充值、支付、提现的时候，会记录相应的交易信息。在需要查询的时候，只需要将之前记录的交易流水，按照时间、类型等条件过滤之后，显示出来即可。</li>
+</ul>
+</li>
+<li>钱包系统的设计思路<ul>
+<li>可以把整个钱包系统的业务划分为两部分，其中一部分单纯跟应用内的虚拟钱包账户打交道，另一部分单纯跟银行账户打交道。基于这样一个业务划分，给系统解耦，将整个钱包系统拆分为两个子系统：虚拟钱包系统和三方支付系统。</li>
+<li>虚拟钱包系统要支持的操作非常简单，就是余额的加加减减。其中，充值、提现、查询余额三个功能，只涉及一个账户余额的加减操作，而支付功能涉及两个账户的余额加减操作：一个账户减余额，另一个账户加余额。</li>
+<li>交易流水的数据格式包含两个钱包账号，一个是入账钱包账号，一个是出账钱包账号</li>
+</ul>
+</li>
+<li>充值、提现、支付这些业务交易类型，是否应该让虚拟钱包系统感知？是否应该在虚拟钱包系统的交易流水中记录这三种类型？<ul>
+<li>虚拟钱包系统不应该感知具体的业务交易类型。我们前面讲到，虚拟钱包支持的操作，仅仅是余额的加加减减操作，不涉及复杂业务概念，职责单一、功能通用。如果耦合太多业务概念到里面，势必影响系统的通用性，而且还会导致系统越做越复杂。因此，不希望将充值、支付、提现这样的业务概念添加到虚拟钱包系统中。</li>
+<li>可以通过记录两条交易流水信息的方式来显示每条交易流水的交易类型。在钱包系统这一层额外再记录一条包含交易类型的交易流水信息，而在底层的虚拟钱包系统中记录不包含交易类型的交易流水信息。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>基于贫血模型的传统开发模式</p>
+<ul>
+<li>Controller 和 VO 负责暴露接口，Service 和 BO 负责核心业务逻辑，Repository 和 Entity 负责数据存取。</li>
+</ul>
+</li>
+<li><p>基于充血模型的 DDD 开发模式</p>
+<ul>
+<li><p>把虚拟钱包 VirtualWallet 类设计成一个充血的 Domain 领域模型，并且将原来在 Service 类中的部分业务逻辑移动到 VirtualWallet 类中，让 Service 类的实现依赖 VirtualWallet 类</p>
+</li>
+<li><p>在基于充血模型的 DDD 开发模式中，将业务逻辑移动到Domain 中，Service 类变得很薄，但在我们的代码设计与实现中，并没有完全将Service 类去掉，这是为什么？或者说，Service 类在这种情况下担当的职责是什么？哪些功能逻辑会放到 Service 类中？</p>
+</li>
+<li><p>区别于 Domain 的职责，Service 类主要有下面这样几个职责。<br>1.Service 类负责与 Repository 交流</p>
+<p>2.Service 类负责跨领域模型的业务聚合功能</p>
+<p>3.Service 类负责一些非功能性及与三方系统交互的工作。</p>
+</li>
+<li><p>基于充血模型的 DDD 开发模式跟基于贫血模型的传统开发模式相比，Controller 层和<br>Repository 层的代码基本上相同。这是因为，Repository 层的 Entity 生命周期有限，Controller 层的 VO 只是单纯作为一种 DTO。两部分的业务逻辑都不会太复杂。业务逻辑主要集中在 Service 层。所以，Repository 层和 Controller 层继续沿用贫血模型的设计思路是没有问题的。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="13丨实战二（上）：如何对接口鉴权这样一个功能开发做面向对象分析？"><a href="#13丨实战二（上）：如何对接口鉴权这样一个功能开发做面向对象分析？" class="headerlink" title="13丨实战二（上）：如何对接口鉴权这样一个功能开发做面向对象分析？"></a>13丨实战二（上）：如何对接口鉴权这样一个功能开发做面向对象分析？</h4><ul>
+<li><p>案例介绍和难点剖析</p>
+<ul>
+<li>假设，正在参与开发一个微服务。微服务通过 HTTP 协议暴露接口给其他系统调用，说直白点就是，其他系统通过 URL 来调用微服务的接口。有一天，你的 leader 找到你说，“为了保证接口调用的安全性，我们希望设计实现一个接口调用鉴权功能，只有经过认证之后的系统才能调用我们的接口，没有认证过的系统调用我们的接口会被拒绝。”</li>
+<li>需求不明确<ul>
+<li>leader 给到的需求过于模糊、笼统，不够具体、细化，离落地到设计、编码还有一定的距离。而人的大脑不擅长思考这种过于抽象的问题</li>
+<li>面向对象分析主要的分析对象是“需求”，因此，面向对象分析可以粗略地看成“需求分析”。实际上，不管是需求分析还是面向对象分析，我们首先要做的都是将笼统的需求细化到足够清晰、可执行。我们需要通过沟通、挖掘、分析、假设、梳理，搞清楚具体的需求有哪些，哪些是现在要做的，哪些是未来可能要做的，哪些是不用考虑做的。</li>
+</ul>
+</li>
+<li>缺少锻炼<ul>
+<li>相比单纯的业务 CRUD 开发，鉴权这个开发任务，要更有难度。鉴权作为一个跟具体业务无关的功能，我们完全可以把它开发成一个独立的框架，集成到很多业务系统中。而作为被很多系统复用的通用框架，比起普通的业务代码，我们对框架的代码质量要求要更高。</li>
+<li>开发这样通用的框架，对工程师的需求分析能力、设计能力、编码能力，甚至逻辑思维能力的要求，都是比较高的</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>对案例进行需求分析</p>
+<ul>
+<li>尽管针对框架、组件、类库等非业务系统的开发，我们一定要有组件化意识、框架意识、抽象意识，开发出来的东西要足够通用，不能局限于单一的某个业务需求，但这并不代表我们就可以脱离具体的应用场景，闷头拍脑袋做需求分析。多跟业务团队聊聊天，甚至自己去参与几个业务系统的开发，只有这样，我们才能真正知道业务系统的痛点，才能分析出最有价值的需求。</li>
+<li>第一轮基础分析<ul>
+<li>对于如何做鉴权这样一个问题，最简单的解决方案就是，通过用户名加密码来做认证。我们给每个允许访问我们服务的调用方，派发一个应用名（或者叫应用 ID、AppID）和一个对应的密码（或者叫秘钥）。调用方每次进行接口请求的时候，都携带自己的 AppID 和密码。微服务在接收到接口调用请求之后，会解析出 AppID 和密码，跟存储在微服务端的AppID 和密码进行比对。如果一致，说明认证成功，则允许接口调用请求；否则，就拒绝接口调用请求</li>
+</ul>
+</li>
+<li>第二轮分析优化<ul>
+<li>这样的验证方式，每次都要明文传输密码。密码很容易被截获，是不安全的。那如果我们借助加密算法（比如 SHA），对密码进行加密之后，再传递到微服务端验证，是不是就可以了呢？实际上，这样也是不安全的，因为加密之后的密码及 AppID，照样可以被未认证系统（或者说黑客）截获，未认证系统可以携带这个加密之后的密码以及对应的AppID，伪装成已认证系统来访问我们的接口。这就是典型的“ 重放攻击”。</li>
+<li>提出问题，然后再解决问题，是一个非常好的迭代优化方法。对于刚刚这个问题，我们可以借助 OAuth 的验证思路来解决。调用方将请求接口的 URL 跟 AppID、密码拼接在一起，然后进行加密，生成一个 token。调用方在进行接口请求的的时候，将这个 token 及AppID，随 URL 一块传递给微服务端。微服务端接收到这些数据之后，根据 AppID 从数据库中取出对应的密码，并通过同样的 token 生成算法，生成另外一个 token。用这个新生成的 token 跟调用方传递过来的 token 对比。如果一致，则允许接口调用请求；否则，就拒绝接口调用请求</li>
+</ul>
+</li>
+<li>第三轮分析优化<ul>
+<li>这样的设计仍然存在重放攻击的风险，还是不够安全。每个 URL 拼接上 AppID、密码生成的 token 都是固定的。未认证系统截获 URL、token 和 AppID 之后，还是可以通过重放攻击的方式，伪装成认证系统，调用这个 URL 对应的接口。</li>
+<li>为了解决这个问题，可以进一步优化 token 生成算法，引入一个随机变量，让每次接口请求生成的 token 都不一样。我们可以选择时间戳作为随机变量。原来的 token 是对URL、AppID、密码三者进行加密生成的，现在我们将 URL、AppID、密码、时间戳四者进行加密来生成 token。调用方在进行接口请求的时候，将 token、AppID、时间戳，随URL 一并传递给微服务端。</li>
+<li>微服务端在收到这些数据之后，会验证当前时间戳跟传递过来的时间戳，是否在一定的时间窗口内（比如一分钟）。如果超过一分钟，则判定 token 过期，拒绝接口请求。如果没有超过一分钟，则说明 token 没有过期，就再通过同样的 token 生成算法，在服务端生成新的 token，与调用方传递过来的 token 比对，看是否一致。如果一致，则允许接口调用请求；否则，就拒绝接口调用请求。</li>
+</ul>
+</li>
+<li>第四轮分析优化<ul>
+<li>这样还是不够安全。未认证系统还是可以在这一分钟的 token 失效窗口内，通过截获请求、重放请求，来调用接口</li>
+<li>攻与防之间，本来就没有绝对的安全。我们能做的就是，尽量提高攻击的成本。这个方案虽然还有漏洞，但是实现起来足够简单，而且不会过度影响接口本身的性能（比如响应时间）。所以，权衡安全性、开发成本、对系统性能的影响，这个方案算是比较折中、比较合理的了。</li>
+<li>还有一个细节没有考虑到，那就是如何在微服务端存储每个授权调用方的AppID 和密码。当然，这个问题并不难。最容易想到的方案就是存储到数据库里，比如MySQL。不过，开发像鉴权这样的非业务功能，最好不要与具体的第三方系统有过度的耦合。</li>
+<li>针对 AppID 和密码的存储，我们最好能灵活地支持各种不同的存储方式，比如ZooKeeper、本地配置文件、自研配置中心、MySQL、Redis 等。我们不一定针对每种存储方式都去做代码实现，但起码要留有扩展点，保证系统有足够的灵活性和扩展性，能够在我们切换存储方式的时候，尽可能地减少代码的改动。</li>
+</ul>
+</li>
+<li>最终确定需求<ul>
+<li>调用方进行接口请求的时候，将 URL、AppID、密码、时间戳拼接在一起，通过加密算法生成 token，并且将 token、AppID、时间戳拼接在 URL 中，一并发送到微服务端。</li>
+<li>微服务端在接收到调用方的接口请求之后，从请求中拆解出 token、AppID、时间戳。</li>
+<li>微服务端首先检查传递过来的时间戳跟当前时间，是否在 token 失效时间窗口内。如果已经超过失效时间，那就算接口调用鉴权失败，拒绝接口调用请求。</li>
+<li>如果 token 验证没有过期失效，微服务端再从自己的存储中，取出 AppID 对应的密码，通过同样的 token 生成算法，生成另外一个 token，与调用方传递过来的 token 进行匹配；如果一致，则鉴权成功，允许接口调用，否则就拒绝接口调用。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="设计原则与思想：设计原则-12讲"><a href="#设计原则与思想：设计原则-12讲" class="headerlink" title="设计原则与思想：设计原则 (12讲)"></a>设计原则与思想：设计原则 (12讲)</h3><h4 id="15-理论一：对于单一职责原则，如何判定某个类的职责是否够“单一”？"><a href="#15-理论一：对于单一职责原则，如何判定某个类的职责是否够“单一”？" class="headerlink" title="15 | 理论一：对于单一职责原则，如何判定某个类的职责是否够“单一”？"></a>15 | 理论一：对于单一职责原则，如何判定某个类的职责是否够“单一”？</h4><ul>
+<li><p>如何理解单一职责原则（SRP）？</p>
+<ul>
+<li>SOLID 原则并非单纯的 1 个原则，而是由 5个设计原则组成的，它们分别是：单一职责原则、开闭原则、里式替换原则、接口隔离原则和依赖反转原则，依次对应 SOLID 中的 S、O、L、I、D 这 5 个英文字母</li>
+<li>单一职责原则的英文是 Single Responsibility Principle，缩写为 SRP；这个原则的英文描述是这样的：A class or module should have a single reponsibility。即，一个类或者模块只负责完成一个职责（或者功能）。就是说，不要设计大而全的类，要设计粒度小、功能单一的类。换个角度来讲就是，一个类包含了两个或者两个以上业务不相干的功能，那我们就说它职责不够单一，应该将它拆分成多个功能更加单一、粒度更细的类。</li>
+</ul>
+</li>
+<li><p>如何判断类的职责是否足够单一？</p>
+<ul>
+<li>不同的应用场景、不同阶段的需求背景下，对同一个类的职责是否单一的判定，可能都是不一样的。在某种应用场景或者当下的需求背景下，一个类的设计可能已经满足单一职责原则了，但如果换个应用场景或着在未来的某个需求背景下，可能就不满足了，需要继续拆分成粒度更细的类</li>
+<li>从不同的业务层面去看待同一个类的设计，对类是否职责单一，也会有不同的认识</li>
+<li>可以先写一个粗粒度的类，满足业务需求。随着业务的发展，如果粗粒度的类越来越庞大，代码越来越多，这个时候，我们就可以将这个粗粒度的类，拆分成几个更细粒度的类。这就是所谓的持续重构</li>
+<li>下面这几条判断原则，比起很主观地去思考类是否职责单一，要更有指导意义、更具有可执行性：<ul>
+<li>类中的代码行数、函数或属性过多，会影响代码的可读性和可维护性，我们就需要考虑对类进行拆分；</li>
+<li>类依赖的其他类过多，或者依赖类的其他类过多，不符合高内聚、低耦合的设计思想，我们就需要考虑对类进行拆分；</li>
+<li>私有方法过多，我们就要考虑能否将私有方法独立到新的类中，设置为 public 方法，供更多的类使用，从而提高代码的复用性；</li>
+<li>比较难给类起一个合适名字，很难用一个业务名词概括，或者只能用一些笼统的Manager、Context 之类的词语来命名，这就说明类的职责定义得可能不够清晰；</li>
+<li>类中大量的方法都是集中操作类中的某几个属性，比如，在 UserInfo 例子中，如果一半的方法都是在操作 address 信息，那就可以考虑将这几个属性和对应的方法拆分出来。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>类的职责是否设计得越单一越好？</p>
+<ul>
+<li>单一职责原则通过避免设计大而全的类，避免将不相关的功能耦合在一起，来提高类的内聚性。同时，类职责单一，类依赖的和被依赖的其他类也会变少，减少了代码的耦合性，以此来实现代码的高内聚、低耦合。但是，如果拆分得过细，实际上会适得其反，反倒会降低内聚性，也会影响代码的可维护性。</li>
+</ul>
+</li>
+</ul>
+<h4 id="16-理论二：如何做到“对扩展开放、修改关闭”？扩展和修改各指什么？"><a href="#16-理论二：如何做到“对扩展开放、修改关闭”？扩展和修改各指什么？" class="headerlink" title="16 | 理论二：如何做到“对扩展开放、修改关闭”？扩展和修改各指什么？"></a>16 | 理论二：如何做到“对扩展开放、修改关闭”？扩展和修改各指什么？</h4><ul>
+<li>如何理解“对扩展开放、修改关闭”？<ul>
+<li>开闭原则的英文全称是 Open Closed Principle，简写为 OCP。它的英文描述是：software entities (modules, classes, functions, etc.) should be open for extension ,<br>but closed for modification。即：软件实体（模块、类、方法等）应该“对扩展开放、对修改关闭”。</li>
+<li>详细表述一下就是，添加一个新的功能应该是，在已有代码基础上扩展代码（新增模块、类、方法等），而非修改已有代码（修改模块、类、方法等）。</li>
+<li>关于定义，有两点要注意。第一点是，开闭原则并不是说完全杜绝修改，而是以最小的修改代码的代价来完成新功能的开发。第二点是，同样的代码改动，在粗代码粒度下，可能被认定为“修改”；在细代码粒度下，可能又被认定为“扩展”</li>
+</ul>
+</li>
+<li>如何做到“对扩展开放、修改关闭”？<ul>
+<li>要时刻具备扩展意识、抽象意识、封装意识。在写代码的时候，我们要多花点时间思考一下，这段代码未来可能有哪些需求变更，如何设计代码结构，事先留好扩展点，以便在未<br>来需求变更的时候，在不改动代码整体结构、做到最小代码改动的情况下，将新的代码灵活地插入到扩展点上。</li>
+<li>在识别出代码可变部分和不可变部分之后，要将可变部分封装起来，隔离变化，提供抽象化的不可变接口，给上层系统使用。当具体的实现发生变化的时候，只需要基于相同的抽象接口，扩展一个新的实现，替换掉老的实现即可，上游系统的代码几乎不需要修改。</li>
+<li>很多设计原则、设计思想、设计模式，都是以提高代码的扩展性为最终目的的。特别是 23种经典设计模式，大部分都是为了解决代码的扩展性问题而总结出来的，都是以开闭原则为指导原则的。最常用来提高代码扩展性的方法有：多态、依赖注入、基于接口而非实现编程，以及大部分的设计模式（比如，装饰、策略、模板、职责链、状态）。</li>
+</ul>
+</li>
+<li>如何在项目中灵活应用开闭原则？<ul>
+<li>如果你开发的是一个业务导向的系统，比如金融系统、电商系统、物流系统等，要想识别出尽可能多的扩展点，就要对业务有足够的了解，能够知道当下以及未来可能要支持的业务需求。</li>
+<li>如果你开发的是跟业务无关的、通用的、偏底层的系统，比如，框架、组件、类库，你需要了解“它们会被如何使用？今后你打算添加哪些功能？使用者未来会有哪些更多的功能需求？”等问题。</li>
+<li>最合理的做法是，对于一些比较确定的、短期内可能就会扩展，或者需求改动对代码结构影响比较大的情况，或者实现成本不高的扩展点，在编写代码的时候之后，我们就可以事先做些扩展性设计。但对于一些不确定未来是否要支持的需求，或者实现起来比较复杂的扩展点，我们可以等到有需求驱动的时候，再通过重构代码的方式来支持扩展的需求</li>
+<li>开闭原则也并不是免费的。有些情况下，代码的扩展性会跟可读性相冲突。比如，我们之前举的 Alert 告警的例子。为了更好地支持扩展性，我们对代码进行了重构，重构之后的代码要比之前的代码复杂很多，理解起来也更加有难度。很多时候，我们都需要在扩展性和可读性之间做权衡</li>
+</ul>
+</li>
+</ul>
+<h4 id="17-理论三：里式替换（LSP）跟多态有何区别？哪些代码违背了LSP？"><a href="#17-理论三：里式替换（LSP）跟多态有何区别？哪些代码违背了LSP？" class="headerlink" title="17 | 理论三：里式替换（LSP）跟多态有何区别？哪些代码违背了LSP？"></a>17 | 理论三：里式替换（LSP）跟多态有何区别？哪些代码违背了LSP？</h4><ul>
+<li>如何理解“里式替换原则”？<ul>
+<li>里式替换原则的英文翻译是：Liskov Substitution Principle，缩写为 LSP。Functions that use pointers of references to base classes must be able to use objects of derived classes without knowing it</li>
+<li>子类对象（object of subtype&#x2F;derived class）能够替换程序（program）中父类对象（object of base&#x2F;parent class）出现的任何地方，并且保证原来程序的逻辑行为（behavior）不变及正确性不被破坏。</li>
+</ul>
+</li>
+<li>虽然从定义描述和代码实现上来看，多态和里式替换有点类似，但它们关注的角度是不一样的。多态是面向对象编程的一大特性，也是面向对象编程语言的一种语法。它是一种代码实现的思路。而里式替换是一种设计原则，是用来指导继承关系中子类该如何设计的，子类的设计要保证在替换父类的时候，不改变原有程序的逻辑以及不破坏原有程序的正确性。</li>
+<li>哪些代码明显违背了 LSP？<ul>
+<li>里式替换原则还有另外一个更加能落地、更有指导意义的描述，那就是“Design By Contract”，中文翻译就是“按照协议来设计”。</li>
+<li>子类在设计的时候，要遵守父类的行为约定（或者叫协议）。父类定义了函数的行为约定，那子类可以改变函数的内部实现逻辑，但不能改变函数原有的行为约定。这里的行为约定包括：函数声明要实现的功能；对输入、输出、异常的约定；甚至包括注释中所罗列的任何特殊说明。实际上，定义中父类和子类之间的关系，也可以替换成接口和实现类之间的关系。</li>
+</ul>
+</li>
+</ul>
+<h4 id="18丨理论四：接口隔离原则有哪三种应用？原则中的“接口”该如何理解？"><a href="#18丨理论四：接口隔离原则有哪三种应用？原则中的“接口”该如何理解？" class="headerlink" title="18丨理论四：接口隔离原则有哪三种应用？原则中的“接口”该如何理解？"></a>18丨理论四：接口隔离原则有哪三种应用？原则中的“接口”该如何理解？</h4><ul>
+<li><p>如何理解“接口隔离原则”？</p>
+<ul>
+<li>接口隔离原则的英文翻译是“ Interface Segregation Principle”，缩写为 ISP；SOLID 原则中是这样定义它的：“Clients should not be forced to depend upon interfaces that they do not use。”即：客户端不应该强迫依赖它不需要的接口。其中的“客户端”，可以理解为接口的调用者或者使用者。</li>
+<li>实际上，“接口”这个名词可以用在很多场合中。生活中我们可以用它来指插座接口等。在软件开发中，我们既可以把它看作一组抽象的约定，也可以具体指系统与系统之间的 API接口，还可以特指面向对象编程语言中的接口等</li>
+<li>理解接口隔离原则的关键，就是理解其中的“接口”二字。在这条原则中，可以把“接口”理解为下面三种东西：<ul>
+<li>一组 API 接口集合</li>
+<li>单个 API 接口或函数</li>
+<li>OOP 中的接口概念</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>把“接口”理解为一组 API 接口集合</p>
+<ul>
+<li>比如后台管理系统要实现删除用户的功能，希望用户系统提供一个删除用户的接口，现有一个UserService 系统具有注册、登录、获取用户信息等</li>
+<li>删除用户是一个非常慎重的操作，只希望通过后台管理系统来执行，所以这个接口只限于给后台管理系统使用。如果把它放到 UserService 中，那所有使用到 UserService<br>的系统，都可以调用这个接口。不加限制地被其他业务系统调用，就有可能导致误删用户</li>
+<li>最好的解决方案是从架构设计的层面，通过接口鉴权的方式来限制接口的调用。不过，如果暂时没有鉴权框架来支持，还可以从代码设计的层面，尽量避免接口被误用。参照接口隔离原则，调用者不应该强迫依赖它不需要的接口，将删除接口单独放到另外一个接口 RestrictedUserService 中，然后将 RestrictedUserService 只打包提供给后台管理系统来使用</li>
+<li>把接口隔离原则中的接口，理解为一组接口集合，它可以是某个微服务的接口，也可以是某个类库的接口等等。在设计微服务或者类库接口的时候，如果部分接口只被部分调用者使用，那我们就需要将这部分接口隔离出来，单独给对应的调用者使用，而不是强迫其他调用者也依赖这部分不会被用到的接口</li>
+</ul>
+</li>
+<li><p>把“接口”理解为单个 API 接口或函数</p>
+<ul>
+<li>函数的设计要功能单一，不要将多个不同的功能逻辑在一个函数中实现，需要把函数拆分成粒度更细的多个函数，让调用者只依赖它需要的那个细粒度函数</li>
+<li>接口隔离原则跟单一职责原则有点类似，不过稍微还是有点区别。单一职责原则针对的是模块、类、接口的设计。而接口隔离原则相对于单一职责原则，一方面它更侧重于接口的设计，另一方面它的思考的角度不同。它提供了一种判断接口是否职责单一的标准：通过调用者如何使用接口来间接地判定。如果调用者只使用部分接口或接口的部分功能，那接口的设计就不够职责单一。</li>
+</ul>
+</li>
+<li><p>把“接口”理解为 OOP 中的接口概念</p>
+<ul>
+<li>理解为面向对象编程语言中的接口语法。那接口的设计要尽量单一，不要让接口的实现类和调用者，依赖不需要的接口函数</li>
+<li>针对每个功能设计一个单一的接口，比如设计了两个功能非常单一的接口：Updater 和 Viewer。ScheduledUpdater 只依赖Updater 这个跟热更新相关的接口，不需要被强迫去依赖不需要的 Viewer 接口，满足接口隔离原则。同理，SimpleHttpServer 只依赖跟查看信息相关的 Viewer 接口，不依赖不需要的 Updater 接口，也满足接口隔离原则<ul>
+<li>Updater、Viewer 职责更加单一，单一就意味了通用、复用性好。比如，现在又有一个新的需求，开发一个 Metrics性能统计模块，并且希望将 Metrics 也通过 SimpleHttpServer 显示在网页上，以方便查看。这个时候，尽管 Metrics 跟 RedisConfig 等没有任何关系，但我们仍然可以让Metrics 类实现非常通用的 Viewer 接口，复用 SimpleHttpServer 的代码实现</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="19丨理论五：控制反转、依赖反转、依赖注入，这三者有何区别和联系？"><a href="#19丨理论五：控制反转、依赖反转、依赖注入，这三者有何区别和联系？" class="headerlink" title="19丨理论五：控制反转、依赖反转、依赖注入，这三者有何区别和联系？"></a>19丨理论五：控制反转、依赖反转、依赖注入，这三者有何区别和联系？</h4><ul>
+<li><p>控制反转（IOC）</p>
+<ul>
+<li>控制反转的英文翻译是Inversion Of Control，缩写为 IOC</li>
+<li>框架提供了一个可扩展的代码骨架，用来组装对象、管理整个执行流程。程序员利用框架进行开发的时候，只需要往预留的扩展点上，添加跟自己业务相关的代码，就可以利用框架来驱动整个程序流程的执行。</li>
+<li>这里的“控制”指的是对程序执行流程的控制，而“反转”指的是在没有使用框架之前，程序员自己控制整个程序的执行。在使用框架之后，整个程序的执行流程可以通过框架来控制。流程的控制权从程序员“反转”到了框架</li>
+</ul>
+</li>
+<li><p>依赖注入（DI）</p>
+<ul>
+<li>依赖注入跟控制反转恰恰相反，它是一种具体的编码技巧。依赖注入的英文翻译是 Dependency Injection，缩写为 DI。</li>
+<li>用一句话来概括就是：不通过 new() 的方式在类内部创建依赖类对象，而是将依赖的类对象在外部创建好之后，通过构造函数、函数参数等方式传递（或注入）给类使用</li>
+<li>通过依赖注入的方式来将依赖的类对象传递进来，这样就提高了代码的扩展性，可以灵活地替换依赖的类</li>
+</ul>
+</li>
+<li><p>依赖注入框架（DI Framework）</p>
+<ul>
+<li>在采用依赖注入实现的 中，虽然我们不需要用类似 hard code 的方式，在类内部通过 new 来创建对象，但是，这个创建对象、组装（或注入）对象的工作仅仅是被移动到了更上层代码而已，还是需要程序员自己来实现</li>
+<li>只需要通过依赖注入框架提供的扩展点，简单配置一下所有需要创建的类对象、类与类之间的依赖关系，就可以实现由框架来自动创建对象、管理对象的生命周期、依赖注入等原本需要程序员来做的事情</li>
+</ul>
+</li>
+<li><p>依赖反转原则（DIP）</p>
+<ul>
+<li>依赖反转原则的英文翻译是 Dependency Inversion Principle，缩写为 DIP，</li>
+<li>High-level modules shouldn’t depend on low-level modules. Both modules should depend on abstractions. In addition, abstractions shouldn’t depend on details. Details depend on abstractions.</li>
+<li>高层模块（high-level modules）不要依赖低层模块（low-level）。高层模块和低层模块应该通过抽象abstractions）来互相依赖。除此之外，抽象（abstractions）不要依赖具体实现细节（details），具体实现细节（details）依赖抽象（abstractions）。</li>
+<li>所谓高层模块和低层模块的划分，简单来说就是，在调用链上，调用者属于高层，被调用者属于低层。在平时的业务代码开发中，高层模块依赖底层模块是没有任何问题的。实际上，这条原则主要还是用来指导框架层面的设计</li>
+</ul>
+</li>
+</ul>
+<h4 id="20丨理论六：我为何说KISS、YAGNI原则看似简单，却经常被用错？"><a href="#20丨理论六：我为何说KISS、YAGNI原则看似简单，却经常被用错？" class="headerlink" title="20丨理论六：我为何说KISS、YAGNI原则看似简单，却经常被用错？"></a>20丨理论六：我为何说KISS、YAGNI原则看似简单，却经常被用错？</h4><ul>
+<li><p>如何理解“KISS 原则”？</p>
+<ul>
+<li>Keep It Simple and Stupid.尽量保持简单。KISS 原则算是一个万金油类型的设计原则，可以应用在很多场景中。</li>
+<li>代码的可读性和可维护性是衡量代码质量非常重要的两个标准。而 KISS 原则就是保持代码可读和可维护的重要手段。代码足够简单，也就意味着很容易读懂，bug 比较难隐藏。即便出现 bug，修复起来也比较简单</li>
+</ul>
+</li>
+<li><p>代码行数越少就越“简单”吗？</p>
+<ul>
+<li>KISS 原则中的“简单”并不是以代码行数来考量的。代码行数越少并不代表代码越简单，还要考虑逻辑复杂度、实现难度、代码的可读性等。</li>
+</ul>
+</li>
+<li><p>代码逻辑复杂就违背 KISS 原则吗？</p>
+<ul>
+<li>本身就复杂的问题，用复杂的方法解决，并不违背 KISS 原则</li>
+</ul>
+</li>
+<li><p>如何写出满足 KISS 原则的代码？</p>
+<ul>
+<li>不要使用同事可能不懂的技术来实现代码。比如正则表达式，还有一些编程语言中过于高级的语法等。</li>
+<li>不要重复造轮子，要善于使用已经有的工具类库。经验证明，自己去实现这些类库，出bug 的概率会更高，维护的成本也比较高。</li>
+<li>不要过度优化。不要过度使用一些奇技淫巧（比如，位运算代替算术运算、复杂的条件语句代替 if-else、使用一些过于底层的函数等）来优化代码，牺牲代码的可读性。</li>
+<li>代码是否足够简单是一个挺主观的评判。同样的代码，有的人觉得简单，有的人觉得不够简单。而往往自己编写的代码，自己都会觉得够简单。所以，评判代码是否简单，还有一个很有效的间接方法，那就是 code review。</li>
+</ul>
+</li>
+<li><p>YAGNI 跟 KISS 说的是一回事吗？</p>
+<ul>
+<li>YAGNI 原则的英文全称是：You Ain’t Gonna Need It。直译就是：你不会需要它。这条原则也算是万金油了。当用在软件开发中的时候，它的意思是：不要去设计当前用不到的功能；不要去编写当前用不到的代码。实际上，这条原则的核心思想就是：不要做过度设计</li>
+<li>YAGNI 原则跟 KISS 原则并非一回事儿。KISS 原则讲的<br>是“如何做”的问题（尽量保持简单），而 YAGNI 原则说的是“要不要做”的问题（当前不需要的就不要做）。</li>
+</ul>
+</li>
+</ul>
+<h4 id="21丨理论七：重复的代码就一定违背DRY吗？如何提高代码的复用性？"><a href="#21丨理论七：重复的代码就一定违背DRY吗？如何提高代码的复用性？" class="headerlink" title="21丨理论七：重复的代码就一定违背DRY吗？如何提高代码的复用性？"></a>21丨理论七：重复的代码就一定违背DRY吗？如何提高代码的复用性？</h4><ul>
+<li><p>DRY 原则。Don’t Repeat Yourself。即不要重复自己。将它应用在编程中，可以理解为：不要写重复的代码。</p>
+</li>
+<li><p>三种典型的代码重复情况</p>
+<ul>
+<li><p>实现逻辑重复</p>
+<ul>
+<li>isValidUserName() 和 isValidPassword() 两个函数，虽然从代码实现逻辑上看起来是重复的，但是从语义上并不重复。所谓“语义不重复”指的是：从功能上来看，这两个函数干的是完全不重复的两件事情，一个是校验用户名，另一个是校验密码。尽管在目前的设计中，两个校验逻辑是完全一样的，但如果将两个函数的合并，那就会存在潜在的问题。在未来的某一天，如果我们修改了密码的校验逻辑，比如，允许密码包含大写字符，允许密码的长度为 8 到 64 个字符，那这个时候，isValidUserName() 和isValidPassword() 的实现逻辑就会不相同。我们就要把合并后的函数，重新拆成合并前的那两个函数。</li>
+<li>尽管代码的实现逻辑是相同的，但语义不同，判定它并不违反 DRY 原则。对于包含重复代码的问题，可以通过抽象成更细粒度函数的方式来解决</li>
+</ul>
+</li>
+<li><p>功能语义重复</p>
+<ul>
+<li>在同一个项目代码中有下面两个函数：isValidIp() 和checkIfIpValid()。尽管两个函数的命名不同，实现逻辑不同，但功能是相同的，都是用来判定 IP 地址是否合法的。</li>
+<li>尽管两段代码的实现逻辑不重复，但语义重复，也就是功能重复，认为它违反了 DRY 原则。应该在项目中，统一一种实现思路，所有用到判断 IP 地址是否合法的地方，都统一调用同一个函数。</li>
+</ul>
+</li>
+<li><p>代码执行重复</p>
+<ul>
+<li>代码中存在“执行重复”违反了 DRY 原则</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>代码复用性（Code Reusability）</p>
+<ul>
+<li>代码复用表示一种行为：我们在开发新功能的时候，尽量复用已经存在的代码。代码的可复用性表示一段代码可被复用的特性或能力：我们在编写代码的时候，让代码尽量可复用。DRY 原则是一条原则：不要写重复的代码。从定义描述上，它们好像有点类似，但深究起来，三者的区别还是蛮大的。</li>
+<li>“不重复”并不代表“可复用”。在一个项目代码中，可能不存在任何重复的代码，但也并不表示里面有可复用的代码，不重复和可复用完全是两个概念。所以，从这个角度来说，DRY 原则跟代码的可复用性讲的是两回事。</li>
+<li>“复用”和“可复用性”关注角度不同。代码“可复用性”是从代码开发者的角度来讲的，“复用”是从代码使用者的角度来讲的</li>
+<li>尽管复用、可复用性、DRY 原则这三者从理解上有所区别，但实际上要达到的目的都是类似的，都是为了减少代码量，提高代码的可读性、可维护性。除此之外，复用已经经过测试的老代码，bug 会比从零重新开发要少。</li>
+<li>“复用”这个概念不仅可以指导细粒度的模块、类、函数的设计开发，实际上，一些框架、类库、组件等的产生也都是为了达到复用的目的</li>
+</ul>
+</li>
+<li><p>怎么提高代码复用性？</p>
+<ul>
+<li>减少代码耦合<ul>
+<li>对于高度耦合的代码，当我们希望复用其中的一个功能，想把这个功能的代码抽取出来成为一个独立的模块、类或者函数的时候，往往会发现牵一发而动全身。移动一点代码，就要牵连到很多其他相关的代码。所以，高度耦合的代码会影响到代码的复用性，我们要尽量减少代码耦合。</li>
+</ul>
+</li>
+<li>满足单一职责原则<ul>
+<li>如果职责不够单一，模块、类设计得大而全，那依赖它的代码或者它依赖的代码就会比较多，进而增加了代码的耦合。根据上一点，也就会影响到代码的复用性。相反，越细粒度的代码，代码的通用性会越好，越容易被复用。</li>
+</ul>
+</li>
+<li>模块化<ul>
+<li>这里的“模块”，不单单指一组类构成的模块，还可以理解为单个类、函数。我们要善于将功能独立的代码，封装成模块。独立的模块就像一块一块的积木，更加容易复用，可以直接拿来搭建更加复杂的系统。</li>
+</ul>
+</li>
+<li>业务与非业务逻辑分离<ul>
+<li>越是跟业务无关的代码越是容易复用，越是针对特定业务的代码越难复用。所以，为了复用跟业务无关的代码，我们将业务和非业务逻辑代码分离，抽取成一些通用的框架、类库、组件等。</li>
+</ul>
+</li>
+<li>通用代码下沉<ul>
+<li>从分层的角度来看，越底层的代码越通用、会被越多的模块调用，越应该设计得足够可复用。一般情况下，在代码分层之后，为了避免交叉调用导致调用关系混乱，我们只允许上层代码调用下层代码及同层代码之间的调用，杜绝下层代码调用上层代码。所以，通用的代码我们尽量下沉到更下层。</li>
+</ul>
+</li>
+<li>继承、多态、抽象、封装<ul>
+<li>利用继承，可以将公共的代码抽取到父类，子类复用<br>父类的属性和方法。利用多态，我们可以动态地替换一段代码的部分逻辑，让这段代码可复用。除此之外，抽象和封装，从更加广义的层面、而非狭义的面向对象特性的层面来理解的话，越抽象、越不依赖具体的实现，越容易复用。代码封装成模块，隐藏可变的细节、暴露不变的接口，就越容易复用。</li>
+</ul>
+</li>
+<li>应用模板等设计模式<ul>
+<li>一些设计模式，也能提高代码的复用性。比如，模板模式利用了多态来实现，可以灵活地替换其中的部分代码，整个流程模板代码可复用</li>
+<li>还有一些跟编程语言相关的特性，也能提高代码的复用性，比如泛型编程等。</li>
+<li>复用意识也非常重要。在写代码的时候，我们要多去思考一下，这个部分代码是否可以抽取出来，作为一个独立的模块、类或者函数供多处使用。在设计每个模块、类、函数的时候，要像设计一个外部 API 那样，去思考它的复用性。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>除非有非常明确的复用需求，否则，为了暂时用不到的复用需求，花费太多的时间、精力，投入太多的开发成本，并不是一个值得推荐的做法。这也违反之前讲到的YAGNI 原则。</p>
+<ul>
+<li>除此之外，有一个著名的原则，叫作“Rule of Three”</li>
+<li>我们在第一次写代码的时候，如果当下没有复用的需求，而未来的复用需求也不是特别明确，并且开发可复用代码的成本比较高，那我们就不需要考虑代码的复用性。在之后我们开发新的功能的时候，发现可以复用之前写的这段代码，那我们就重构这段代码，让其变得更加可复用。</li>
+</ul>
+</li>
+</ul>
+<h4 id="22-理论八：如何用迪米特法则（LOD）实现“高内聚、松耦合”？"><a href="#22-理论八：如何用迪米特法则（LOD）实现“高内聚、松耦合”？" class="headerlink" title="22 | 理论八：如何用迪米特法则（LOD）实现“高内聚、松耦合”？"></a>22 | 理论八：如何用迪米特法则（LOD）实现“高内聚、松耦合”？</h4><ul>
+<li>何为“高内聚、松耦合”？<ul>
+<li>“高内聚、松耦合”是一个非常重要的设计思想，能够有效地提高代码的可读性和可维护性，缩小功能改动导致的代码改动范围。很多设计原则都以实现代码的“高内聚、松耦合”为目的，比如单一职责原则、基于接口而非实现编程等。</li>
+<li>“高内聚、松耦合”是一个比较通用的设计思想，可以用来指导不同粒度代码的设计与开发，比如系统、模块、类，甚至是函数，也可以应用到不同的开发场景中，比如微服务、框架、组件、类库等。</li>
+<li>“高内聚”用来指导类本身的设计，“松耦合”用来指导类与类之间依赖关系的设计。高内聚有助于松耦合，松耦合又需要高内聚的支持。</li>
+<li>所谓高内聚，就是指相近的功能应该放到同一个类中，不相近的功能不要放到同一个类中。相近的功能往往会被同时修改，放到同一个类中，修改会比较集中，代码容易维护。</li>
+<li>所谓松耦合是说，在代码中，类与类之间的依赖关系简单清晰。即使两个类有依赖关系，一个类的代码改动不会或者很少导致依赖类的代码改动。前面讲的依赖注入、接口隔离、基于接口而非实现编程，以及今天讲的迪米特法则，都是为了实现代码的松耦合</li>
+<li>“内聚”和“耦合”之间的关系：“高内聚”有助于“松耦合”，同理，“低内聚”也会导致“紧耦合”<ul>
+<li>类的粒度比较小，每个类的职责都比较单一。相近的功能都放到了一个类中，不相近的功能被分割到了多个类中。这样类更加独立，代码的内聚性更好。因为职责单一，所以每个类被依赖的类就会比较少，代码低耦合。一个类的修改，只会影响到一个依赖类的代码改动。我们只需要测试这一个依赖类是否还能正常工作就行了。</li>
+<li>类粒度比较大，低内聚，功能大而全，不相近的功能放到了一个类中。这就导致很多其他类都依赖这个类。当我们修改这个类的某一个功能代码的时候，会影响依赖它的多个类。“牵一发而动全身”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>“迪米特法则”理论描述<ul>
+<li>迪米特法则：Law of Demeter，缩写是 LOD。也即最小知识原则：The Least Knowledge Principle</li>
+<li>Each unit should have only limited knowledge about other units: only units “closely” related to the current unit. Or: Each unit should only talk to its friends; Don’t talk to strangers.</li>
+<li>每个模块（unit）只应该了解那些与它关系密切的模块（units: only units “closely” related to the current unit）的有限知识（knowledge）。或者说，每个模块只和自己的朋友“说话”（talk），不和陌生人“说话”（talk）</li>
+<li>不该有直接依赖关系的类之间，不要有依赖；有依赖关系的类之间，尽量只依赖必要的接口（也就是定义中的“有限知识”）。</li>
+<li>迪米特法则是希望减少类之间的耦合，让类越独立越好。每个类都应该少了解系统的其他部分。一旦发生变化，需要了解这一变化的类就会比较少。</li>
+</ul>
+</li>
+<li>拆分之后的代码更能满足迪米特法则，但却违背了高内聚的设计思想。高内聚要求相近的功能要放到同一个类中，这样可以方便功能修改的时候，修改的地方不至于过于分散<ul>
+<li>既不想违背高内聚的设计思想，也不想违背迪米特法则，使用“基于接口而非实现编程”的设计原则</li>
+</ul>
+</li>
+</ul>
+<h4 id="23-实战一（上）：针对业务系统的开发，如何做需求分析和设计？"><a href="#23-实战一（上）：针对业务系统的开发，如何做需求分析和设计？" class="headerlink" title="23 | 实战一（上）：针对业务系统的开发，如何做需求分析和设计？"></a>23 | 实战一（上）：针对业务系统的开发，如何做需求分析和设计？</h4><ul>
+<li><p>需求分析</p>
+<ul>
+<li><p>积分是一种常见的营销手段，很多产品都会通过它来促进消费、增加用户粘性，比如淘宝积分、信用卡积分、商场消费积分等等。假设你是一家类似淘宝这样的电商平台的工程师，平台暂时还没有积分系统。Leader 希望由你来负责开发这样一个系统，你会如何来做呢？</p>
+</li>
+<li><p>笼统地来讲，积分系统无外乎就两个大的功能点，一个是赚取积分，另一个是消费积分。赚取积分功能包括积分赚取渠道，比如下订单、每日签到、评论等；还包括积分兑换规则，比如订单金额与积分的兑换比例，每日签到赠送多少积分等。消费积分功能包括积分消费渠道，比如抵扣订单金额、兑换优惠券、积分换购、参与活动扣积分等；还包括积分兑换规则，比如多少积分可以换算成抵扣订单的多少金额，一张优惠券需要多少积分来兑换等等。</p>
+</li>
+<li><p>在实际情况中，肯定还有一些业务细节需要考虑，比如积分的有效期问题。对于这些业务细节，还是那句话，闷头拍脑袋想是想不全面的。除了刚刚讲的“借鉴”的思路之外，通过产品的线框图、用户用例（user case ）或者叫用户故事（user story）来细化业务流程，挖掘一些比较细节的、不容易想到的功能点。</p>
+<ul>
+<li>用户用例有点类似单元测试用例。它侧重情景化，其实就是模拟用户如何使用我们的产品，描述用户在一个特定的应用场景里的一个完整的业务操作流程；比如，有关积分有效期的用户用例，可以进行如下的设计：</li>
+<li>用户在获取积分的时候，会告知积分的有效期；</li>
+<li>用户在使用积分的时候，会优先使用快过期的积分；</li>
+<li>用户在查询积分明细的时候，会显示积分的有效期和状态（是否过期）；</li>
+<li>用户在查询总可用积分的时候，会排除掉过期的积分。</li>
+</ul>
+</li>
+<li><p>积分赚取和兑换规则</p>
+<ul>
+<li>积分的赚取渠道包括：下订单、每日签到、评论等。</li>
+<li>积分兑换规则可以是比较通用的，比如，签到送 10 积分</li>
+<li>也可以是比较细化的。比如，不同的店铺、不同的商品，可以设置不同的积分兑换比例。</li>
+</ul>
+</li>
+<li><p>积分消费和兑换规则：积分的消费渠道包括：抵扣订单金额、兑换优惠券、积分换购、参与活动扣积分等。可以根据不同的消费渠道，设置不同的积分兑换规则</p>
+</li>
+<li><p>积分及其明细查询：查询用户的总积分，以及赚取积分和消费积分的历史记录。</p>
+</li>
+</ul>
+</li>
+<li><p>系统设计</p>
+<ul>
+<li>面向对象设计聚焦在代码层面（主要是针对类），那系统设计就是聚焦在架构层面（主要是针对模块），两者有很多相似之处。很多设计原则和思想不仅仅可以应用到代码设计中，还能用到架构设计中。</li>
+<li>合理地将功能划分到不同模块；面向对象设计的本质就是把合适的代码放到合适的类中。合理地划分代码可以实现代码的高内聚、低耦合，类与类之间的交互简单清晰，代码整体结构一目了然，那代码的质量就不会差到哪里去。类比面向对象设计，系统设计实际上就是将合适的功能放到合适的模块中。合理地划分模块也可以做到模块层面的高内聚、低耦合，架构整洁清晰。有下面三种模块划分方法<ul>
+<li>积分赚取渠道及兑换规则、消费渠道及兑换规则的管理和维护（增删改查），不划分到积分系统中，而是放到更上层的营销系统中。这样积分系统就会变得非常简单，只需要负责增加积分、减少积分、查询积分、查询积分明细等这几个工作。</li>
+<li>积分赚取渠道及兑换规则、消费渠道及兑换规则的管理和维护，分散在各个相关业务系统中，比如订单系统、评论系统、签到系统、换购商城、优惠券系统等。</li>
+<li>所有的功能都划分到积分系统中，包括积分赚取渠道及兑换规则、消费渠道及兑换规则的管理和维护</li>
+</ul>
+</li>
+<li>除此之外，为了避免业务知识的耦合，让下层系统更加通用，一般来讲，不希望下层系统（也就是被调用的系统）包含太多上层系统（也就是调用系统）的业务信息，但是，可以接受上层系统包含下层系统的业务信息。比如，订单系统、优惠券系统、换购商城等作为调用积分系统的上层系统，可以包含一些积分相关的业务信息。但是，反过来，积分系统中最好不要包含太多跟订单、优惠券、换购等相关的信息。</li>
+<li>综合考虑，更倾向于第一种和第二种模块划分方式。但是，不管选择这两种中的哪一种，积分系统所负责的工作是一样的，只包含积分的增、减、查询，以及积分明细的记录和查询。</li>
+</ul>
+</li>
+<li><p>设计模块与模块之间的交互关系</p>
+<ul>
+<li>类比到系统设计，系统职责划分好之后，接下来就是设计系统之间的交互，也就是确定有哪些系统跟积分系统之间有交互以及如何进行交互。</li>
+<li>比较常见的系统之间的交互方式有两种，一种是同步接口调用，另一种是利用消息中间件异步调用。第一种方式简单直接，第二种方式的解耦效果更好。</li>
+<li>比如，用户下订单成功之后，订单系统推送一条消息到消息中间件，营销系统订阅订单成功消息，触发执行相应的积分兑换逻辑。这样订单系统就跟营销系统完全解耦，订单系统不需要知道任何跟积分相关的逻辑，而营销系统也不需要直接跟订单系统交互。</li>
+<li>除此之外，上下层系统之间的调用倾向于通过同步接口，同层之间的调用倾向于异步消息调用。比如，营销系统和积分系统是上下层关系，它们之间就比较推荐使用同步接口调用</li>
+</ul>
+</li>
+<li><p>设计模块的接口、数据库、业务模型</p>
+<ul>
+<li>业务系统本身的设计无外乎有这样三方面的工作要做：接口设计、数据库设计和业务模型设计</li>
+</ul>
+</li>
+</ul>
+<h4 id="24-实战一（下）：如何实现一个遵从设计原则的积分兑换系统？"><a href="#24-实战一（下）：如何实现一个遵从设计原则的积分兑换系统？" class="headerlink" title="24 | 实战一（下）：如何实现一个遵从设计原则的积分兑换系统？"></a>24 | 实战一（下）：如何实现一个遵从设计原则的积分兑换系统？</h4><ul>
+<li><p>业务开发包括哪些工作？</p>
+<ul>
+<li>做业务系统的设计与开发，无外乎有这样三方面的工作要做：接口设计、数据库设计和业务模型设计（也就是业务逻辑）</li>
+<li>数据库和接口的设计非常重要，一旦设计好并投入使用之后，这两部分都不能轻易改动。改动数据库表结构，需要涉及数据的迁移和适配；改动接口，需要推动接口的使用者作相应的代码修改。这两种情况，即便是微小的改动，执行起来都会非常麻烦。</li>
+<li>业务逻辑代码侧重内部实现，不涉及被外部依赖的接口，也不包含持久化的数据，所以对改动的容忍性更大。</li>
+<li>针对积分系统，如何设计数据库<ul>
+<li>只需要一张记录积分流水明细的表就可以了。表中记录积分的赚取和消费流水。用户积分的各种统计数据，比如总积分、总可用积分等，都可以通过这张表来计算得到。</li>
+</ul>
+</li>
+<li>如何设计积分系统的接口<ul>
+<li>接口设计要符合单一职责原则，粒度越小通用性就越好。但是，接口粒度太小也会带来一些问题。比如，一个功能的实现要调用多个小接口，一方面如果接口调用走网络（特别是公网），多次远程接口调用会影响性能；另一方面，本该在一个接口中完成的原子操作，现在分拆成多个小接口来完成，就可能会涉及分布式事务的数据一致性问题（一个接口执行成功了，但另一个接口执行失败了）。所以，为了兼顾易用性和性能，可以借鉴facade（外观）设计模式，在职责单一的细粒度接口之上，再封装一层粗粒度的接口给外部使用。</li>
+</ul>
+</li>
+<li>业务模型的设计<ul>
+<li>从代码实现角度来说，大部分业务系统的开发都可以分为 Controller、Service、Repository 三层。Controller 层负责接口暴露，Repository 层负责数据读写，Service 层负责核心业务逻辑，也就是这里说的业务模型。</li>
+<li>积分系统业务比较简单，代码量也不多，更倾向于将它跟营销系统放到一个项目中开发部署。只要做好代码的模块化和解耦，让积分相关的业务代码跟其他业务代码之间边界清晰，没有太多耦合，后期如果需要将它拆分成独立的项目来开发部署，那也并不困难。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>为什么要分 MVC 三层开发？</p>
+<ul>
+<li><strong>分层能起到代码复用的作用</strong><ul>
+<li>同一个 Repository 可能会被多个 Service 来调用，同一个 Service 可能会被多个Controller 调用。</li>
+</ul>
+</li>
+<li><strong>分层能起到隔离变化的作用</strong><ul>
+<li>分层体现了一种抽象和封装的设计思想。比如，Repository 层封装了对数据库访问的操作，提供了抽象的数据访问接口。基于接口而非实现编程的设计思想，Service 层使用Repository 层提供的接口，并不关心其底层依赖的是哪种具体的数据库。</li>
+<li>Controller、Service、Repository 三层代码的稳定程度不同、引起变化的原因不同，所以分成三层来组织代码，能有效地隔离变化。</li>
+</ul>
+</li>
+<li><strong>分层能起到隔离关注点的作用</strong><ul>
+<li>Repository 层只关注数据的读写。Service 层只关注业务逻辑，不关注数据的来源。Controller 层只关注与外界打交道，数据校验、封装、格式转换，并不关心业务逻辑</li>
+</ul>
+</li>
+<li><strong>分层能提高代码的可测试性</strong></li>
+<li><strong>分层能应对系统的复杂性</strong><ul>
+<li>所有的代码都放到一个类中，那这个类的代码就会因为需求的迭代而无限膨胀。当一个类或一个函数的代码过多之后，可读性、可维护性就会变差。</li>
+<li>拆分有垂直和水平两个方向。水平方向基于业务来做拆分，就是模块化；垂直方向基于流程来做拆分，就是这里说的分层。</li>
+<li>不管是分层、模块化，还是 OOP、DDD，以及各种设计模式、原则和思想，都是为了应对复杂系统，应对系统的复杂性</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>BO、VO、Entity 存在的意义是什么？</p>
+<ul>
+<li>针对 Controller、Service、Repository 三层，每层都会定义相应的数据对象，它们分别是 VO（View Object）、BO（Business Object）、Entity，例如 UserVo、UserBo、UserEntity。在实际的开发中，VO、BO、Entity 可能存在大量的重复字段，甚至三者包含的字段完全一样。在开发的过程中，经常需要重复定义三个几乎一样的类，显然是一种重复劳动。</li>
+<li>VO、BO、Entity 并非完全一样。比如，可以在 UserEntity、UserBo 中定义Password 字段，但显然不能在 UserVo 中定义 Password 字段，否则就会将用户的密码暴露出去。</li>
+<li>VO、BO、Entity 三个类虽然代码重复，但功能语义不重复，从职责上讲是不一样的。所以，也并不能算违背 DRY 原则。在前面讲到 DRY 原则的时候，针对这种情况，如果合并为同一个类，那也会存在后期因为需求的变化而需要再拆分的问题。</li>
+<li>为了尽量减少每层之间的耦合，把职责边界划分明确，每层都会维护自己的数据对象，层与层之间通过接口交互。数据从下一层传递到上一层的时候，将下一层的数据对象转化成上一层的数据对象，再继续处理。虽然这样的设计稍微有些繁琐，每层都需要定义各自的数据对象，需要做数据对象之间的转化，但是分层清晰。对于非常大的项目来说，结构清晰是第一位的！</li>
+</ul>
+</li>
+<li><p>既然 VO、BO、Entity 不能合并，那如何解决代码重复的问题呢？</p>
+<ul>
+<li>继承可以解决代码重复问题。我们可以将公共的字段定义在父类中，让VO、BO、Entity 都继承这个父类，各自只定义特有的字段。因为这里的继承层次很浅，也不复杂，所以使用继承并不会影响代码的可读性和可维护性。后期如果因为业务的需要，有些字段需要从父类移动到子类，或者从子类提取到父类，代码改起来也并不复杂</li>
+<li>组合也可以解决代码重复的问题，所以还可以将公共的字段抽取到公共的类中，VO、BO、Entity 通过组合关系来复用这个类的代码。</li>
+</ul>
+</li>
+<li><p>代码重复问题解决了，那不同分层之间的数据对象该如何互相转化呢？</p>
+<ul>
+<li>当下一层的数据通过接口调用传递到上一层之后，我们需要将它转化成上一层对应的数据对象类型。比如，Service 层从 Repository 层获取的 Entity 之后，将其转化成 BO，再继续业务逻辑的处理。所以，整个开发的过程会涉及“Entity 到 BO”和“BO 到 VO”这两种转化。</li>
+<li>最简单的转化方式是手动复制。自己写代码在两个对象之间，一个字段一个字段的赋值。但这样的做法显然是没有技术含量的低级劳动。借鉴 Java 这些工具类的设计思路，自己在项目中实现对象转化工具类。</li>
+<li>VO、BO、Entity 都是基于贫血模型的，而且为了兼容框架或开发库（比如 MyBatis、Dozer、BeanUtils），我们还需要定义每个字段的 set 方法。这些都违背 OOP 的封装特性，会导致数据被随意修改。那到底该怎么办好呢？<ul>
+<li>Entity 和 VO 的生命周期是有限的，都仅限在本层范围内。而对应的Repository 层和 Controller 层也都不包含太多业务逻辑，所以也不会有太多代码随意修改数据，即便设计成贫血、定义每个字段的 set 方法，相对来说也是安全的。</li>
+<li>Service 层包含比较多的业务逻辑代码，所以 BO 就存在被任意修改的风险了。但是，设计的问题本身就没有最优解，只有权衡。为了使用方便，我们只能做一些妥协，放弃BO 的封装特性，由程序员自己来负责这些数据对象的不被错误使用。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="25丨实战二（上）：针对非业务的通用框架开发，如何做需求分析和设计？"><a href="#25丨实战二（上）：针对非业务的通用框架开发，如何做需求分析和设计？" class="headerlink" title="25丨实战二（上）：针对非业务的通用框架开发，如何做需求分析和设计？"></a>25丨实战二（上）：针对非业务的通用框架开发，如何做需求分析和设计？</h4><ul>
+<li><p>项目背景</p>
+<ul>
+<li>希望设计开发一个小的框架，能够获取接口调用的各种统计信息，比如，响应时间的最大值（max）、最小值（min）、平均值（avg）、百分位值（percentile）、接口调用次数（count）、频率（tps） 等，并且支持将统计结果以各种显示格式（比如：JSON 格式、网页格式、自定义显示格式等）输出到各种终端（Console 命令行、HTTP 网页、Email、日志文件、自定义输出终端等），以方便查看</li>
+</ul>
+</li>
+<li><p>需求分析</p>
+<ul>
+<li>功能性需求分析<ul>
+<li>接口统计信息：包括接口响应时间的统计信息，以及接口调用次数的统计信息等。</li>
+<li>统计信息的类型：max、min、avg、percentile、count、tps 等。</li>
+<li>统计信息显示格式：Json、Html、自定义显示格式。</li>
+<li>统计信息显示终端：Console、Email、HTTP 网页、日志、自定义显示终端</li>
+<li>还可以借助设计产品的时候，经常用到的线框图，把最终数据的显示样式画出来，会更加一目了然；从线框图中，还能挖掘出了下面几个隐藏的需求<ul>
+<li>统计触发方式：包括主动和被动两种。主动表示以一定的频率定时统计数据，并主动推送到显示终端，比如邮件推送。被动表示用户触发统计，比如用户在网页中选择要统计的时间区间，触发统计，并将结果显示给用户。</li>
+<li>统计时间区间：框架需要支持自定义统计时间区间，比如统计最近 10 分钟的某接口的tps、访问次数，或者统计 12 月 11 日 00 点到 12 月 12 日 00 点之间某接口响应时间的最大值、最小值、平均值等。</li>
+<li>统计时间间隔：对于主动触发统计，我们还要支持指定统计时间间隔，也就是多久触发一次统计显示。比如，每间隔 10s 统计一次接口信息并显示到命令行中，每间隔 24 小时发送一封统计信息邮件。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>非功能性需求分析<ul>
+<li>易用性：易用性听起来更像是一个评判产品的标准。在开发这样一个技术框架的时候，也要有产品意识。框架是否易集成、易插拔、跟业务代码是否松耦合、提供的接口是否够灵活等等，都是应该花心思去思考和设计的。有的时候，文档写得好坏甚至都有可能决定一个框架是否受欢迎</li>
+<li>性能：对于需要集成到业务系统的框架来说，不希望框架本身的代码执行效率，对业务系统有太多性能上的影响。对于性能计数器这个框架来说，一方面，希望它是低延迟的，也就是说，统计代码不影响或很少影响接口本身的响应时间；另一方面，希望框架本身对内存的消耗不能太大。</li>
+<li>扩展性：从框架使用者的角度来说的，特指使用者可以在不修改框架源码，甚至不拿到框架源码的情况下，为框架扩展新的功能。这就有点类似给框架开发插件</li>
+<li>容错性：对于性能计数器框架来说，不能因为框架本身的异常导致接口请求出错。所以，要对框架可能存在的各种异常情况都考虑全面，对外暴露的接口抛出的所有运行时、非运行时异常都进行捕获处理。</li>
+<li>通用性：为了提高框架的复用性，能够灵活应用到各种场景中。框架在设计的时候，要尽可能通用。要多去思考一下，除了接口统计这样一个需求，还可以适用到其他哪些场景中，比如是否还可以处理其他事件的统计信息，比如 SQL 请求时间的统计信息、业务统计信息</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>框架设计</p>
+<ul>
+<li>借鉴 TDD（测试驱动开发）和 Prototype（最小原型）的思想，先聚焦于一个简单的应用场景，基于此设计实现一个简单的原型。尽管这个最小原型系统在功能和非功能特性上都不完善，但它能够看得见、摸得着，比较具体、不抽象，能够很有效地帮助我缕清更复杂的设计思路，是迭代设计的基础。<ul>
+<li>对于性能计数器这个框架的开发来说，我们可以先聚焦于一个非常具体、简单的应用场景，比如统计用户注册、登录这两个接口的响应时间的最大值和平均值、接口调用次数，并且将统计结果以 JSON 的格式输出到命令行中。</li>
+<li>要输出接口的响应时间的最大值、平均值和接口调用次数，我们首先要采集每次接口请求的响应时间，并且存储起来，然后按照某个时间间隔做聚合统计，最后才是将结果输出。在原型系统的代码实现中，可以把所有代码都塞到一个类中，暂时不用考虑任何代码质量、线程安全、性能、扩展性等等问题，怎么简单怎么来就行</li>
+</ul>
+</li>
+<li>针对性能计数器框架画的一个粗略的系统设计图。图可以非常直观地体现设计思想，并且能有效地帮助我们释放更多的脑空间，来思考其他细节问题。<ul>
+<li>整个框架分为四个模块：数据采集、存储、聚合统计、显示。</li>
+<li>数据采集：负责打点采集原始数据，包括记录每次接口请求的响应时间和请求时间。数据采集过程要高度容错，不能影响到接口本身的可用性。除此之外，因为这部分功能是暴露给框架的使用者的，所以在设计数据采集 API 的时候，我们也要尽量考虑其易用性。</li>
+<li>存储：负责将采集的原始数据保存下来，以便后面做聚合统计。数据的存储方式有多种，比如：Redis、MySQL、HBase、日志、文件、内存等。数据存储比较耗时，为了尽量地减少对接口性能（比如响应时间）的影响，采集和存储的过程异步完成。</li>
+<li>聚合统计：负责将原始数据聚合为统计数据，比如：max、min、avg、pencentile、count、tps 等。为了支持更多的聚合统计规则，代码希望尽可能灵活、可扩展。</li>
+<li>显示：负责将统计数据以某种格式显示到终端，比如：输出到命令行、邮件、网页、自定义显示终端等。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="26丨实战二（下）：如何实现一个支持各种统计规则的性能计数器？"><a href="#26丨实战二（下）：如何实现一个支持各种统计规则的性能计数器？" class="headerlink" title="26丨实战二（下）：如何实现一个支持各种统计规则的性能计数器？"></a>26丨实战二（下）：如何实现一个支持各种统计规则的性能计数器？</h4><ul>
+<li>应该分多个版本逐步完善这个框架。第一个版本可以先实现一些基本功能，对于更高级、更复杂的功能，以及非功能性需求不做过高的要求，在后续的 v2.0、v3.0……版本中继续迭代优化，在 v1.0 版本中，暂时只实现下面这些功能。<ul>
+<li>数据采集：负责打点采集原始数据，包括记录每次接口请求的响应时间和请求时间。</li>
+<li>存储：负责将采集的原始数据保存下来，以便之后做聚合统计。数据的存储方式有很多种，暂时只支持 Redis 这一种存储方式，并且，采集与存储两个过程同步执行。</li>
+<li>聚合统计：负责将原始数据聚合为统计数据，包括响应时间的最大值、最小值、平均值、99.9 百分位值、99 百分位值，以及接口请求的次数和 tps。</li>
+<li>显示：负责将统计数据以某种格式显示到终端，暂时只支持主动推送给命令行和邮件。命令行间隔 n 秒统计显示上 m 秒的数据（比如，间隔 60s 统计上 60s 的数据）。邮件每日统计上日的数据。</li>
+</ul>
+</li>
+<li>面向对象设计与实现<ul>
+<li>在实际的软件开发中，面向对象设计与实现往往是交叉进行的。一般是先有一个粗糙的设计，然后着手实现，实现的过程发现问题，再回过头来补充修改设计</li>
+<li>划分职责进而识别出有哪些类，根据需求描述，先大致识别出下面几个接口或类<ul>
+<li>MetricsCollector 类负责提供 API，来采集接口请求的原始数据。可以为MetricsCollector 抽象出一个接口</li>
+<li>MetricsStorage 接口负责原始数据存储，RedisMetricsStorage 类实现MetricsStorage 接口。这样做是为了今后灵活地扩展新的存储方法</li>
+<li>Aggregator 类负责根据原始数据计算统计数据。</li>
+<li>ConsoleReporter 类、EmailReporter 类分别负责以一定频率统计并发送统计数据到命令行和邮件</li>
+</ul>
+</li>
+<li>定义类及类与类之间的关系<ul>
+<li>在设计类、类与类之间交互的时候，不断地用之前学过的设计原则和思想来审视设计是否合理，比如，是否满足单一职责原则、开闭原则、依赖注入、KISS 原则、DRY 原则、迪米特法则，是否符合基于接口而非实现编程思想，代码是否高内聚、低耦合，是否可以抽象出可复用代码等等。</li>
+<li>MetricsCollector 类和 MetricsStorage 类的设计思路比较简单，统计和显示这两个功能就不一样了，可以有多种设计思路。实际上，如果把统计显示所要完成的功能逻辑细分一下的话，主要包含下面 4 点：<ol>
+<li>根据给定的时间区间，从数据库中拉取数据；</li>
+<li>根据原始数据，计算得到统计数据；</li>
+<li>将统计数据显示到终端（命令行或邮件）；</li>
+<li>定时触发以上 3 个过程的执行。</li>
+</ol>
+</li>
+<li>面向对象设计和实现要做的事情，就是把合适的代码<br>放到合适的类中，现在要做的工作就是，把以上的 4 个功能逻辑划分到几个类中。划分的方法有很多种，比如，可以把前两个逻辑放到一个类中，第 3 个逻辑放到<br>另外一个类中，第 4 个逻辑作为上帝类（God Class）组合前面两个类来触发前 3 个逻辑的执行。当然，也可以把第 2 个逻辑单独放到一个类中，第 1、3、4 都放到另外一个类中。</li>
+</ul>
+</li>
+<li>将类组装起来并提供执行入口<ul>
+<li>这个框架稍微有些特殊，有两个执行入口：一个是 MetricsCollector 类，提供了一组API 来采集原始数据；另一个是 ConsoleReporter 类和 EmailReporter 类，用来触发统计显示。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Review 设计与实现<ul>
+<li>MetricsCollector 负责采集和存储数据，职责相对来说还算比较单一。它基于接口而非实现编程，通过依赖注入的方式来传递 MetricsStorage 对象，可以在不需要修改代码的情况下，灵活地替换不同的存储方式，满足开闭原则。</li>
+<li>MetricsStorage 和 RedisMetricsStorage 的设计比较简单。当我们需要实现新的存储方式的时候，只需要实现 MetricsStorage 接口即可。因为所有用到 MetricsStorage 和RedisMetricsStorage 的地方，都是基于相同的接口函数来编程的，所以，除了在组装类的地方有所改动（从 RedisMetricsStorage 改为新的存储实现类），其他接口函数调用的地方都不需要改动，满足开闭原则。</li>
+<li>Aggregator 类是一个工具类，里面只有一个静态函数，有 50 行左右的代码量，负责各种统计数据的计算。当需要扩展新的统计功能的时候，需要修改 aggregate() 函数代码，并且一旦越来越多的统计功能添加进来之后，这个函数的代码量会持续增加，可读性、可维护性就变差了。所以，从刚刚的分析来看，这个类的设计可能存在职责不够单一、不易扩展等问题，需要在之后的版本中，对其结构做优化。</li>
+<li>ConsoleReporter 和 EmailReporter 中存在代码重复问题。在这两个类中，从数据库中取数据、做统计的逻辑都是相同的，可以抽取出来复用，否则就违反了 DRY 原则。而且整个类负责的事情比较多，职责不是太单一。特别是显示部分的代码，可能会比较复杂（比如Email 的展示方式），最好是将显示部分的代码逻辑拆分成独立的类。除此之外，因为代码中涉及线程操作，并且调用了 Aggregator 的静态函数，所以代码的可测试性不好。</li>
+</ul>
+</li>
+</ul>
+<h3 id="设计原则与思想：规范与重构-11讲"><a href="#设计原则与思想：规范与重构-11讲" class="headerlink" title="设计原则与思想：规范与重构 (11讲)"></a>设计原则与思想：规范与重构 (11讲)</h3><h4 id="27丨理论一：什么情况下要重构？到底重构什么？又该如何重构？"><a href="#27丨理论一：什么情况下要重构？到底重构什么？又该如何重构？" class="headerlink" title="27丨理论一：什么情况下要重构？到底重构什么？又该如何重构？"></a>27丨理论一：什么情况下要重构？到底重构什么？又该如何重构？</h4><ul>
+<li><p>重构的目的：为什么要重构（why）？</p>
+<ul>
+<li>“重构是一种对软件内部结构的改善，目的是在不改变软件的可见行为的情况下，使其更易理解，修改成本更低。”</li>
+<li>可以把重构理解为，在保持功能不变的前提下，利用设计思想、原则、模式、编程规范等理论来优化代码，修改设计上的不足，提高代码质量。</li>
+<li>为什么要进行代码重构？<ul>
+<li>首先，重构是时刻保证代码质量的一个极其有效的手段，不至于让代码腐化到无可救药的地步。项目在演进，代码不停地在堆砌。如果没有人为代码的质量负责任，代码总是会往越来越混乱的方向演进。当混乱到一定程度之后，量变引起质变，项目的维护成本已经高过重新开发一套新代码的成本，想要再去重构，已经没有人能做到了。</li>
+<li>其次，优秀的代码或架构不是一开始就能完全设计好的，就像优秀的公司和产品也都是迭代出来的。我们无法 100% 遇见未来的需求，也没有足够的精力、时间、资源为遥远的未来买单，所以，随着系统的演进，重构代码也是不可避免的。</li>
+<li>最后，重构是避免过度设计的有效手段。在我们维护代码的过程中，真正遇到问题的时候，再对代码进行重构，能有效避免前期投入太多时间做过度的设计，做到有的放矢。</li>
+</ul>
+</li>
+<li>除此之外，重构对一个工程师本身技术的成长也有重要的意义;重构实际上是对学习的经典设计思想、设计原则、设<br>计模式、编程规范的一种应用。重构实际上就是将这些理论知识，应用到实践的一个很好的场景，能够锻炼熟练使用这些理论知识的能力</li>
+</ul>
+</li>
+<li><p>重构的对象：到底重构什么（what）？</p>
+<ul>
+<li>根据重构的规模，可以笼统地分为大规模高层次重构（以下简称为“大型重构”）和小规模低层次的重构（以下简称为“小型重构”）。</li>
+<li>大型重构指的是对顶层代码设计的重构，包括：系统、模块、代码结构、类与类之间的关系等的重构，重构的手段有：分层、模块化、解耦、抽象可复用组件等等。这类重构的工具就是我们学习过的那些设计思想、原则和模式。这类重构涉及的代码改动会比较多，影响面会比较大，所以难度也较大，耗时会比较长，引入 bug 的风险也会相对比较大。</li>
+<li>小型重构指的是对代码细节的重构，主要是针对类、函数、变量等代码级别的重构，比如规范命名、规范注释、消除超大类或函数、提取重复代码等等。小型重构更多的是利用我们能后面要讲到的编码规范。这类重构要修改的地方比较集中，比较简单，可操作性较强，耗时会比较短，引入 bug 的风险相对来说也会比较小。只需要熟练掌握各种编码规范，就可以做到得心应手</li>
+</ul>
+</li>
+<li><p>重构的时机：什么时候重构（when）？</p>
+<ul>
+<li>寄希望于在代码烂到一定程度之后，集中重构解决所有问题是不现实的，必须探索一条可持续、可演进的方式</li>
+<li>特别提倡的重构策略是持续重构。平时没有事情的时候，可以看看项目中有哪些写得不够好的、可以优化的代码，主动去重构一下。或者，在修改、添加某个功能代码的时候，也可以顺手把不符合编码规范、不好的设计重构一下。总之，就像把单元测试、Code Review 作为开发的一部分，我们如果能把持续重构也作为开发的一部分，成为一种开发习惯，对项目、对自己都会很有好处。</li>
+<li>要正确地看待代码质量和重构这件事情。技术在更新、需求在变化、人员在流动，代码质量总会在下降，代码总会存在不完美，重构就会持续在进行。时刻具有持续重构意识，才能避免开发初期就过度设计，避免代码维护的过程中质量的下降</li>
+</ul>
+</li>
+<li><p>重构的方法：又该如何重构（how）？</p>
+<ul>
+<li>对于大型重构来说，因为涉及的模块、代码会比较多，如果项目代码质量又比较差，耦合比较严重，往往会牵一发而动全身，本来觉得一天就能完成的重构，你会发现越改越多、越改越乱，没一两个礼拜都搞不定。而新的业务开发又与重构相冲突，最后只能半途而废，revert 掉所有的改动，很失落地又去堆砌烂代码了。</li>
+<li>在进行大型重构的时候，要提前做好完善的重构计划，有条不紊地分阶段来进行。每个阶段完成一小部分代码的重构，然后提交、测试、运行，发现没有问题之后，再继续进行下<br>一阶段的重构，保证代码仓库中的代码一直处于可运行、逻辑正确的状态。每个阶段都要控制好重构影响到的代码范围，考虑好如何兼容老的代码逻辑，必要的时候还需要写一<br>些兼容过渡代码。只有这样，才能让每一阶段的重构都不至于耗时太长（最好一天就能完成），不至于与新的功能开发相冲突</li>
+</ul>
+</li>
+</ul>
+<h4 id="28丨理论二：为了保证重构不出错，有哪些非常能落地的技术手段？"><a href="#28丨理论二：为了保证重构不出错，有哪些非常能落地的技术手段？" class="headerlink" title="28丨理论二：为了保证重构不出错，有哪些非常能落地的技术手段？"></a>28丨理论二：为了保证重构不出错，有哪些非常能落地的技术手段？</h4><ul>
+<li><p>如何保证重构不出错呢？你需要熟练掌握各种设计原则、思想、模式，还需要对所重构的业务和代码有足够的了解。除了这些个人能力因素之外，最可落地执行、最有效的保证重构不出错的手段应该就是单元测试（Unit Testing）了。当重构完成之后，如果新的代码仍然能通过单元测试，那就说明代码原有逻辑的正确性未被破坏，原有的外部可见行为未变</p>
+</li>
+<li><p>什么是单元测试？</p>
+<ul>
+<li>单元测试是代码层面的测试，由研发自己来编写，用于测试“自己”编写的代码的逻辑的正确性。单元测试顾名思义是测试一个“单元”，有别于集成测试，这个“单元”一般是类或函数，而不是模块或者系统。</li>
+<li>集成测试的测试对象是整个系统或者某个功能模块，比如测试用户注册、登录功能是否正常，是一种端到端（end to end）的测试。而单元测试的测试对象是类或者函数，用来测试一个类和函数是否都按照预期的逻辑执行。这是代码层级的测试。</li>
+</ul>
+</li>
+<li><p>为什么要写单元测试？</p>
+<ul>
+<li>单元测试能有效地帮你发现代码中的 bug</li>
+<li>写单元测试能帮你发现代码设计上的问题<ul>
+<li>代码的可测试性是评判代码质量的一个重要标准。对于一段代码，如果很难为其编写单元测试，或者单元测试写起来很吃力，需要依靠单元测试框架里很高级的特性才能完成，那往往就意味着代码设计得不够合理</li>
+</ul>
+</li>
+<li>单元测试是对集成测试的有力补充<ul>
+<li>对于一些复杂系统来说，集成测试也无法覆盖得很全面。复杂系统往往有很多模块。每个模块都有各种输入、输出、异常情况，组合起来，整个系统就有无数测试场景需要模拟，无数的测试用例需要设计，再强大的测试团队也无法穷举完备。</li>
+<li>尽管单元测试无法完全替代集成测试，但如果我们能保证每个类、每个函数都能按照我们的预期来执行，底层 bug 少了，那组装起来的整个系统，出问题的概率也就相应减少了</li>
+</ul>
+</li>
+<li>写单元测试的过程本身就是代码重构的过程<ul>
+<li>可以发现一些设计上的问题（比如代码设计的不可测试）以及代码编写方面的问题（比如一些边界条件处理不当）等，然后针对性的进行重构。</li>
+</ul>
+</li>
+<li>阅读单元测试能帮助你快速熟悉代码</li>
+<li>单元测试是 TDD 可落地执行的改进方案<ul>
+<li>测试驱动开发（Test-Driven Development，简称 TDD）是一个经常被提及但很少被执行的开发模式。它的核心指导思想就是测试用例先于代码编写</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>如何编写单元测试？</p>
+<ul>
+<li>写单元测试就是针对代码设计各种测试用例，以覆盖各种输入、异常、边界情况，并将其翻译成代码。我们可以利用一些测试框架来简化单元测试的编写。</li>
+<li>除此之外，对于单元测试，我们需要建立以下正确的认知：<ul>
+<li>编写单元测试尽管繁琐，但并不是太耗时；</li>
+<li>我们可以稍微放低对单元测试代码质量的要求；</li>
+<li>覆盖率作为衡量单元测试质量的唯一标准是不合理的；</li>
+<li>单元测试不要依赖被测代码的具体实现逻辑；</li>
+<li>单元测试框架无法测试，多半是因为代码的可测试性不好</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>单元测试为何难落地执行？</p>
+<ul>
+<li>一方面，写单元测试本身比较繁琐，技术挑战不大，很多程序员不愿意去写；</li>
+<li>另一方面，国内研发比较偏向“快、糙、猛”，容易因为开发进度紧，导致单元测试的执行虎头蛇尾。</li>
+<li>最后，关键问题还是团队没有建立对单元测试正确的认识，觉得可有可无，单靠督促很难执行得很好。</li>
+</ul>
+</li>
+</ul>
+<h4 id="29丨理论三：什么是代码的可测试性？如何写出可测试性好的代码？"><a href="#29丨理论三：什么是代码的可测试性？如何写出可测试性好的代码？" class="headerlink" title="29丨理论三：什么是代码的可测试性？如何写出可测试性好的代码？"></a>29丨理论三：什么是代码的可测试性？如何写出可测试性好的代码？</h4><ul>
+<li>什么是代码的可测试性？<ul>
+<li>粗略地讲，所谓代码的可测试性，就是针对代码编写单元测试的难易程度。对于一段代码，如果很难为其编写单元测试，或者单元测试写起来很费劲，需要依靠单元测试框架中很高级的特性，那往往就意味着代码设计得不够合理，代码的可测试性不好。</li>
+</ul>
+</li>
+<li>编写可测试性代码的最有效手段<ul>
+<li>依赖注入是编写可测试性代码的最有效手段。通过依赖注入，我们在编写单元测试的时候，可以通过 mock 的方法解依赖外部服务，这也是我们在编写单元测试的过程中最有技术挑战的地方。</li>
+<li>如果代码中依赖了外部系统或者不可控组件，比如，需要依赖数据库、网络通信、文件系统等，那我们就需要将被测代码与外部系统解依赖，而这种解依赖的方法就叫作 “mock”。所谓的 mock 就是用一个“假”的服务替换真正的服务。mock 的服务完全在我们的控制之下，模拟输出我们想要的数据。</li>
+</ul>
+</li>
+<li>常见的 Anti-Patterns<ul>
+<li>未决行为<ul>
+<li>所谓的未决行为逻辑就是，代码的输出是随机或者说不确定的，比如，跟时间、随机数有关的代码</li>
+</ul>
+</li>
+<li>全局变量<ul>
+<li>全局变量是一种面向过程的编程风格，有种种弊端。实际上，滥用全局变量也让编写单元测试变得困难。</li>
+</ul>
+</li>
+<li>静态方法<ul>
+<li>静态方法跟全局变量一样，也是一种面向过程的编程思维。在代码中调用静态方法，有时候会导致代码不易测试。主要原因是静态方法也很难 mock。但是，这个要<br>分情况来看。</li>
+<li>只有在这个静态方法执行耗时太长、依赖外部资源、逻辑复杂、行为未决等情况下，我们才需要在单元测试中 mock 这个静态方法。</li>
+<li>除此之外，如果只是类似Math.abs() 这样的简单静态方法，并不会影响代码的可测试性，因为本身并不需要mock。</li>
+</ul>
+</li>
+<li>复杂继承<ul>
+<li>相比组合关系，继承关系的代码结构更加耦合、不灵活，更加不易扩展、不易维护。实际上，继承关系也更加难测试。</li>
+<li>如果我们利用组合而非继承来组织类之间的关系，类之间的结构层次比较扁平，在编写单元测试的时候，只需要 mock 类所组合依赖的对象即可。</li>
+</ul>
+</li>
+<li>高耦合代码<ul>
+<li>如果一个类职责很重，需要依赖十几个外部对象才能完成工作，代码高度耦合，那我们在编写单元测试的时候，可能需要 mock 这十几个依赖的对象。不管是从代码设计的角度来说，还是从编写单元测试的角度来说，这都是不合理的。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</article><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192211377.png" target="_blank"><img class="post-qr-code-img" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192211377.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192207910.png" target="_blank"><img class="post-qr-code-img" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192207910.png" alt="alipayautoh"/></a><div class="post-qr-code-desc">alipayautoh</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://acall.love/2023/04/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%BE%8E%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=undefined&amp;url=http://acall.love/2023/04/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%BE%8E%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/&amp;pic=undefined" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/C/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>C++<span class="tagsPageCount">23</span></a><a class="post-meta__box__tags" href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>后端开发<span class="tagsPageCount">22</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/iTab-p92mj3%20(2).webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div></div><div class="post-copyright"><i class="anzhiyufont anzhiyu-icon-copyright"></i><div class="post-copyright__author"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://acall.love/2023/04/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%BE%8E%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">原创</a><a class="post-copyright-title"><span>设计模式之美 读书心得</span></a></div><div class="post-copyright-info-box"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"></span><a class="link" href="http://acall.love">🎵张小佑♪</a></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a class="link" href="http://acall.love/2023/04/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%BE%8E%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">http://acall.love/2023/04/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%BE%8E%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</a></span><span class="copy-button" onclick="rm.copyPageUrl('http://acall.love/2023/04/01/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%BE%8E%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/')"><i class="anzhiyufont anzhiyu-icon-copy"></i></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://acall.love" target="_blank">♪张小佑</a>！</span></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/03/01/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E9%9D%A2%E7%BB%8F%E6%95%B4%E7%90%86/"><img class="prev-cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/iTab-vqm813.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">学习笔记面试合集</div></div></a></div><div class="next-post pull-right"><a href="/2023/04/05/2.%E7%B3%BB%E5%88%97%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"><img class="next-cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/mpxy18.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">2.系统知识点整理</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/06/01/1.C++%E5%B2%97%E4%BD%8D%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E5%AE%9D%E5%85%B8/" title="1.C++岗位面试真题宝典"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/iTab-p92mj3%20(2).webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-06-01</div><div class="title">1.C++岗位面试真题宝典</div></div></a></div><div><a href="/2023/05/01/1.%E4%B8%AA%E4%BA%BA%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="1.个人问题"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/p9918p.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-05-01</div><div class="title">1.个人问题</div></div></a></div><div><a href="/2023/06/05/2.C++%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" title="2.C++读书笔记"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/gp5k23.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-06-05</div><div class="title">2.C++读书笔记</div></div></a></div><div><a href="/2023/06/10/3.C++%20%E9%9D%A2%E8%AF%95%E7%AA%81%E7%A0%B4/" title="3.面试突破"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/d6g1gl.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-06-10</div><div class="title">3.面试突破</div></div></a></div><div><a href="/2023/01/10/day03%E7%AC%94%E8%AE%B0/" title="3.C++入门"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/1pqq1w.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-01-10</div><div class="title">3.C++入门</div></div></a></div><div><a href="/2023/01/05/day02%E7%AC%94%E8%AE%B0/" title="2.C++入门"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/001.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-01-05</div><div class="title">2.C++入门</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%BE%8E-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">设计模式之美 读书笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%AD%A6%E4%B9%A0%E5%AF%BC%E8%AF%BB-3%E8%AE%B2"><span class="toc-number">1.1.</span> <span class="toc-text">设计模式学习导读 (3讲)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#02-%E4%BB%8E%E5%93%AA%E4%BA%9B%E7%BB%B4%E5%BA%A6%E8%AF%84%E5%88%A4%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F%E7%9A%84%E5%A5%BD%E5%9D%8F%EF%BC%9F%E5%A6%82%E4%BD%95%E5%85%B7%E5%A4%87%E5%86%99%E5%87%BA%E9%AB%98%E8%B4%A8%E9%87%8F%E4%BB%A3%E7%A0%81%E7%9A%84%E8%83%BD%E5%8A%9B%EF%BC%9F"><span class="toc-number">1.1.1.</span> <span class="toc-text">02 | 从哪些维度评判代码质量的好坏？如何具备写出高质量代码的能力？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#03-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E3%80%81%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E3%80%81%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%81%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83%E3%80%81%E9%87%8D%E6%9E%84%EF%BC%8C%E8%BF%99%E4%BA%94%E8%80%85%E6%9C%89%E4%BD%95%E5%85%B3%E7%B3%BB%EF%BC%9F"><span class="toc-number">1.1.2.</span> <span class="toc-text">03 | 面向对象、设计原则、设计模式、编程规范、重构，这五者有何关系？</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E4%B8%8E%E6%80%9D%E6%83%B3%EF%BC%9A%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1-11%E8%AE%B2"><span class="toc-number">1.2.</span> <span class="toc-text">设计原则与思想：面向对象 (11讲)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#04%E4%B8%A8%E7%90%86%E8%AE%BA%E4%B8%80%EF%BC%9A%E5%BD%93%E8%B0%88%E8%AE%BA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E6%88%91%E4%BB%AC%E5%88%B0%E5%BA%95%E5%9C%A8%E8%B0%88%E8%AE%BA%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.2.1.</span> <span class="toc-text">04丨理论一：当谈论面向对象的时候，我们到底在谈论什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#05-%E7%90%86%E8%AE%BA%E4%BA%8C%EF%BC%9A%E5%B0%81%E8%A3%85%E3%80%81%E6%8A%BD%E8%B1%A1%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E5%A4%9A%E6%80%81%E5%88%86%E5%88%AB%E5%8F%AF%E4%BB%A5%E8%A7%A3%E5%86%B3%E5%93%AA%E4%BA%9B%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%EF%BC%9F"><span class="toc-number">1.2.2.</span> <span class="toc-text">05 | 理论二：封装、抽象、继承、多态分别可以解决哪些编程问题？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#07%E4%B8%A8%E7%90%86%E8%AE%BA%E5%9B%9B%EF%BC%9A%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81%E8%AE%BE%E8%AE%A1%E7%9C%8B%E4%BC%BC%E6%98%AF%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%8C%E5%AE%9E%E9%99%85%E6%98%AF%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E7%9A%84%EF%BC%9F"><span class="toc-number">1.2.3.</span> <span class="toc-text">07丨理论四：哪些代码设计看似是面向对象，实际是面向过程的？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#08%E4%B8%A8%E7%90%86%E8%AE%BA%E4%BA%94%EF%BC%9A%E6%8E%A5%E5%8F%A3vs%E6%8A%BD%E8%B1%A1%E7%B1%BB%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%A6%82%E4%BD%95%E7%94%A8%E6%99%AE%E9%80%9A%E7%9A%84%E7%B1%BB%E6%A8%A1%E6%8B%9F%E6%8A%BD%E8%B1%A1%E7%B1%BB%E5%92%8C%E6%8E%A5%E5%8F%A3%EF%BC%9F"><span class="toc-number">1.2.4.</span> <span class="toc-text">08丨理论五：接口vs抽象类的区别？如何用普通的类模拟抽象类和接口？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#09%E4%B8%A8%E7%90%86%E8%AE%BA%E5%85%AD%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9F%BA%E4%BA%8E%E6%8E%A5%E5%8F%A3%E8%80%8C%E9%9D%9E%E5%AE%9E%E7%8E%B0%E7%BC%96%E7%A8%8B%EF%BC%9F%E6%9C%89%E5%BF%85%E8%A6%81%E4%B8%BA%E6%AF%8F%E4%B8%AA%E7%B1%BB%E9%83%BD%E5%AE%9A%E4%B9%89%E6%8E%A5%E5%8F%A3%E5%90%97%EF%BC%9F"><span class="toc-number">1.2.5.</span> <span class="toc-text">09丨理论六：为什么基于接口而非实现编程？有必要为每个类都定义接口吗？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10%E4%B8%A8%E7%90%86%E8%AE%BA%E4%B8%83%EF%BC%9A%E4%B8%BA%E4%BD%95%E8%AF%B4%E8%A6%81%E5%A4%9A%E7%94%A8%E7%BB%84%E5%90%88%E5%B0%91%E7%94%A8%E7%BB%A7%E6%89%BF%EF%BC%9F%E5%A6%82%E4%BD%95%E5%86%B3%E5%AE%9A%E8%AF%A5%E7%94%A8%E7%BB%84%E5%90%88%E8%BF%98%E6%98%AF%E7%BB%A7%E6%89%BF%EF%BC%9F"><span class="toc-number">1.2.6.</span> <span class="toc-text">10丨理论七：为何说要多用组合少用继承？如何决定该用组合还是继承？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#11%E4%B8%A8%E5%AE%9E%E6%88%98%E4%B8%80%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E4%B8%9A%E5%8A%A1%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E7%9A%84%E5%9F%BA%E4%BA%8E%E8%B4%AB%E8%A1%80%E6%A8%A1%E5%9E%8B%E7%9A%84MVC%E6%9E%B6%E6%9E%84%E8%BF%9D%E8%83%8COOP%E5%90%97%EF%BC%9F"><span class="toc-number">1.2.7.</span> <span class="toc-text">11丨实战一（上）：业务开发常用的基于贫血模型的MVC架构违背OOP吗？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#12%E4%B8%A8%E5%AE%9E%E6%88%98%E4%B8%80%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8%E5%9F%BA%E4%BA%8E%E5%85%85%E8%A1%80%E6%A8%A1%E5%9E%8B%E7%9A%84DDD%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E8%99%9A%E6%8B%9F%E9%92%B1%E5%8C%85%E7%B3%BB%E7%BB%9F%EF%BC%9F"><span class="toc-number">1.2.8.</span> <span class="toc-text">12丨实战一（下）：如何利用基于充血模型的DDD开发一个虚拟钱包系统？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13%E4%B8%A8%E5%AE%9E%E6%88%98%E4%BA%8C%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E5%A6%82%E4%BD%95%E5%AF%B9%E6%8E%A5%E5%8F%A3%E9%89%B4%E6%9D%83%E8%BF%99%E6%A0%B7%E4%B8%80%E4%B8%AA%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91%E5%81%9A%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%88%86%E6%9E%90%EF%BC%9F"><span class="toc-number">1.2.9.</span> <span class="toc-text">13丨实战二（上）：如何对接口鉴权这样一个功能开发做面向对象分析？</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E4%B8%8E%E6%80%9D%E6%83%B3%EF%BC%9A%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99-12%E8%AE%B2"><span class="toc-number">1.3.</span> <span class="toc-text">设计原则与思想：设计原则 (12讲)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#15-%E7%90%86%E8%AE%BA%E4%B8%80%EF%BC%9A%E5%AF%B9%E4%BA%8E%E5%8D%95%E4%B8%80%E8%81%8C%E8%B4%A3%E5%8E%9F%E5%88%99%EF%BC%8C%E5%A6%82%E4%BD%95%E5%88%A4%E5%AE%9A%E6%9F%90%E4%B8%AA%E7%B1%BB%E7%9A%84%E8%81%8C%E8%B4%A3%E6%98%AF%E5%90%A6%E5%A4%9F%E2%80%9C%E5%8D%95%E4%B8%80%E2%80%9D%EF%BC%9F"><span class="toc-number">1.3.1.</span> <span class="toc-text">15 | 理论一：对于单一职责原则，如何判定某个类的职责是否够“单一”？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#16-%E7%90%86%E8%AE%BA%E4%BA%8C%EF%BC%9A%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E2%80%9C%E5%AF%B9%E6%89%A9%E5%B1%95%E5%BC%80%E6%94%BE%E3%80%81%E4%BF%AE%E6%94%B9%E5%85%B3%E9%97%AD%E2%80%9D%EF%BC%9F%E6%89%A9%E5%B1%95%E5%92%8C%E4%BF%AE%E6%94%B9%E5%90%84%E6%8C%87%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.3.2.</span> <span class="toc-text">16 | 理论二：如何做到“对扩展开放、修改关闭”？扩展和修改各指什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#17-%E7%90%86%E8%AE%BA%E4%B8%89%EF%BC%9A%E9%87%8C%E5%BC%8F%E6%9B%BF%E6%8D%A2%EF%BC%88LSP%EF%BC%89%E8%B7%9F%E5%A4%9A%E6%80%81%E6%9C%89%E4%BD%95%E5%8C%BA%E5%88%AB%EF%BC%9F%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81%E8%BF%9D%E8%83%8C%E4%BA%86LSP%EF%BC%9F"><span class="toc-number">1.3.3.</span> <span class="toc-text">17 | 理论三：里式替换（LSP）跟多态有何区别？哪些代码违背了LSP？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#18%E4%B8%A8%E7%90%86%E8%AE%BA%E5%9B%9B%EF%BC%9A%E6%8E%A5%E5%8F%A3%E9%9A%94%E7%A6%BB%E5%8E%9F%E5%88%99%E6%9C%89%E5%93%AA%E4%B8%89%E7%A7%8D%E5%BA%94%E7%94%A8%EF%BC%9F%E5%8E%9F%E5%88%99%E4%B8%AD%E7%9A%84%E2%80%9C%E6%8E%A5%E5%8F%A3%E2%80%9D%E8%AF%A5%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3%EF%BC%9F"><span class="toc-number">1.3.4.</span> <span class="toc-text">18丨理论四：接口隔离原则有哪三种应用？原则中的“接口”该如何理解？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#19%E4%B8%A8%E7%90%86%E8%AE%BA%E4%BA%94%EF%BC%9A%E6%8E%A7%E5%88%B6%E5%8F%8D%E8%BD%AC%E3%80%81%E4%BE%9D%E8%B5%96%E5%8F%8D%E8%BD%AC%E3%80%81%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5%EF%BC%8C%E8%BF%99%E4%B8%89%E8%80%85%E6%9C%89%E4%BD%95%E5%8C%BA%E5%88%AB%E5%92%8C%E8%81%94%E7%B3%BB%EF%BC%9F"><span class="toc-number">1.3.5.</span> <span class="toc-text">19丨理论五：控制反转、依赖反转、依赖注入，这三者有何区别和联系？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#20%E4%B8%A8%E7%90%86%E8%AE%BA%E5%85%AD%EF%BC%9A%E6%88%91%E4%B8%BA%E4%BD%95%E8%AF%B4KISS%E3%80%81YAGNI%E5%8E%9F%E5%88%99%E7%9C%8B%E4%BC%BC%E7%AE%80%E5%8D%95%EF%BC%8C%E5%8D%B4%E7%BB%8F%E5%B8%B8%E8%A2%AB%E7%94%A8%E9%94%99%EF%BC%9F"><span class="toc-number">1.3.6.</span> <span class="toc-text">20丨理论六：我为何说KISS、YAGNI原则看似简单，却经常被用错？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#21%E4%B8%A8%E7%90%86%E8%AE%BA%E4%B8%83%EF%BC%9A%E9%87%8D%E5%A4%8D%E7%9A%84%E4%BB%A3%E7%A0%81%E5%B0%B1%E4%B8%80%E5%AE%9A%E8%BF%9D%E8%83%8CDRY%E5%90%97%EF%BC%9F%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E4%BB%A3%E7%A0%81%E7%9A%84%E5%A4%8D%E7%94%A8%E6%80%A7%EF%BC%9F"><span class="toc-number">1.3.7.</span> <span class="toc-text">21丨理论七：重复的代码就一定违背DRY吗？如何提高代码的复用性？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#22-%E7%90%86%E8%AE%BA%E5%85%AB%EF%BC%9A%E5%A6%82%E4%BD%95%E7%94%A8%E8%BF%AA%E7%B1%B3%E7%89%B9%E6%B3%95%E5%88%99%EF%BC%88LOD%EF%BC%89%E5%AE%9E%E7%8E%B0%E2%80%9C%E9%AB%98%E5%86%85%E8%81%9A%E3%80%81%E6%9D%BE%E8%80%A6%E5%90%88%E2%80%9D%EF%BC%9F"><span class="toc-number">1.3.8.</span> <span class="toc-text">22 | 理论八：如何用迪米特法则（LOD）实现“高内聚、松耦合”？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#23-%E5%AE%9E%E6%88%98%E4%B8%80%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E9%92%88%E5%AF%B9%E4%B8%9A%E5%8A%A1%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%BC%80%E5%8F%91%EF%BC%8C%E5%A6%82%E4%BD%95%E5%81%9A%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%92%8C%E8%AE%BE%E8%AE%A1%EF%BC%9F"><span class="toc-number">1.3.9.</span> <span class="toc-text">23 | 实战一（上）：针对业务系统的开发，如何做需求分析和设计？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#24-%E5%AE%9E%E6%88%98%E4%B8%80%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E9%81%B5%E4%BB%8E%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E7%9A%84%E7%A7%AF%E5%88%86%E5%85%91%E6%8D%A2%E7%B3%BB%E7%BB%9F%EF%BC%9F"><span class="toc-number">1.3.10.</span> <span class="toc-text">24 | 实战一（下）：如何实现一个遵从设计原则的积分兑换系统？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#25%E4%B8%A8%E5%AE%9E%E6%88%98%E4%BA%8C%EF%BC%88%E4%B8%8A%EF%BC%89%EF%BC%9A%E9%92%88%E5%AF%B9%E9%9D%9E%E4%B8%9A%E5%8A%A1%E7%9A%84%E9%80%9A%E7%94%A8%E6%A1%86%E6%9E%B6%E5%BC%80%E5%8F%91%EF%BC%8C%E5%A6%82%E4%BD%95%E5%81%9A%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%92%8C%E8%AE%BE%E8%AE%A1%EF%BC%9F"><span class="toc-number">1.3.11.</span> <span class="toc-text">25丨实战二（上）：针对非业务的通用框架开发，如何做需求分析和设计？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#26%E4%B8%A8%E5%AE%9E%E6%88%98%E4%BA%8C%EF%BC%88%E4%B8%8B%EF%BC%89%EF%BC%9A%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E6%94%AF%E6%8C%81%E5%90%84%E7%A7%8D%E7%BB%9F%E8%AE%A1%E8%A7%84%E5%88%99%E7%9A%84%E6%80%A7%E8%83%BD%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%9F"><span class="toc-number">1.3.12.</span> <span class="toc-text">26丨实战二（下）：如何实现一个支持各种统计规则的性能计数器？</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E4%B8%8E%E6%80%9D%E6%83%B3%EF%BC%9A%E8%A7%84%E8%8C%83%E4%B8%8E%E9%87%8D%E6%9E%84-11%E8%AE%B2"><span class="toc-number">1.4.</span> <span class="toc-text">设计原则与思想：规范与重构 (11讲)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#27%E4%B8%A8%E7%90%86%E8%AE%BA%E4%B8%80%EF%BC%9A%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%B8%8B%E8%A6%81%E9%87%8D%E6%9E%84%EF%BC%9F%E5%88%B0%E5%BA%95%E9%87%8D%E6%9E%84%E4%BB%80%E4%B9%88%EF%BC%9F%E5%8F%88%E8%AF%A5%E5%A6%82%E4%BD%95%E9%87%8D%E6%9E%84%EF%BC%9F"><span class="toc-number">1.4.1.</span> <span class="toc-text">27丨理论一：什么情况下要重构？到底重构什么？又该如何重构？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#28%E4%B8%A8%E7%90%86%E8%AE%BA%E4%BA%8C%EF%BC%9A%E4%B8%BA%E4%BA%86%E4%BF%9D%E8%AF%81%E9%87%8D%E6%9E%84%E4%B8%8D%E5%87%BA%E9%94%99%EF%BC%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E9%9D%9E%E5%B8%B8%E8%83%BD%E8%90%BD%E5%9C%B0%E7%9A%84%E6%8A%80%E6%9C%AF%E6%89%8B%E6%AE%B5%EF%BC%9F"><span class="toc-number">1.4.2.</span> <span class="toc-text">28丨理论二：为了保证重构不出错，有哪些非常能落地的技术手段？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#29%E4%B8%A8%E7%90%86%E8%AE%BA%E4%B8%89%EF%BC%9A%E4%BB%80%E4%B9%88%E6%98%AF%E4%BB%A3%E7%A0%81%E7%9A%84%E5%8F%AF%E6%B5%8B%E8%AF%95%E6%80%A7%EF%BC%9F%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E5%8F%AF%E6%B5%8B%E8%AF%95%E6%80%A7%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81%EF%BC%9F"><span class="toc-number">1.4.3.</span> <span class="toc-text">29丨理论三：什么是代码的可测试性？如何写出可测试性好的代码？</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By 🎵张小佑♪</div></div></footer></div></div></div><div id="sidebar"><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:17px;"><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-dice-d20 faa-tada" style="font-size: 0.9em;"></i><span> 我的装备</span></a></li></ul></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script><div><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.4.0/source/js/utils.js"></script><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.4.0/source/js/main.js"></script><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.4.0/source/js/tw_cn.js"></script><script src="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.umd.js"></script><script src="https://npm.elemecdn.com/instant.page@5.1.1/instantpage.js" type="module"></script><script src="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://npm.elemecdn.com/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("09/01/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2022 By 安知鱼 1.4.0",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 🎵张小佑♪ 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "visitor@anheyu.com";</script><script>//动态标题
+let leaveTitle = '♪张小佑 - 分享思考与科技生活';
+let backTitle = '♪张小佑 - 分享思考与科技生活';
+let OriginTitile = document.title
+let titleTime
+document.addEventListener('visibilitychange', function () {
+  if (document.hidden) {
+    //离开当前页面时标签显示内容
+    document.title = leaveTitle
+    clearTimeout(titleTime)
+  } else {
+    //返回当前页面时标签显示内容
+    document.title = backTitle + OriginTitile
+    //两秒后变回正常标题
+    titleTime = setTimeout(function () {
+      document.title = OriginTitile
+    }, 2000)
+  }
+})</script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script>// 初始化函数
+let rm = {};
+
+//禁止图片与超链接拖拽
+let aElements = document.getElementsByTagName("a");
+for (let i = 0; i < aElements.length; i++) {
+  aElements[i].setAttribute("draggable", "false");
+  let imgElements = aElements[i].getElementsByTagName("img");
+  for (let j = 0; j < imgElements.length; j++) {
+    imgElements[j].setAttribute("draggable", "false");
+  }
+}
+
+// 显示菜单
+rm.showRightMenu = function (isTrue, x = 0, y = 0) {
+  console.info(x, y)
+  let rightMenu = document.getElementById("rightMenu");
+  rightMenu.style.top = x + "px";
+  rightMenu.style.left = y + "px";
+  if (isTrue) {
+    rightMenu.style.display = "block";
+    stopMaskScroll();
+  } else {
+    rightMenu.style.display = "none";
+  }
+};
+
+// 隐藏菜单
+rm.hideRightMenu = function () {
+  rm.showRightMenu(false);
+  let rightMenuMask = document.querySelector("#rightmenu-mask");
+  rightMenuMask.style.display = "none";
+};
+
+// 尺寸
+let rmWidth = document.getElementById("rightMenu").offsetWidth;
+let rmHeight = document.getElementById("rightMenu").offsetHeight;
+
+// 重新定义尺寸
+rm.reloadrmSize = function () {
+  rightMenu.style.visibility = "hidden";
+  rightMenu.style.display = "block";
+  // 获取宽度和高度
+  rmWidth = document.getElementById("rightMenu").offsetWidth;
+  rmHeight = document.getElementById("rightMenu").offsetHeight;
+  rightMenu.style.visibility = "visible";
+};
+
+// 获取点击的href
+let domhref = "";
+let domImgSrc = "";
+let globalEvent = null;
+
+var oncontextmenuFunction = function (event) {
+  if (document.body.clientWidth > 768) {
+    let pageX = event.clientX + 10; //加10是为了防止显示时鼠标遮在菜单上
+    let pageY = event.clientY;
+
+    //其他额外菜单
+    const $rightMenuOther = document.querySelector(".rightMenuOther");
+    const $rightMenuPlugin = document.querySelector(".rightMenuPlugin");
+    const $rightMenuCopyText = document.querySelector("#menu-copytext");
+    const $rightMenuPasteText = document.querySelector("#menu-pastetext");
+    const $rightMenuCommentText = document.querySelector("#menu-commenttext");
+    const $rightMenuNewWindow = document.querySelector("#menu-newwindow");
+    const $rightMenuNewWindowImg = document.querySelector("#menu-newwindowimg");
+    const $rightMenuCopyLink = document.querySelector("#menu-copylink");
+    const $rightMenuCopyImg = document.querySelector("#menu-copyimg");
+    const $rightMenuDownloadImg = document.querySelector("#menu-downloadimg");
+    const $rightMenuSearch = document.querySelector("#menu-search");
+    const $rightMenuSearchBaidu = document.querySelector("#menu-searchBaidu");
+    const $rightMenuMusicToggle = document.querySelector("#menu-music-toggle");
+    const $rightMenuMusicBack = document.querySelector("#menu-music-back");
+    const $rightMenuMusicForward = document.querySelector("#menu-music-forward");
+    const $rightMenuMusicPlaylist = document.querySelector("#menu-music-playlist");
+    const $rightMenuMusicCopyMusicName = document.querySelector("#menu-music-copyMusicName");
+
+    let href = event.target.href;
+    let imgsrc = event.target.currentSrc;
+
+    // 判断模式 扩展模式为有事件
+    let pluginMode = false;
+    $rightMenuOther.style.display = "block";
+    globalEvent = event;
+
+    // 检查是否需要复制 是否有选中文本
+    if (selectTextNow && window.getSelection()) {
+      pluginMode = true;
+      $rightMenuCopyText.style.display = "block";
+      $rightMenuCommentText.style.display = "block";
+      $rightMenuSearch.style.display = "block";
+      $rightMenuSearchBaidu.style.display = "block";
+    } else {
+      $rightMenuCopyText.style.display = "none";
+      $rightMenuCommentText.style.display = "none";
+      $rightMenuSearchBaidu.style.display = "none";
+      $rightMenuSearch.style.display = "none";
+    }
+
+    //检查是否右键点击了链接a标签
+    if (href) {
+      pluginMode = true;
+      $rightMenuNewWindow.style.display = "block";
+      $rightMenuCopyLink.style.display = "block";
+      domhref = href;
+    } else {
+      $rightMenuNewWindow.style.display = "none";
+      $rightMenuCopyLink.style.display = "none";
+    }
+
+    //检查是否需要复制图片
+    if (imgsrc) {
+      pluginMode = true;
+      $rightMenuCopyImg.style.display = "block";
+      $rightMenuDownloadImg.style.display = "block";
+      $rightMenuNewWindowImg.style.display = "block";
+      document.getElementById("rightMenu").style.width="12rem"
+      domImgSrc = imgsrc;
+    } else {
+      $rightMenuCopyImg.style.display = "none";
+      $rightMenuDownloadImg.style.display = "none";
+      $rightMenuNewWindowImg.style.display = "none";
+    }
+
+    // 判断是否为输入框
+    if (event.target.tagName.toLowerCase() === "input" || event.target.tagName.toLowerCase() === "textarea") {
+      pluginMode = true;
+      $rightMenuPasteText.style.display = "block";
+    } else {
+      $rightMenuPasteText.style.display = "none";
+    }
+    const navMusicEl = document.querySelector("#nav-music");
+    //判断是否是音乐
+    if (navMusicEl && navMusicEl.contains(event.target)) {
+      pluginMode = true;
+      $rightMenuMusicToggle.style.display = "block";
+      $rightMenuMusicBack.style.display = "block";
+      $rightMenuMusicForward.style.display = "block";
+      $rightMenuMusicPlaylist.style.display = "block";
+      $rightMenuMusicCopyMusicName.style.display = "block";
+    } else {
+      $rightMenuMusicToggle.style.display = "none";
+      $rightMenuMusicBack.style.display = "none";
+      $rightMenuMusicForward.style.display = "none";
+      $rightMenuMusicPlaylist.style.display = "none";
+      $rightMenuMusicCopyMusicName.style.display = "none";
+    }
+
+    // 如果不是扩展模式则隐藏扩展模块
+    if (pluginMode) {
+      $rightMenuOther.style.display = "none";
+      $rightMenuPlugin.style.display = "block";
+    } else {
+      $rightMenuPlugin.style.display = "none";
+    }
+
+    rm.reloadrmSize();
+
+    // 鼠标默认显示在鼠标右下方，当鼠标靠右或靠下时，将菜单显示在鼠标左方\上方
+    if (pageX + rmWidth > window.innerWidth) {
+      pageX -= rmWidth + 10;
+    }
+    if (pageY + rmHeight > window.innerHeight) {
+      pageY -= pageY + rmHeight - window.innerHeight;
+    }
+
+    rm.showRightMenu(true, pageY, pageX);
+    document.getElementById("rightmenu-mask").style.display = "flex";
+    return false;
+  }
+};
+
+// 监听右键初始化
+window.oncontextmenu = oncontextmenuFunction
+
+// 下载图片状态
+rm.downloadimging = false;
+
+// 复制图片到剪贴板
+rm.writeClipImg = function (imgsrc) {
+  console.log("按下复制");
+  rm.hideRightMenu();
+  anzhiyu.snackbarShow("正在下载中，请稍后", false, 10000);
+  if (rm.downloadimging == false) {
+    rm.downloadimging = true;
+    setTimeout(function () {
+      copyImage(imgsrc);
+      anzhiyu.snackbarShow("复制成功！图片已添加盲水印，请遵守版权协议");
+      rm.downloadimging = false;
+    }, "10000");
+  }
+};
+
+function imageToBlob(imageURL) {
+  const img = new Image();
+  const c = document.createElement("canvas");
+  const ctx = c.getContext("2d");
+  img.crossOrigin = "";
+  img.src = imageURL;
+  return new Promise(resolve => {
+    img.onload = function () {
+      c.width = this.naturalWidth;
+      c.height = this.naturalHeight;
+      ctx.drawImage(this, 0, 0);
+      c.toBlob(
+        blob => {
+          // here the image is a blob
+          resolve(blob);
+        },
+        "image/png",
+        0.75
+      );
+    };
+  });
+}
+
+async function copyImage(imageURL) {
+  const blob = await imageToBlob(imageURL);
+  const item = new ClipboardItem({ "image/png": blob });
+  navigator.clipboard.write([item]);
+}
+
+rm.copyUrl = function (id) {
+  const input = document.createElement("input"); // Create a new <input> element
+  input.id = "copyVal"; // Set the id of the new element to "copyVal"
+  document.body.appendChild(input); // Append the new element to the end of the <body> element
+  
+  const text = id;
+  input.value = text;
+  input.select();
+  input.setSelectionRange(0, input.value.length);
+  document.execCommand("copy");
+  
+  input.remove(); // Remove the <input> element from the DOM
+};
+
+function stopMaskScroll() {
+  if (document.getElementById("rightmenu-mask")) {
+    let xscroll = document.getElementById("rightmenu-mask");
+    xscroll.addEventListener(
+      "mousewheel",
+      function (e) {
+        //阻止浏览器默认方法
+        rm.hideRightMenu();
+        // e.preventDefault();
+      },
+      { passive: true }
+    );
+  }
+  if (document.getElementById("rightMenu")) {
+    let xscroll = document.getElementById("rightMenu");
+    xscroll.addEventListener(
+      "mousewheel",
+      function (e) {
+        //阻止浏览器默认方法
+        rm.hideRightMenu();
+        // e.preventDefault();
+      },
+      { passive: true }
+    );
+  }
+}
+
+rm.rightmenuCopyText = function (txt) {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(txt);
+  }
+  rm.hideRightMenu();
+};
+
+rm.copyPageUrl = function (url) {
+  if (!url) {
+    url = window.location.href;
+  }
+  rm.copyUrl(url);
+  anzhiyu.snackbarShow("复制本页链接地址成功", false, 2000);
+  rm.hideRightMenu();
+};
+
+rm.sharePage = function () {
+  var content = window.location.href;
+  rm.copyUrl(url);
+  anzhiyu.snackbarShow("复制本页链接地址成功", false, 2000);
+  rm.hideRightMenu();
+};
+
+// 复制当前选中文本
+var selectTextNow = "";
+document.onmouseup = document.ondblclick = selceText;
+
+function selceText() {
+  var txt;
+  if (document.selection) {
+    txt = document.selection.createRange().text;
+  } else {
+    txt = window.getSelection().toString();
+  }
+  selectTextNow = txt !== "" ? txt : "";
+}
+
+// 读取剪切板
+rm.readClipboard = function () {
+  if (navigator.clipboard) {
+    navigator.clipboard.readText().then(clipText => rm.insertAtCaret(globalEvent.target, clipText));
+  }
+};
+
+// 粘贴文本到焦点
+rm.insertAtCaret = function (elemt, value) {
+  const startPos = elemt.selectionStart,
+    endPos = elemt.selectionEnd;
+  if (document.selection) {
+    elemt.focus();
+    var sel = document.selection.createRange();
+    sel.text = value;
+    elemt.focus();
+  } else {
+    if (startPos || startPos == "0") {
+      var scrollTop = elemt.scrollTop;
+      elemt.value = elemt.value.substring(0, startPos) + value + elemt.value.substring(endPos, elemt.value.length);
+      elemt.focus();
+      elemt.selectionStart = startPos + value.length;
+      elemt.selectionEnd = startPos + value.length;
+      elemt.scrollTop = scrollTop;
+    } else {
+      elemt.value += value;
+      elemt.focus();
+    }
+  }
+};
+
+//粘贴文本
+rm.pasteText = function () {
+  const result = rm.readClipboard() || "";
+  rm.hideRightMenu();
+};
+
+//引用到评论
+rm.rightMenuCommentText = function (txt) {
+  rm.hideRightMenu();
+  const postCommentDom = document.getElementById("post-comment");
+  var domTop = postCommentDom.offsetTop;
+  window.scrollTo(0, domTop - 80);
+  if (txt == "undefined" || txt == "null") txt = "好棒！";
+  function setText() {
+    setTimeout(() => {
+      var input = document.getElementsByClassName("el-textarea__inner")[0];
+      if (!input) setText();
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("input", true, true);
+      let inputValue = replaceAll(txt, "\n", "\n> ");
+      input.value = "> " + inputValue + "\n\n";
+      input.dispatchEvent(evt);
+      input.focus();
+      input.setSelectionRange(-1, -1);
+      if (document.getElementById("comment-tips")) {
+        document.getElementById("comment-tips").classList.add("show");
+      }
+    }, 100);
+  }
+  setText();
+};
+
+//替换所有内容
+function replaceAll(string, search, replace) {
+  return string.split(search).join(replace);
+}
+
+// 百度搜索
+rm.searchBaidu = function () {
+  anzhiyu.snackbarShow("即将跳转到百度搜索", false, 2000);
+  setTimeout(function () {
+    window.open("https://www.baidu.com/s?wd=" + selectTextNow);
+  }, "2000");
+  rm.hideRightMenu();
+};
+
+//分享链接
+rm.copyLink = function () {
+  rm.rightmenuCopyText(domhref);
+  anzhiyu.snackbarShow("已复制链接地址");
+};
+
+function addRightMenuClickEvent() {
+  // 添加点击事件
+  document.getElementById("menu-backward").addEventListener("click", function () {
+  window.history.back();
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-forward").addEventListener("click", function () {
+    window.history.forward();
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-refresh").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  document.getElementById("menu-top").addEventListener("click", function () {
+    anzhiyu.scrollToDest(0, 500);
+    rm.hideRightMenu();
+  });
+
+  const menuLinks = document.querySelectorAll(".menu-link");
+  menuLinks.forEach(function (link) {
+    link.addEventListener("click", rm.hideRightMenu);
+  });
+
+  document.getElementById("menu-darkmode").addEventListener("click", anzhiyu.switchDarkMode);
+
+  document.getElementById("menu-home") && document.getElementById("menu-home").addEventListener("click", function () {
+    window.location.href = window.location.origin;
+  });
+
+  document.getElementById("menu-randomPost").addEventListener("click", function () {
+    toRandomPost();
+  });
+
+  document.getElementById("menu-commentBarrage").addEventListener("click", anzhiyu.switchCommentBarrage);
+
+  document.getElementById("rightmenu-mask").addEventListener("click", rm.hideRightMenu);
+
+  document.getElementById("rightmenu-mask").addEventListener("contextmenu", function (event) {
+    rm.hideRightMenu();
+    event.preventDefault(); // Prevent the default context menu from appearing
+  });
+
+  document.getElementById("menu-copy").addEventListener("click", rm.copyPageUrl);
+
+  document.getElementById("menu-pastetext").addEventListener("click", rm.pasteText);
+
+  document.getElementById("menu-copytext").addEventListener("click", function () {
+    rm.rightmenuCopyText(selectTextNow);
+    anzhiyu.snackbarShow("复制成功，复制和转载请标注本文地址");
+  });
+
+  document.getElementById("menu-commenttext").addEventListener("click", function () {
+    rm.rightMenuCommentText(selectTextNow);
+  });
+
+  document.getElementById("menu-newwindow").addEventListener("click", function () {
+    window.open(domhref, "_blank");
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-copylink").addEventListener("click", rm.copyLink);
+
+  document.getElementById("menu-downloadimg").addEventListener("click", function () {
+    anzhiyu.downloadImage(domImgSrc, "anzhiyu");
+  });
+
+  document.getElementById("menu-newwindowimg").addEventListener("click", function () {
+    window.open(domImgSrc, "_blank");
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-copyimg").addEventListener("click", function () {
+    rm.writeClipImg(domImgSrc);
+  });
+
+  document.getElementById("menu-searchBaidu").addEventListener("click", rm.searchBaidu);
+
+  //音乐
+  document.getElementById("menu-music-toggle").addEventListener("click", anzhiyu.musicToggle);
+
+  document.getElementById("menu-music-back").addEventListener("click", anzhiyu.musicSkipBack);
+
+  document.getElementById("menu-music-forward").addEventListener("click", anzhiyu.musicSkipForward);
+
+  document.getElementById("menu-music-copyMusicName").addEventListener("click", function () {
+    rm.rightmenuCopyText(anzhiyu.musicGetName());
+    anzhiyu.snackbarShow("复制歌曲名称成功", false, 3000);
+  });
+
+}
+
+addRightMenuClickEvent();</script><script data-pjax>var themeColorMeta = document.querySelector('meta[name="theme-color"]');
+var pageHeaderEl = document.getElementById("page-header");
+var navMusicEl = document.getElementById("nav-music");
+var consoleEl = document.getElementById("console");
+// 已随机的歌曲
+var selectRandomSong = [];
+// 音乐默认声音大小
+var musicVolume = 0.8;
+// 是否切换了周杰伦音乐列表
+var changeMusicListFlag = false;
+// 当前默认播放列表
+var defaultPlayMusicList = [];
+
+document.getElementById("page-name").innerText = document.title.split(" | ♪张小佑")[0];
+anzhiyu.initIndexEssay();
+anzhiyu.changeTimeInEssay();
+anzhiyu.removeBodyPaceClass();
+anzhiyu.qrcodeCreate();
+anzhiyu.changeTimeInAlbumDetail();
+anzhiyu.reflashEssayWaterFall();
+anzhiyu.sayhi();
+anzhiyu.stopImgRightDrag();
+anzhiyu.addNavBackgroundInit();
+anzhiyu.setValueToBodyType();
+anzhiyu.catalogActive();
+anzhiyu.tagsPageActive();
+anzhiyu.categoriesBarActive();
+anzhiyu.topCategoriesBarScroll();
+anzhiyu.switchRightClickMenuHotReview();
+anzhiyu.getCustomPlayList();
+anzhiyu.addEventListenerConsoleMusicList(false);
+setTimeout(() => {
+  if (typeof addFriendLinksInFooter === "function") {
+    addFriendLinksInFooter();
+  }
+}, 200)</script><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.1.4/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://npm.elemecdn.com/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://npm.elemecdn.com/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div></body></html>

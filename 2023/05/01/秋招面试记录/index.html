@@ -1,0 +1,2283 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>秋招面试记录 | ♪张小佑</title><meta name="keywords" content="C++"><meta name="author" content="🎵张小佑♪"><meta name="copyright" content="🎵张小佑♪"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="秋招面试记录"><meta name="application-name" content="秋招面试记录"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta name="description" content="积极学习C++吧！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="秋招面试记录">
+<meta property="og:url" content="http://acall.love/2023/05/01/%E7%A7%8B%E6%8B%9B%E9%9D%A2%E8%AF%95%E8%AE%B0%E5%BD%95/index.html">
+<meta property="og:site_name" content="♪张小佑">
+<meta property="og:description" content="积极学习C++吧！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/kxw3p1.webp">
+<meta property="article:published_time" content="2023-04-30T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-04-30T16:00:00.000Z">
+<meta property="article:author" content="🎵张小佑♪">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="后端开发">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/kxw3p1.webp"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="http://acall.love/2023/05/01/%E7%A7%8B%E6%8B%9B%E9%9D%A2%E8%AF%95%E8%AE%B0%E5%BD%95/"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  friends_vue_info: undefined,
+  navMusic: true,
+  changeMainColorPost: undefined,
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#3b70fc","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '秋招面试记录',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2023-05-01 00:00:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/1.jpg"/><div class="loading-image-dot"></div><div id="loading-percentage">0%</div></div></div><script>const loadingPercentage = document.getElementById("loading-percentage");
+let loadingPercentageTimer = setInterval(function() {
+  var progressBar = document.querySelector(".pace-progress");
+  if (!progressBar) return
+  var currentValue = progressBar.getAttribute("data-progress-text");
+  if (currentValue !== loadingPercentage.textContent) {
+    loadingPercentage.textContent = currentValue;
+    if (currentValue === "100%") {
+      clearInterval(loadingPercentageTimer);
+    }
+  }
+}, 100);
+const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+    Pace.restart()
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/progress_bar/progress_bar.css"/><script async="async" src="https://npm.elemecdn.com/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div id="web_box"><div id="web_container"><div id="menu-mask"></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://acall.love/" title="博客" target="_blank"><img class="back-menu-item-icon" src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" href="https://image.anheyu.com/" title="安知鱼图床" target="_blank"><img class="back-menu-item-icon" src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">♪张小佑</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:17px;"><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-dice-d20 faa-tada" style="font-size: 0.9em;"></i><span> 我的装备</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192211377.png" target="_blank"><img class="post-qr-code-img" alt="wechat" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192211377.png"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192207910.png" target="_blank"><img class="post-qr-code-img" alt="alipayautoh" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192207910.png"/></a><div class="post-qr-code-desc">alipayautoh</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments" onclick="anzhiyu.hideConsole()"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> <span>最新评论</span></span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags" onclick="anzhiyu.hideConsole()"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/C/" style="font-size: 1.05rem;">C++<sup>23</sup></a><a href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" style="font-size: 1.05rem;">后端开发<sup>22</sup></a><a href="/tags/%E9%9D%A2%E7%BB%8F/" style="font-size: 1.05rem;">面经<sup>1</sup></a><a href="/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 1.05rem;">面试<sup>3</sup></a></div></div><hr/></div></div><div class="console-card history" onclick="anzhiyu.hideConsole()"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">六月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">一月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">7</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" onclick="anzhiyu.switchDarkMode()" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B6%AF/">大学生涯</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/C/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>C++</span></a><a class="article-meta__tags" href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>后端开发</span></a></span></div></div><h1 class="post-title">秋招面试记录</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-04-30T16:00:00.000Z" title="发表于 2023-05-01 00:00:00">2023-05-01</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-30T16:00:00.000Z" title="更新于 2023-05-01 00:00:00">2023-05-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">17.6k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>52分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="秋招面试记录"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为郑州"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>郑州</span></div></div></div><article class="post-content" id="article-container"><h3 id="8-29-元像后台开发（50min）"><a href="#8-29-元像后台开发（50min）" class="headerlink" title="8.29 元像后台开发（50min）"></a>8.29 元像后台开发（50min）</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>介绍一个最熟悉的项目，项目背景、项目难点、项目效果</p>
+<p>怂了，只敢介绍研究生的，又感觉说细他听不懂，随便介绍了一下，花了10分钟左右吧</p>
+</li>
+<li><p>介绍一下C++里的内存管理</p>
+<p>从new delete引入介绍了malloc，free，然后介绍malloc的底层原理，引入brk和mmap进行介绍等，然后卡住了。。。</p>
+</li>
+<li><p>堆和栈的区别</p>
+<p>从程序自动处理和程序员开辟释放介绍，然后又卡住了，还说错词说编译器会进行栈空间释放。。然后被逮住</p>
+</li>
+<li><p>编译器是什么</p>
+<p>开始瞎扯，说是解析C++语言的，什么头文件define，然后生成汇编代码产生可执行文件；然后被说教了一番，编译器只是负责生成可执行文件的，空间的管理都是交给操作系统</p>
+</li>
+<li><p>这些计算机基础都是你自己学的是吧，然后就不问了哈哈哈</p>
+</li>
+<li><p>讲一下C++的多态机制把</p>
+<p>从重载和虚函数引入进行介绍，然后扯到子类父类运行时多态啥的</p>
+</li>
+<li><p>介绍一下虚函数表</p>
+<p>又扯到子类父类，根据class决定调用哪个函数</p>
+</li>
+<li><p>线程和进程的区别</p>
+<p>回答了基本定义，开销方面，还有说不出来了</p>
+</li>
+<li><p>epoll和select差别</p>
+<p>从介绍是干啥的开始，介绍为啥需要IO多路复用，减少开销；然后介绍了select的流程，epoll的流程；然后叫我直接说差别，就介绍了select需要轮询，epoll直接通过就绪链表、select需要拷贝，epoll只需要拷贝一次；select仅支持LT，epoll还支持ET</p>
+</li>
+<li><p>做题，写一个会的排序算法把</p>
+<p>写了快排的基本实现，然后叫我写 非递归版本，脑袋空空</p>
+</li>
+<li><p>最长公共子序列，枚举出所有长度相等的子序列</p>
+<p>只会使用On2求解最长公共子序列的长度，还被质疑On2.。。估计感觉我是背题的把</p>
+</li>
+<li><p>反问，介绍一下公司业务</p>
+</li>
+<li><p>总结：面试不是一道题一道题，都不是明确的题目，考察对一个知识点的整体理解程度，好久没面试了，还是有点紧张，没答出来就慌了</p>
+</li>
+</ul>
+<h3 id="9-7-美团软件开发工程师一面（30min）"><a href="#9-7-美团软件开发工程师一面（30min）" class="headerlink" title="9.7 美团软件开发工程师一面（30min）"></a>9.7 美团软件开发工程师一面（30min）</h3><ul>
+<li>自我介绍</li>
+<li>写一个MySQL语句，表一有学生id和班级字段，表二有学生id、课程、成绩字段，写一个SQL语句，查询每个班级的课程的学生平均分（很简单，但我就是写不出来。。）</li>
+<li>Web服务器流程介绍（讲得很乱。。。需要整理）</li>
+<li>为什么用IO多路复用（从不用的话的缺点开始介绍，引入select，poll，epoll等，也没讲好，无语了。。）</li>
+<li>为什么epoll使用红黑树</li>
+<li>如果让你对你的项目加一个功能，针对高并发场景，维护一个用户的访问量，有什么思路吗（乱答，不会）</li>
+<li>现在就假如只是对系统内部一个变量，进行高并发访问了，怎么保证他的正确性（乱答，扯到加锁影响效率）</li>
+<li>为什么需要加锁（引起数据不一致），为什么会数据不一致（瞎扯，线程举例。。）</li>
+<li>介绍一下平衡二叉树把，失衡了怎么调整</li>
+<li>写一下层序遍历代码</li>
+<li>你有华为的实习经历，也是算法相关的，算法和开发你更喜欢哪个呢（瞎扯，，）</li>
+<li>再来场景题，一个网站一天有一亿访问量来自不同城市（以文件形式存储），系统内部只能存储1GB大小文件（无法处理1亿的数据），要维护一个月的总访问量前十的城市，怎么维护？（扯到堆+归并排序，但是文件不会处理）</li>
+<li>业务介绍，反问，g</li>
+</ul>
+<h3 id="9-14-同花顺C-开发工程师—B2B-一面（52min）"><a href="#9-14-同花顺C-开发工程师—B2B-一面（52min）" class="headerlink" title="9.14 同花顺C++开发工程师—B2B 一面（52min）"></a>9.14 同花顺C++开发工程师—B2B 一面（52min）</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>公司大介绍，balabala，主要业务方向场景等等，然后：我看你的研究生项目还有华为实习经历都是偏硬的C++开发，想问下你的职业规划或者说倾向是什么？（这块可能说了快20min。。）</p>
+<p>主要扯了下研究生导师分配的，然后实习根据研究生项目找的，然后用了很多C++的相关知识，但是视觉的编程做到后面发现反馈感不强，所以更像说倾向于互联网或者说像同花顺这样的快速迭代（感觉需要整理一下这个问题。。），不过面试官对这个反馈迭代挺满意，继续介绍</p>
+</li>
+<li><p>聊聊技术问题把，你怎么看待C和C++，介绍一下差别</p>
+<p>主要从面向对象和面向过程切入，然后扯到C++的一些类的特性，代码复用，编写复杂度等等，最后又扯了下三大特性，封装继承多态</p>
+</li>
+<li><p>你说到多态，多态是什么，怎么实现的</p>
+<p>从继承的父类派生类切入，根据类型实现调用的不同，引入虚函数、虚函数表介绍等等（还是不太熟，整理下）</p>
+</li>
+<li><p>虚函数表怎么起作用的？</p>
+<p>继续扯父类派生类根据类型查询对应的虚函数表，找到对应的虚函数指针进行运行</p>
+</li>
+<li><p>能继续介绍下封装吗？</p>
+<p>扯到了C++里的类访问限定符，private将内部细节封装起来，类外无法直接访问，保证了不被随意修改</p>
+</li>
+<li><p>继承也介绍一下</p>
+<p>扯到了代码复用，减少重复编码，人和学生的关系</p>
+</li>
+<li><p>多继承了解吗</p>
+<p>扯到多个父类，没介绍好感觉</p>
+</li>
+<li><p>菱形继承了解吗</p>
+<p>ABCD举例介绍，使用virtual继承解决</p>
+</li>
+<li><p>如果不使用virtual，可以访问指定B类或者C类的成员吗</p>
+<p>使用类作用域指定</p>
+</li>
+<li><p>网络编程你了解到什么程度？是调用接口还是？</p>
+<p>扯到基本的协议，HTTP、TCP，然后为了熟悉使用选择了搭建web服务器等等</p>
+</li>
+<li><p>那你平时学习一般都从哪里学，问题搜索其实很重要</p>
+<p>遇到问题会去CSDN查找解决方法，然后如果是实现一个功能会去github查找类似的项目，参考学习</p>
+</li>
+<li><p>你这个web服务器用到了登录，是用什么数据库？</p>
+<p>扯到MySQL但是很简单，简单的用户名密码查询</p>
+</li>
+<li><p>MySQL你了解到什么程度</p>
+<p>基本概念了解，运作了解，但是使用场景不是很多比较不熟</p>
+</li>
+<li><p>编程题，二分查找第一个出现target的位置</p>
+</li>
+<li><p>反问，部门具体业务和技术栈，继续大介绍</p>
+</li>
+</ul>
+<h3 id="9-15-安克创新-初级终端软件开发工程师-一面-50min"><a href="#9-15-安克创新-初级终端软件开发工程师-一面-50min" class="headerlink" title="9.15 安克创新 初级终端软件开发工程师 一面 50min"></a>9.15 安克创新 初级终端软件开发工程师 一面 50min</h3><ul>
+<li>自我介绍</li>
+</ul>
+<p>计算机网络相关</p>
+<ul>
+<li><p>你知道哪些网络协议呢，介绍一下</p>
+<p>比较熟悉的是项目里使用的，应用层是HTTP传输层是TCP</p>
+</li>
+<li><p>HTTP你可以介绍一下常用的请求方法嘛</p>
+<p>讲了下HTTP1的GET和POST，HTTP1.1的PUT, DELETE等等</p>
+</li>
+<li><p>GET和POST的区别是什么</p>
+<p>主要通过语义介绍，GET 的语义是从服务器获取指定的资源，POST语义是根据请求负荷（报文body）对指定的资源做出处理，然后扯了下GET一般写在URL中，只支持ASCII字符，浏览器对其有长度限制，POST的body没有长度的限制</p>
+</li>
+<li><p>那GET和POST的应用场景你可以介绍下吗</p>
+<p>没什么了解，项目里主要用了GET（瞎说。。）</p>
+</li>
+<li><p>可以介绍下HTTP的状态码吗</p>
+<p>1-5都介绍了一下</p>
+</li>
+<li><p>可以介绍下TCP建立连接的过程吗</p>
+<p>本来还想介绍下TCP的定义，忘了又。。然后直接从SYN ACK SYN介绍握手了，讲的还挺乱的，需要整理</p>
+</li>
+<li><p>为什么还需要第三次握手呢？</p>
+<p>扯到了确保双方的一个发送和接受的能力，如果两次的话会导致服务端构造出无意义的连接（说得不是很好，需要整理）</p>
+</li>
+<li><p>字节流你的理解是什么</p>
+<p>扯到了TCP基于字节流传输，UDP基于报文传输、</p>
+</li>
+<li><p>内部封装的定义是什么了解吗</p>
+<p>不会，没具体了解</p>
+</li>
+</ul>
+<p>操作系统相关</p>
+<ul>
+<li><p>介绍一下进程和线程把</p>
+<p>进程是基本调度资源，然后进程可以拥有多个线程，线程开销小，然后扯到了进程通信比较麻烦啥的（也不知道对不对，，还是要熟悉）</p>
+</li>
+<li><p>那进程间通信的方法可以介绍一下吗</p>
+<p>管道、有名管道、消息队列、共享内存、信号信号量等等</p>
+</li>
+<li><p>你用到比较多的是什么呢</p>
+<p>共享内存用的多一些，他快</p>
+</li>
+<li><p>那使用共享内存的时候需要注意什么呢？</p>
+<p>对共享资源的访问需要注意临界变量的保护，利用锁机制互斥访问，保证运行结果一致性</p>
+</li>
+<li><p>可以介绍下几种锁吗</p>
+<p>互斥锁、自旋锁、信号量</p>
+</li>
+<li><p>这几种锁有使用过吗，都是什么函数</p>
+<p>互斥锁是mutex，自旋没用过，信号零保证同步，定义一个变量进行PV操作</p>
+</li>
+<li><p>可以讲一下内核态和用户态的区别吗</p>
+<p>扯到了系统调用切换内核态，什么从用户态搬运数据过来处理，，瞎扯</p>
+</li>
+<li><p>那为什么要设计这么一个内核态呢</p>
+<p>扯错了，扯到了内存和磁盘的关系了。。最后说主要为了用户和系统交互，让我再去理解理解</p>
+</li>
+</ul>
+<p>数据结构</p>
+<ul>
+<li><p>介绍一下栈和堆</p>
+<p>栈先进后出，堆维护堆顶为最大或者最小元素</p>
+</li>
+<li><p>栈和堆你平时的使用场景</p>
+<p>扯到了项目里用的堆维护定时器，栈就是各种函数调用压栈弹栈的过程</p>
+</li>
+<li><p>排序算法有了解吗，比较熟悉的是什么</p>
+<p>快速、归并、堆排序</p>
+</li>
+<li><p>他们复杂度是多少，稳定吗</p>
+<p>都是nlogn，堆排序原理然后说他不稳定，快速和归并介绍了下原理然后扯他稳定。。忘记了</p>
+</li>
+<li><p>有没有了解什么加密算法</p>
+<p>举例HTTPS，对称非对称，然后说知道一点RSA，还需要整理。</p>
+</li>
+</ul>
+<p>项目</p>
+<ul>
+<li>华为实习介绍、问题难点、如何克服、与他人的沟通、创新点</li>
+<li>大学期间最有成就的事情，扯到了研究生项目，然后继续介绍背景、难点、解决方法、沟通</li>
+</ul>
+<p>闲聊</p>
+<ul>
+<li><p>你的职业规划是什么</p>
+<p>需要准备，瞎扯。。</p>
+</li>
+<li><p>比如说移动端桌面端设备端，你更倾向与什么</p>
+<p>继续乱扯，说想要利用自己的基础能力，继续深造，不想0-1（乱说了，，被说那你不管是啥都得重新学）</p>
+</li>
+<li><p>反问、业务方向、技术栈</p>
+</li>
+</ul>
+<h3 id="9-16-华为AI工程师-一面-40min"><a href="#9-16-华为AI工程师-一面-40min" class="headerlink" title="9.16 华为AI工程师 一面 40min"></a>9.16 华为AI工程师 一面 40min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>介绍一下STL容器</p>
+<p>vector、stack、queue、map、unorder_set等等介绍</p>
+</li>
+<li><p>list和vector有什么差别</p>
+<p>插入删除效率，存储连续，随机访问</p>
+</li>
+<li><p>指针和引用的区别</p>
+<p>引用——别名，指针——实际变量，存储地址，还有挺多点没讲到，整理复习</p>
+</li>
+<li><p>可以讲一下C++的多态机制嘛</p>
+<p>还是从父类派生类切入进行介绍，感觉还是没讲得很好，整理！</p>
+</li>
+<li><p>底层是怎么实现的呢</p>
+<p>虚函数表，根据调用对象类型指向具体函数地址，还是要整理复习</p>
+</li>
+<li><p>虚函数&#x3D;0是什么用法</p>
+<p>纯虚函数，抽象类</p>
+</li>
+<li><p>可以介绍几个C++11新特性嘛</p>
+<p>介绍了auto、范围for、lambda表达式，右值引用不敢介绍，还是要复习</p>
+</li>
+<li><p>可以介绍下线程间的通信嘛</p>
+<p>扯到进程的都可以，然后一般都是使用全局变量，引入进程和线程概念，然后介绍具体方式</p>
+</li>
+<li><p>实习期间你开发的算法和Java联调，怎么做到的</p>
+<p>主要就说负责功能代码的封装开发，调用了dll，具体的联调同事负责了</p>
+</li>
+<li><p>STL的容器还有什么比较熟悉的嘛（？不是问过了）</p>
+<p>又补充了下priority_queue</p>
+</li>
+<li><p>OpenCV介绍一下把</p>
+<p>各种基本图像处理都有，函数封装也有，甚至还有人脸检测网络直接使用</p>
+</li>
+<li><p>介绍一个神经网络的框架把</p>
+<p>由YOLO切入介绍了CNN，卷积层，pooling层，激活函数，全连接层</p>
+</li>
+<li><p>代码题，一个班级 有学生，姓名，课程，成绩，找到对应课程成绩前三的学生姓名</p>
+<p>讲了两种思路，如果是直接代码的话就直接排序取前三，数据库的话语句给他写了一下</p>
+</li>
+<li><p>如果量很大，不是班级了，是全国的数据，怎么处理</p>
+<p>哈希分桶，归并+堆取前三，然后让我代码大概写一下，就写了单组堆排序的过程，哈希和归并没写了</p>
+</li>
+<li><p>好像没有反问，直接结束了</p>
+</li>
+</ul>
+<h3 id="9-16-华子二面45min"><a href="#9-16-华子二面45min" class="headerlink" title="9.16 华子二面45min"></a>9.16 华子二面45min</h3><ul>
+<li><p>二面比较多的就是实验室项目以及实习工作相关了，主要是一些遇到困难怎么解决，失败的经历带来什么等等的问题</p>
+</li>
+<li><p>还有一个算法题，给定一个单词数组比如”good”, “green”, “flower”, “blue”, “sky”, “cold”； 然后一个字符串”cockblesgdflowkyou”，按找字符顺序输出字符串可以组成的单词</p>
+</li>
+</ul>
+<h3 id="9-20-京东方群面-50min"><a href="#9-20-京东方群面-50min" class="headerlink" title="9.20 京东方群面 50min"></a>9.20 京东方群面 50min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>使用什么语言开发？</p>
+<p>C++，Java没有了解</p>
+</li>
+<li><p>了解计算机网络吗？可以介绍一下OSI七层模型吗？</p>
+<p>数据链路层、网络层、传输层、应用层，只记得了这4个，需要复习一下</p>
+</li>
+<li><p>那你了解什么中间件吗？</p>
+<p>MySQL和Redis都有了解</p>
+</li>
+<li><p>那你可以介绍下怎么看MySQL是否有走索引吗？</p>
+<p>show processlist，里面的，，没说清</p>
+</li>
+<li><p>MySQL有什么性能优化手段吗?</p>
+<p>主要介绍了索引，然后查询语句注意竟然让优化器走索引，也不太会说。</p>
+</li>
+<li><p>然后就是HR常规问题了，为什么选择北京，觉得自己的优点是什么</p>
+</li>
+</ul>
+<h3 id="9-20-安克创新-HR面-25min"><a href="#9-20-安克创新-HR面-25min" class="headerlink" title="9.20 安克创新 HR面 25min"></a>9.20 安克创新 HR面 25min</h3><ul>
+<li>自我介绍</li>
+<li>你觉得这个项目对你来说最有意义的一点</li>
+<li>本硕期间最有成就感的一件事情</li>
+<li>项目上有遇到什么难点，怎么解决的</li>
+<li>对工作有什么倾向要求吗</li>
+<li>周围人对你的评价是什么，三个词</li>
+<li>工作地点有要求吗</li>
+<li>薪资有什么要求吗</li>
+<li>有没有经历过什么失败挫折，怎么度过的</li>
+<li>从导师或者师兄身上有学到什么品质吗</li>
+<li>有没有什么压力大的时期</li>
+<li>华为实习有什么不一样的吗，有没有遇到权责交代不清的情况</li>
+<li>反问，公式业务方向，工作氛围</li>
+</ul>
+<h3 id="9-20-美的群面-45min"><a href="#9-20-美的群面-45min" class="headerlink" title="9.20 美的群面 45min"></a>9.20 美的群面 45min</h3><ul>
+<li>主要是设计一个企业微信，保证实时性，同时还有一些权限管理，通讯录管理，开辟群组，抢红包等功能需求，针对性能也有一些可靠性、监控、可拓展性、实时性等要求，讲技术方案，每个点的对应解决方法</li>
+</ul>
+<h3 id="9-20-4399-C-游戏开发工程师-一面15min"><a href="#9-20-4399-C-游戏开发工程师-一面15min" class="headerlink" title="9.20 4399 C++游戏开发工程师 一面15min"></a>9.20 4399 C++游戏开发工程师 一面15min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>先谈一下Linux服务器这个项目把，你可以说一下你的项目难点吗</p>
+<p>主要说了提高并发度，多线程处理，然后说了下这个项目的目的</p>
+</li>
+<li><p>使用了多路复用，可以介绍下多路复用有哪几种吗，对应的原理</p>
+<p>select、poll、epoll三剑客</p>
+</li>
+<li><p>利用vector基于堆结构的定时器，怎么实现的</p>
+<p>介绍STL里priority_queue不能用的原因，然后使用vector堆化，以时间小为排序规则</p>
+</li>
+<li><p>vector底层你了解吗</p>
+<p>动态数组，不够时自动以2倍大小扩容</p>
+</li>
+<li><p>一定是两倍吗?</p>
+<p>我了解的是</p>
+</li>
+<li><p>使用状态机解析GET和POST，介绍一下GET和POST差别，怎么解析的</p>
+<p>语义差别，请求差别，解析请求头和请求体实现对应请求</p>
+</li>
+<li><p>介绍一下华为实习的工作把</p>
+</li>
+<li><p>熟悉常用容器，双向链表底层怎么实现的</p>
+<p>前向指针和后向指针</p>
+</li>
+<li><p>贪心算法可以介绍一下吗</p>
+<p>举例子，优先满足最好满足的</p>
+</li>
+<li><p>快速排序的原理可以介绍下吗</p>
+</li>
+<li><p>对C++游戏开发有什么了解吗</p>
+<p>没有，主要对C++开发比较有了解</p>
+</li>
+<li><p>反问</p>
+</li>
+</ul>
+<h3 id="9-21-招商网银一面-20min"><a href="#9-21-招商网银一面-20min" class="headerlink" title="9.21 招商网银一面 20min"></a>9.21 招商网银一面 20min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>介绍一下C++重载、重写还有重定义（隐藏）的区别</p>
+</li>
+<li><p>虚函数通过什么关键字实现的，实现机理是什么</p>
+</li>
+<li><p>静态链接和动态链接的差别</p>
+<p>没听清问了下是静态绑定和动态绑定吗，然后让我一起讲了</p>
+</li>
+<li><p>C++源文件到可执行文件的一个过程是什么</p>
+</li>
+<li><p>写个题把，链表判环</p>
+</li>
+<li><p>有了解计算机网络吗，介绍一下TCP四次挥手</p>
+</li>
+<li><p>TCP粘包问题怎么解决</p>
+</li>
+<li><p>平时项目开发中怎么看网络状态的，或者说有调试过吗</p>
+<p>ping，抓包，举了timewait导致端口重用失败的例子</p>
+</li>
+<li><p>抓包你使用什么指令</p>
+<p>忘记了，扯了下是一个外部插件，没记清名字</p>
+</li>
+<li><p>项目里用了IO多路复用，介绍下有哪几种方法</p>
+</li>
+<li><p>数据库有了解吗，介绍一下数据库分类</p>
+</li>
+<li><p>介绍一下几个关键字</p>
+<p>SELECT、DELETE、UPDATE</p>
+</li>
+<li><p>使用JOIN，WHERE，GROUP BY, ORDER BY这些关键字的时候，他们的先后顺序是什么？</p>
+</li>
+<li><p>反问，业务方向，技术栈，工作氛围</p>
+</li>
+</ul>
+<h3 id="9-21-字节抖音客户端一面-55min"><a href="#9-21-字节抖音客户端一面-55min" class="headerlink" title="9.21 字节抖音客户端一面 55min"></a>9.21 字节抖音客户端一面 55min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>选一个自己觉得比较有意义的项目或者实习经历介绍</p>
+<p>和投递岗位比较契合的就是Linux服务器，所以介绍了下整体的思路流程</p>
+</li>
+<li><p>IO多路复用介绍一下</p>
+<p>解决多线程多进程开销问题，三剑客select，poll，epoll介绍</p>
+</li>
+<li><p>那什么时候使用select</p>
+<p>并发量不大时可以使用，再介绍了下select的原理</p>
+</li>
+<li><p>使用了多线程是吗，那问一下多线程之前变量访问要注意什么</p>
+<p>看是否是临界资源，是的话一般使用锁保证程序运行达到想要的结果</p>
+</li>
+<li><p>都有什么锁，你比较熟悉的是什么</p>
+<p>互斥锁用的比较多，保证只有一个线程对临界资源进行访问</p>
+</li>
+<li><p>那还有其他锁吗</p>
+<p>信号量、自旋锁，适用场景介绍了下</p>
+</li>
+<li><p>原子性是什么</p>
+<p>保证要么执行要么不执行，不被中断</p>
+</li>
+<li><p>那i++是原子的吗？</p>
+<p>从操作系统底层介绍了下，分为指令语句和数据读取，所以不是原子的；现在反应过来是不是还可以介绍下i++的原理来着。。</p>
+</li>
+<li><p>可以介绍下HTTP和HTTPS的差别吗</p>
+<p>安全不安全，加密</p>
+</li>
+<li><p>HTTPS怎么保证安全的</p>
+<p>通过SSL四次握手生成会议密钥</p>
+</li>
+<li><p>SSL的过程可以介绍下吗</p>
+<p>四次握手，3个随机数，产生会议密钥</p>
+</li>
+<li><p>DNS的过程可以介绍下吗</p>
+<p>本地缓存，本地DNS服务器，根域服务器，顶域服务器等等</p>
+</li>
+<li><p>DNS传输的内容是什么</p>
+<p>找到就是ip，没找到就是给个地址让他继续找</p>
+</li>
+<li><p>TCP和UDP的区别介绍下</p>
+<p>可靠性、面向连接</p>
+</li>
+<li><p>那对应的应用场景是啥嘞</p>
+<p>TCP可靠传输，所以前面说的HTTP都是使用它，UDP的话无连接，保证实时性，现在的视频面试，前面说的DNS都是基于它</p>
+</li>
+<li><p>TCP的流量控制可以介绍下吗</p>
+<p>根据发送方窗口和接收方窗口进行调控</p>
+</li>
+<li><p>如果接受窗口已经是0了，还会发生吗</p>
+<p>会的，发生一个窗口探测报文，看什么时候可以发</p>
+</li>
+<li><p>TCP拥塞控制是什么</p>
+<p>避免发送方数据填满整个网络，四个算法</p>
+</li>
+<li><p>C++里面class和struct的区别是什么</p>
+<p>默认权限，和C的struct差别较多</p>
+</li>
+<li><p>那介绍一下和C的struct的差别</p>
+<p>C里面只能有变量，不能有函数，没有权限控制，相当于一个结构体</p>
+</li>
+<li><p>class默认是private的，那有没有其他方法访问private变量</p>
+<p>友元函数友元类，或者继承通过对象访问</p>
+</li>
+<li><p>友元有传递效果吗</p>
+</li>
+<li><p>介绍下malloc和new的差别</p>
+</li>
+<li><p>堆和栈的区别</p>
+</li>
+<li><p>虚函数怎么起作用的</p>
+</li>
+<li><p>有虚函数表对class大小有影响吗</p>
+<p>多一个指针</p>
+</li>
+<li><p>C++为什么要有内存对齐，怎么实现的</p>
+<p>为了方便访问变量，采取最大成员变量作为内存对齐的值，需要复习整理这块</p>
+</li>
+<li><p>智能指针了解吗，介绍下</p>
+<p>避免内存泄露，share，unique，weak</p>
+</li>
+<li><p>map和unordered_map的差别知道吗</p>
+</li>
+<li><p>这两个哪个比较占内存</p>
+</li>
+<li><p>数据库有了解吗，为什么要用索引</p>
+<p>当作目录，方便查找</p>
+</li>
+<li><p>一般用什么</p>
+<p>innodb采用B+树索引</p>
+</li>
+<li><p>为啥用B+，不用红黑或者B</p>
+<p>减少IO，方便范围查找</p>
+</li>
+<li><p>算法题，再二维矩阵中查找单词，dfs即可</p>
+</li>
+<li><p>反问</p>
+</li>
+</ul>
+<h3 id="9-22-汇川技术C-开发工程师-一面-25min"><a href="#9-22-汇川技术C-开发工程师-一面-25min" class="headerlink" title="9.22 汇川技术C++开发工程师 一面 25min"></a>9.22 汇川技术C++开发工程师 一面 25min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>最有成就的一个项目</p>
+<p>扯到成就只能介绍实验室了</p>
+</li>
+<li><p>然后就是各种解决问题的思路，难点，如何改进之类的了</p>
+</li>
+<li><p>Web服务器这个项目你用了线程池，线程池开多大的呢</p>
+<p>介绍了下项目的目的，然后设置的线程数是8，并发量利用epoll达到10000+</p>
+</li>
+<li><p>并发量你是怎么测试的</p>
+<p>webbench，模拟访问测试成功数</p>
+</li>
+<li><p>怎么样进一步提高并发量呢</p>
+<p>介绍了多Reactor多线程模型，多几个线程来处理连接分配任务</p>
+</li>
+<li><p>死锁了解吗，介绍一下</p>
+</li>
+<li><p>怎么解决死锁</p>
+<p>保证上锁顺序一致，还有设定超时时间，超时自动放弃</p>
+</li>
+</ul>
+<h3 id="9-22-福瑞泰克嵌入式软件开发工程师（C-）-一面-25min"><a href="#9-22-福瑞泰克嵌入式软件开发工程师（C-）-一面-25min" class="headerlink" title="9.22 福瑞泰克嵌入式软件开发工程师（C++） 一面 25min"></a>9.22 福瑞泰克嵌入式软件开发工程师（C++） 一面 25min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>C++11新特性你了解哪些呢</p>
+<p>auto,范围for，lambda，智能指针</p>
+</li>
+<li><p>针对lambda捕获变量，怎么保证他是有效的呢</p>
+<p>不了解</p>
+</li>
+<li><p>那换个方法问，我们经常使用shapeptr，那它是怎么保证资源有效的呢</p>
+<p>引用计数</p>
+</li>
+<li><p>那这个引用计数是怎么控制的</p>
+<p>构造加1，赋值给别人就减1</p>
+</li>
+<li><p>那多线程进行一个访问，不会导致资源一直使用吗</p>
+<p>理解错了，以为是说循环引用问题，介绍了weakptr</p>
+</li>
+<li><p>我的意思是一个线程对i变量+1另一个-1，那怎么保证数据一致性</p>
+<p>那就是加锁</p>
+</li>
+<li><p>理解原子变量嘛</p>
+<p>介绍了下原子性</p>
+</li>
+<li><p>那STL里面的queue是线程安全的嘛？</p>
+<p>不了解，应该不是</p>
+</li>
+<li><p>举个例子，比如现在也是多个线程对queue进行访问，那么怎么保证一致性</p>
+<p>也是使用锁的机制把</p>
+</li>
+<li><p>那比如说现在队列为空了，我还要pop，会怎么样</p>
+<p>queue的话是会报错的</p>
+</li>
+<li><p>那我不想报错，而是等待，怎么操作呢</p>
+<p>引入一个信号量把，压入+1弹出-1，小于0就阻塞</p>
+</li>
+<li><p>条件变量有了解吗</p>
+<p>刚才说的信号量就是条件变量</p>
+</li>
+<li><p>父类析构函数可以是虚函数嘛，不是会产生什么问题</p>
+</li>
+<li><p>单例模式了解吗，怎么实现的</p>
+</li>
+<li><p>map和unordermap差别了解吗</p>
+</li>
+<li><p>static关键字的作用</p>
+</li>
+<li><p>网络编程有了解吗，介绍一下IO多路复用</p>
+</li>
+<li><p>那epoll里面有两种触发模式，你一般选用哪个，为什么</p>
+<p>ET，效率较高，介绍ET循环读机制</p>
+</li>
+<li><p>那如果一直有线程写入数据，ET不就一直读取，怎么解决</p>
+<p>不会</p>
+</li>
+<li><p>TCP数据流传输，怎么判断边界</p>
+<p>问了下是粘包问题吗，那就采用固定长度传输或者特殊字符做边界</p>
+</li>
+<li><p>特殊字符做边界有没有什么问题</p>
+<p>有可能导致误认为是边界数据不完整</p>
+</li>
+<li><p>那怎么解决</p>
+<p>固定长度的包头，预留一个位置存放长度信息</p>
+</li>
+<li><p>那长度肯定不是固定的，还有其他方法嘛</p>
+<p>不会</p>
+</li>
+<li><p>比如HTTP分为包头包体，那包体就可以存放较多数据，TCP是否也可以这么连接呢</p>
+<p>说刚才的是针对每个报文分割开的，最终一个完整的信息还是要连接在一起的</p>
+</li>
+<li><p>那比如说数据很多，有什么方式处理这种问题</p>
+<p>不会。。</p>
+</li>
+<li><p>你的日志系统怎么实现的</p>
+<p>阻塞队列，生产者消费者模型</p>
+</li>
+<li><p>自己实现的嘛，有没有用过其他中间件</p>
+<p>没有</p>
+</li>
+<li><p>比如说现在有一百万个二叉树，要插入一个二叉树，如何判断是否在集合里面</p>
+<p>针对这种是否重复问题一般就用哈希把</p>
+</li>
+<li><p>二叉树哈希就可以判断相等嘛？</p>
+<p>可能不行，一般通过遍历判断是否一样</p>
+</li>
+<li><p>仅靠前序可以确定二叉树吗</p>
+<p>不行，需要前+中或中+后</p>
+</li>
+<li><p>那刚才那个二叉树插入问题，怎么解决？</p>
+<p>遍历复杂度太高了，不会。。</p>
+</li>
+<li><p>反问</p>
+</li>
+</ul>
+<h3 id="9-23-招商网银二面-22min"><a href="#9-23-招商网银二面-22min" class="headerlink" title="9.23 招商网银二面 22min"></a>9.23 招商网银二面 22min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>你好像都是硬件这块，为啥不继续做</p>
+<p>研究生和实习其实主要都是软件算法开发，所以选软件开发了</p>
+</li>
+<li><p>选你认为最有意义的项目介绍一下</p>
+<p>相关性比较大的还是这个web服务器搭建，其他两个都偏向图像处理</p>
+</li>
+<li><p>主要实现什么功能</p>
+<p>用户登录注册访问对应资源</p>
+</li>
+<li><p>怎么实现登录注册的</p>
+<p>简单的mysql查询对应键值对</p>
+</li>
+<li><p>那注册也是查询？</p>
+<p>先看是否存在表内，存在则注册失败了</p>
+</li>
+<li><p>现在让你实现一个功能，比如说一个用户注册或者登录失败了5次，就把他锁定知道隔天12点，怎么做</p>
+<p>那可以在登录或注册过程中加一个计数，一旦计数达到5次了就把他放入类似黑名单的数据，并且记录时间，利用定时器判断什么时候解除</p>
+</li>
+<li><p>那你这个是在应用端的，如果我关闭了网页再重开记录就不见了</p>
+<p>那就存一个黑名单表</p>
+</li>
+<li><p>表内存什么字段</p>
+<p>账户，时间戳</p>
+</li>
+<li><p>那每次都需要查询这个表看账户是否存在</p>
+<p>啊对，这样子效率比较差</p>
+</li>
+<li><p>那如果现在我想要实现一个账户只能在一个客户端登录，就是说现在两个客户端都要登录的话，有一个显示登录失败，这怎么做</p>
+<p>我的思路可能比较简单，那就是在数据库内存入一个登录客户端的信息，维护这个信息</p>
+</li>
+<li><p>那又有新的问题，如果在同一个客户端上登录了对应账户，但是浏览器现在关掉了，从另一个网页登录，怎么保证这个登录信息？</p>
+<p>这个是不是可以使用类似HTTP里面的cookie记录登录状态？</p>
+</li>
+<li><p>不是这个问题，就是针对同一个客户端的访问，你在数据库里怎么处理。。</p>
+<p>不会了</p>
+</li>
+<li><p>那之前说得这些都是基于数据库的解决方案，那大量请求就会都直接到数据库上，压力很大，怎么办</p>
+<p>那可以加入中间层，比如redis这种</p>
+</li>
+<li><p>你redis怎么加，请求最终还是要到数据库？</p>
+<p>emm，这就是添加一个缓存机制，如果缓存已经有了就直接返回了，避免直接访问数据库</p>
+</li>
+<li><p>那现在比如说缓存没找到，还是要到数据库找，然后呢？</p>
+<p>在数据库找到后在缓存进行更新，从而分担请求</p>
+</li>
+<li><p>那现在有个问题，有个不正确的请求，比如说查询账户，但是该账户不在数据库里，那缓存也用不上了，怎么处理</p>
+<p>这个就是缓存击穿的问题嘛，针对这个情况可以使用布隆过滤器把，把不正确的请求直接拒绝掉</p>
+</li>
+<li><p>布隆过滤器怎么起作用的？</p>
+<p>主要通过几个哈希映射到对应的二进制位把，将对应的二进制位置为1，如果一个请求经过哈希映射得到的对应二进制位不是1，那肯定就是不存在的</p>
+</li>
+<li><p>那如果现在数据很多，二进制位已经都满了，怎么办</p>
+<p>针对数据很多导致的哈希冲突可以使用拉链法解决嘛</p>
+</li>
+<li><p>那缓存也是有限的，存不下了怎么办</p>
+<p>哦对了，缓存内部是有个淘汰机制的，一旦缓存不够就会触发该机制，去除掉过期的或者说使用得比较久了的数据，把新数据放进来</p>
+</li>
+<li><p>你做这个项目过程中遇到过什么难点吗</p>
+<p>举了TIMEWAIT例子，调bug时候发现的</p>
+</li>
+<li><p>怎么解决的</p>
+<p>linux指令查看连接状态， netstat ，然后过一会再用或者换端口</p>
+</li>
+<li><p>反问，看您问我的都是数据库缓存址类的问题，请问业务方向都是这个相关嘛</p>
+<p>这都是计科基础知识啊</p>
+<p>？？？行把是我垃圾</p>
+</li>
+</ul>
+<h3 id="9-24-百度C-开发工程师一面-50min"><a href="#9-24-百度C-开发工程师一面-50min" class="headerlink" title="9.24 百度C++开发工程师一面 50min"></a>9.24 百度C++开发工程师一面 50min</h3><ul>
+<li><p>简单说一下你了解的内存管理</p>
+</li>
+<li><p>new和malloc有什么区别呢</p>
+</li>
+<li><p>设计模式了解一些吗，平时用到的哪些，单例能够简单说一下他的实现方式吗</p>
+</li>
+<li><p>单例的用在多线程，有什么问题，怎么写</p>
+</li>
+<li><p>快速查找使用的字典结构你都了解哪些</p>
+</li>
+<li><p>map的话了解他的时间复杂度吗，哈希表呢</p>
+</li>
+<li><p>哈希表的哈希冲突你知道吗</p>
+</li>
+<li><p>你觉得哈希表和红黑树各自有什么优势或者缺点（少说了哈希表重哈希的消耗，而且存放是数组，内存连续，有要求）</p>
+</li>
+<li><p>跳表你知道吗，为什么时间复杂度是logn（更准确点应该说查找方式和二分方式一致的）</p>
+</li>
+<li><p>HTTPS你知道多少，TLS怎么实现的，证书你知道吗，公钥私钥干啥用的，发送端利用公钥加密后发送数据给对端，那对端通过什么加密？为什么前面要非对称后面要对称加密（从性能，复杂度进行解释）</p>
+</li>
+<li><p>搭建的web服务器是啥的，linux还是？</p>
+</li>
+<li><p>IO多路复用，为什么用，优势在哪，epoll原理，用了epoll一定快吗，什么情况不好（看事件的触发率，如果所有的一直都是触发的，那就不存在浪费了，因为处理的都是一定发生的，所以select也不一定不好）</p>
+</li>
+<li><p>手撕基于STL list 的快速排序，写了单向版本不太满意</p>
+</li>
+<li><p>原本的快排写一下，然后写错了，g</p>
+</li>
+<li><p>总结：很可惜的一场面试，前面都很好，死在快排我是没想到的。。</p>
+</li>
+</ul>
+<h3 id="9-25-中兴软件开发工程师一面-线下-40min"><a href="#9-25-中兴软件开发工程师一面-线下-40min" class="headerlink" title="9.25 中兴软件开发工程师一面 线下 40min"></a>9.25 中兴软件开发工程师一面 线下 40min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>研究生项目各种问</p>
+</li>
+<li><p>实习过程中遇到的问题，有什么改变</p>
+</li>
+<li><p>面向对象设计怎么理解的</p>
+</li>
+<li><p>闲聊</p>
+</li>
+<li><p>技术问题主要就是一个C++17新特性</p>
+</li>
+<li><p>单元测试了解吗，不懂</p>
+</li>
+<li><p>总结：线下就是看你的语言表达能力了，技术细节也不多</p>
+</li>
+</ul>
+<h3 id="9-26-浪潮嵌入式软件开发一面-15min"><a href="#9-26-浪潮嵌入式软件开发一面-15min" class="headerlink" title="9.26 浪潮嵌入式软件开发一面 15min"></a>9.26 浪潮嵌入式软件开发一面 15min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>HR问题，对工作地点有要求嘛，北方适应嘛</p>
+</li>
+<li><p>投底这个岗位是什么样的一个考虑呢，可以介绍一下吗</p>
+</li>
+<li><p>对于未来offer排名前三的考虑因素</p>
+</li>
+<li><p>期望的月薪还算是比较高的，你这边是什么怎么看待的呢？</p>
+</li>
+<li><p>介绍一下华为实习这个贯穿线缺陷的问题，怎么检测怎么设计建模（只考虑了竖线横线，斜线呢？怎么确定初始位置，效率怎么样）</p>
+</li>
+<li><p>web服务器是独立开发的吗？</p>
+</li>
+<li><p>为什么选择EPOLL呢</p>
+</li>
+<li><p>MySQL的索引是什么原理，为什么要构建索引，常用索引的方式</p>
+</li>
+<li><p>总结：KPI局把</p>
+</li>
+</ul>
+<h3 id="9-26-字节客户端开发工程师二面-1h10min"><a href="#9-26-字节客户端开发工程师二面-1h10min" class="headerlink" title="9.26 字节客户端开发工程师二面 1h10min"></a>9.26 字节客户端开发工程师二面 1h10min</h3><ul>
+<li>想问下你一面觉得有哪些答得好哪些答得不好呢</li>
+<li>你一面的面评显示你整体的计算机基础还是ok的，你本身又是非科班的，所以想问下你的一个学习方法是什么呢？</li>
+<li>web服务器出于什么样的目的做的，背景是什么，从中间实现了什么学到了什么 </li>
+<li>登陆是如何实现的，浏览器是如何记录用户登入状态的（简单mysql验证，状态利用类似http的cookie，服务端session）</li>
+<li>那cookie和session的区别还有什么呢？（只停留在了概念上，具体细节有点不清楚）</li>
+<li>GET请求和POST请求的区别（语义差别，长度限制）</li>
+<li>还有其他差别吗？（没了解了）</li>
+<li>那你了解其他请求嘛？（1.1里面新增的几个DELETE）</li>
+<li>HTTP返回状态码了解吗（2345介绍）</li>
+<li>实际使用计算机的时候发现QQ和微信都可以正常使用，但是访问网站比如百度无法访问，怎么确定问题（Ping判断对端响应）</li>
+<li>ping存在两种情况，ping得通和ping不通，如果是ping不通的话你后续怎么做呢（不太了解）</li>
+<li>ping不同有那种原因造成呢（黑名单，防火墙block）</li>
+<li>相比于qq微信，网页打开网址的一个过程是怎么样的呢（四层模型介绍）</li>
+<li>HTTP使用什么协议呢，TCP还是UDP呢（TCP）</li>
+<li>那现在根据你介绍的这些步骤，刚才浏览器打不开的场景可能是出现在哪些环节呢（应用层这里把）</li>
+<li>有没有可能出现在HTTP呢</li>
+<li>浏览器打开网页第一步是什么呢</li>
+<li>域名转到IP地址这一步是不是可能存在问题</li>
+<li>其实刚才说的这个问题其实就是DNS出现问题，那现在想排查DNS，怎么判断呢？</li>
+<li>如何快速判断是否是DNS的问题呢（其实就是ping域名，ping ip看是否存在问题）</li>
+<li>操作系统内核态和用户态的区别是什么，为什么要有这么一个设定</li>
+<li>哪些事情可以在用户态做，哪些事情可以在内核态做</li>
+<li>比如说现在用键盘敲击a，这个a展现到了输入框内，这个过程出现了几次用户态到内核态的切换呢（我认为是2次）</li>
+<li>数学题。。。你可以说一下一个时钟一天分针和时针相交几次嘛（太紧张了没算明白。。。）</li>
+<li>现在你想不出来的话让你用程序去编写，并且写出相遇的时刻的时间（又是败在做题的一天，，太紧张了，，其实很简单。。）</li>
+<li>总结：前面DNS，ping之类的需要巩固，面试刷到没做过的题得冷静点。。</li>
+</ul>
+<h3 id="9-26-同花顺C-开发工程师-二面-35min"><a href="#9-26-同花顺C-开发工程师-二面-35min" class="headerlink" title="9.26 同花顺C++开发工程师 二面 35min"></a>9.26 同花顺C++开发工程师 二面 35min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>最近在干什么（学习，补充自己不足的地方）</p>
+</li>
+<li><p>学什么，哪里比较不足（MySQL，Redis以及各类实际业务的场景问题）</p>
+</li>
+<li><p>你是怎么学习的</p>
+</li>
+<li><p>最近学到了什么可以介绍下吗（MySQL原理之类的）</p>
+</li>
+<li><p>MySQL索引可以介绍一下嘛，分为哪几类</p>
+</li>
+<li><p>联合索引怎么起作用的</p>
+</li>
+<li><p>然后其他的都是闲聊了哈哈哈，什么压力大的时候啊，怎么调解啊之类的</p>
+</li>
+<li><p>总结：主要闲聊哈哈哈，体验局</p>
+</li>
+</ul>
+<h3 id="9-27-荣耀软件开发工程师一面-30min"><a href="#9-27-荣耀软件开发工程师一面-30min" class="headerlink" title="9.27 荣耀软件开发工程师一面 30min"></a>9.27 荣耀软件开发工程师一面 30min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>研究生项目介绍</p>
+</li>
+<li><p>深挖YOLO还行，得亏直接学过</p>
+</li>
+<li><p>创新点在哪里，工作量在哪，项目规模等等细节问题</p>
+</li>
+<li><p>华为实习项目介绍</p>
+</li>
+<li><p>反问（业务方向，原来是搞图像的。。怪不得）</p>
+</li>
+<li><p>总结：主要就是项目问题了，没有任何技术问题</p>
+</li>
+</ul>
+<h3 id="9-28-蓝月亮IT研发-60min-群面"><a href="#9-28-蓝月亮IT研发-60min-群面" class="headerlink" title="9.28 蓝月亮IT研发 60min 群面"></a>9.28 蓝月亮IT研发 60min 群面</h3><ul>
+<li>大无语，讨论一个社区门店开在哪里，货架摆放产品次序的问题，后期维护需要的IT技术支持。。。和4个视觉算法老哥一起，直接摆了，坐牢60min；没啥意义的群面</li>
+</ul>
+<h3 id="9-28-汇川技术-C-开发工程师-HR面-20min"><a href="#9-28-汇川技术-C-开发工程师-HR面-20min" class="headerlink" title="9.28 汇川技术 C++开发工程师 HR面 20min"></a>9.28 汇川技术 C++开发工程师 HR面 20min</h3><ul>
+<li>自我介绍</li>
+<li>个人优点，最能概括你的三个词</li>
+<li>为什么说沟通能力好，有没有什么例子</li>
+<li>生活或者项目啥有没有遇到什么冲突，怎么解决的</li>
+<li>你周围的同学朋友对你的评价，三个词</li>
+<li>他们有问题会找你嘛</li>
+<li>offer问题</li>
+<li>薪资问题</li>
+<li>你对我们公司了解多少？</li>
+<li>3年内，你有什么职业规划嘛？</li>
+<li>有女朋友嘛？</li>
+<li>你选择一个公司的三个最看重的点</li>
+<li>方便问下你什么时候分手为什么的吗（？？？无语）</li>
+<li>反问，工作氛围工作时间</li>
+</ul>
+<h3 id="9-28-迈瑞医疗-软件开发工程师-30min"><a href="#9-28-迈瑞医疗-软件开发工程师-30min" class="headerlink" title="9.28 迈瑞医疗 软件开发工程师 30min"></a>9.28 迈瑞医疗 软件开发工程师 30min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>怎么检测内存泄漏，使用什么工具</p>
+<p>讲了原因，工具没有使用过</p>
+</li>
+<li><p>那你讲一下这些工具检测的原理</p>
+<p>看堆内存的占用率把</p>
+</li>
+<li><p>IO多路复用，怎么起作用的，epoll底层原理</p>
+</li>
+<li><p>字节序了解吗</p>
+<p>介绍了TCP字节序传输，系统和网络间的大端小端传输</p>
+</li>
+<li><p>除了网络传输间的字节序，还有哪里会使用到</p>
+<p>不同硬件间可能也存在把，不懂</p>
+</li>
+<li><p>写个代码把，16进制转10进制，考虑所有因素</p>
+<p>少考虑了输入的限制，溢出问题，然后说我对入参直接修改了，不行</p>
+</li>
+<li><p>总结：体验有点差，这一写题目就紧张也是绝了，很拉</p>
+</li>
+</ul>
+<h3 id="9-28-虹软C-x2F-C-开发工程师-20min"><a href="#9-28-虹软C-x2F-C-开发工程师-20min" class="headerlink" title="9.28 虹软C&#x2F;C++开发工程师 20min"></a>9.28 虹软C&#x2F;C++开发工程师 20min</h3><ul>
+<li>自我介绍</li>
+<li>华为项目介绍，工作内容，改进点</li>
+<li>除了OpenCV的运算开销，其余开销有用其他方法加速嘛</li>
+<li>里面有用多线程嘛，你用过什么多线程做什么事情</li>
+<li>那多线程直接要注意什么</li>
+<li>采用什么手段保护临界资源</li>
+<li>了解Android相关知识嘛</li>
+<li>HDR相机原理</li>
+<li>图像格式是什么</li>
+<li>工作方向，工作地点等问题</li>
+</ul>
+<h3 id="9-28-招银网络科技-软件开发工程师-HR面-15min"><a href="#9-28-招银网络科技-软件开发工程师-HR面-15min" class="headerlink" title="9.28 招银网络科技 软件开发工程师 HR面 15min"></a>9.28 招银网络科技 软件开发工程师 HR面 15min</h3><ul>
+<li>自我介绍</li>
+<li>你是机械的，为什么转开发呢</li>
+<li>研究生都是图像处理的，现在为什么选择开发呢</li>
+<li>到这边后可能要转java，接受吗</li>
+<li>offer问题</li>
+<li>你认为你在应届生中的主要优势和劣势在哪里</li>
+<li>如何学习一门新技术，你的重点在哪里</li>
+<li>最近有在看书吗</li>
+<li>反问</li>
+</ul>
+<h3 id="9-29-广汽研究所-智能网联类-二面-HR面-35min"><a href="#9-29-广汽研究所-智能网联类-二面-HR面-35min" class="headerlink" title="9.29 广汽研究所 智能网联类 二面+HR面 35min"></a>9.29 广汽研究所 智能网联类 二面+HR面 35min</h3><ul>
+<li>自我介绍</li>
+<li>HR问题，你是哪里人，父母都在做什么，有兄弟姐妹吗</li>
+<li>现在有面试什么公司，什么在流程中，拿了什么offer</li>
+<li>工作地点的要求</li>
+<li>有女朋友吗</li>
+<li>有打算考博或者考公务员吗</li>
+<li>offer的薪酬是多少</li>
+<li>华为实习是什么部门</li>
+<li>你刚才投递的没有做手机的，你没投吗</li>
+<li>荣耀那边到什么阶段</li>
+<li>华为项目介绍，贯穿线缺陷是什么样的，怎么解决的，简要说一下细节</li>
+<li>阈值是根据什么设置的，是对着LCD屏拍照还是</li>
+<li>全局搜索做的优化是什么，循环次数怎么减少</li>
+<li>web服务器能解决多大的并发量</li>
+<li>这个项目是怎么来的</li>
+<li>怎么监听连接的客户端，需要什么校验的东西吗</li>
+<li>有没有结合防火墙的考虑</li>
+<li>有几个进程</li>
+<li>第三个项目是导师项目吗，有机器视觉是吗</li>
+<li>跟相机之间的通信是怎么做的</li>
+<li>整个项目的大概框架</li>
+<li>你这个跟踪好像不太算跟踪</li>
+<li>这个算法的输入是怎么样的，输出是怎么样的，算法怎么处理的</li>
+<li>是只有直线吗？曲线呢</li>
+<li>当焊缝不是直线时，你是怎么控制机器人行走的位移的</li>
+<li>和下位机之间的通信是由什么协议通信呢</li>
+<li>那你给他的信息是什么</li>
+<li>你的项目之中都有用到什么数据结构</li>
+<li>定时器vector内部存什么数据，有用到排序吗，拿什么比较呢</li>
+<li>网络编程这一块简单说一下三次握手和四次挥手的过程</li>
+<li>智能指针用的多吧</li>
+<li>web项目里都开辟了几个对象呢，有没有经常创建销毁的场景</li>
+<li>反问，业务方向，技术栈</li>
+</ul>
+<h3 id="9-29-荣耀通用软件开发工程师-综合面-22min"><a href="#9-29-荣耀通用软件开发工程师-综合面-22min" class="headerlink" title="9.29 荣耀通用软件开发工程师 综合面 22min"></a>9.29 荣耀通用软件开发工程师 综合面 22min</h3><ul>
+<li>自我介绍</li>
+<li>研究生项目，项目构成、项目难点、负责模块、主要工作；以及一些细节，问蛮多的</li>
+<li>华为实习你感觉和学生阶段最大的体会</li>
+<li>你怎么理解公司的企业文化，对公司的理解，如何快速融入</li>
+<li>未来几年的一个职业规划</li>
+<li>工作地点</li>
+<li>反问</li>
+</ul>
+<h3 id="9-29-字节-客户端开发工程师—番茄小说-一面-1h"><a href="#9-29-字节-客户端开发工程师—番茄小说-一面-1h" class="headerlink" title="9.29 字节 客户端开发工程师—番茄小说 一面 1h"></a>9.29 字节 客户端开发工程师—番茄小说 一面 1h</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>说一下你了解的数据结构</p>
+</li>
+<li><p>讲一下哈希表内部的原理</p>
+</li>
+<li><p>怎么处理哈希冲突的</p>
+</li>
+<li><p>怎么判断一个单链表是否有环</p>
+</li>
+<li><p>怎么判断两个链表是否相交，怎么确认交点呢</p>
+</li>
+<li><p>怎么用栈实现队列的功能</p>
+</li>
+<li><p>再说一下用户态和内核态，他们之间怎么切换的</p>
+</li>
+<li><p>你了解哪些中断呢？（回答了硬中断和软中断，不太对感觉）</p>
+</li>
+<li><p>介绍一下父子进程</p>
+</li>
+<li><p>什么是虚拟地址什么是物理地址</p>
+</li>
+<li><p>介绍一下缺页中断</p>
+</li>
+<li><p>如果页表满了怎么办，你了解什么置换算法</p>
+</li>
+<li><p>再介绍一下动态链接和静态链接的区别</p>
+</li>
+<li><p>动态链接和静态链接是在什么阶段执行的呢，编译?执行？调用？</p>
+</li>
+<li><p>静态变量和全局变量的区别（没说出具体的区别）</p>
+</li>
+<li><p>说一下数据库事务</p>
+</li>
+<li><p>你知道抓包吗？网络过程间的状态查询</p>
+</li>
+<li><p>可以抓HTTPS的包吗？</p>
+</li>
+<li><p>那我们作为开发者如何防止抓包呢？除了君子协议外（不懂，要防止攻击者）</p>
+</li>
+<li><p>程序输出分析，一个数组指针问题，一个sizeof数组元素的分析，一个位运算计算二进制有几个1</p>
+</li>
+<li><p>算法题：目前的链表奇数位置升序偶数位置降序，怎么对链表进行排序</p>
+<p>采用了拆分链表然后翻转偶数链表然后合并有序链表的思路，因为拆分后忘记断开导致程序输出的时候死循环了哈哈哈很尴尬，和面试官找了半天</p>
+</li>
+<li><p>再介绍一下智能指针把（因为我使用虚拟头但是没有delete，程序有警告哈哈哈）</p>
+</li>
+<li><p>智能指针有哪几种，都有引用计数吗</p>
+</li>
+<li><p>再介绍下进程间有哪些通信方式</p>
+</li>
+<li><p>对称加密和非对称加密介绍</p>
+</li>
+<li><p>反问</p>
+</li>
+</ul>
+<h3 id="9-29-新华三-智能终端-嵌入式软件工程师（网络终端）一面25min"><a href="#9-29-新华三-智能终端-嵌入式软件工程师（网络终端）一面25min" class="headerlink" title="9.29 新华三 智能终端-嵌入式软件工程师（网络终端）一面25min"></a>9.29 新华三 智能终端-嵌入式软件工程师（网络终端）一面25min</h3><ul>
+<li><p>自我介绍</p>
+</li>
+<li><p>华为实习项目介绍，背景，方法，耗时，难点</p>
+</li>
+<li><p>web服务器介绍，难点</p>
+</li>
+<li><p>四层网络模型介绍</p>
+</li>
+<li><p>三次握手介绍</p>
+</li>
+<li><p>研究生项目介绍，整体流程</p>
+</li>
+<li><p>怎么理解Linux下的内存管理</p>
+<p>介绍了malloc分配内存的过程，感觉不太对，临时就想到这个了。。</p>
+</li>
+<li><p>进程线程通信有什么不同</p>
+</li>
+<li><p>业务介绍，反问</p>
+</li>
+</ul>
+<h3 id="9-29-中兴-软件开发工程师-综合面-12min"><a href="#9-29-中兴-软件开发工程师-综合面-12min" class="headerlink" title="9.29 中兴 软件开发工程师 综合面 12min"></a>9.29 中兴 软件开发工程师 综合面 12min</h3><ul>
+<li>自我介绍</li>
+<li>项目中的角色，任务</li>
+<li>实习收获</li>
+<li>工作地点</li>
+<li>3-5年职业规划</li>
+<li>反问，工作氛围、上班时间</li>
+</ul>
+<h3 id="10-9-中望软件C-研发工程师一面-30min"><a href="#10-9-中望软件C-研发工程师一面-30min" class="headerlink" title="10.9 中望软件C++研发工程师一面 30min"></a>10.9 中望软件C++研发工程师一面 30min</h3><ul>
+<li>本科和研究生都是机械的，现在选择的岗位是纯开发的，怎么考虑的</li>
+<li>三个项目挑一个介绍把</li>
+<li>web服务器主线程主要做什么事情，工作线程主要分为哪几类去实现你的业务</li>
+<li>基于线程池的竞争是怎么实现的</li>
+<li>在线程池里面有用到什么设计模式或者其他技巧确定线程的稳定以及线程的竞争是可控的吗</li>
+<li>有没有考虑过一个线程挂了对你服务器的影响吗</li>
+<li>static在不同场景下有不同的作用，系统描述一下</li>
+<li>除了全局和局部静态变量，还有其他场景吗？在类内有什么作用</li>
+<li>静态的成员函数和普通成员函数有什么区别（没说清）</li>
+<li>单例模式怎么实现的，是线程安全的吗</li>
+<li>提前构造的对象是在哪里构造的，这样就线程安全了吗</li>
+<li>除了构造函数声明为私有的外还有其他需要的声明为私有的吗，拷贝构造函数这些需要处理吗，不需要不就破坏单例了？还有什么呢，C++11还有一个新的构造函数，需要吗</li>
+<li>移动构造和拷贝构造的区别是什么</li>
+<li>你是怎么理解右值的</li>
+<li>了解map和unordered_map的区别吗</li>
+<li>key值是唯一的吗</li>
+<li>map和unordered_map查找元素的时间复杂度是多少(说理论上都可以O1，但是数据结构应该是Ologn和O1，瞎说了)</li>
+<li>对于自定义的结构，map需要做什么事情保证key有序且唯一呢</li>
+<li>重载&lt;的函数原型你知道吗</li>
+<li>传参需要是什么类型，为什么</li>
+<li>返回类型是bool怎么保证唯一（不会）</li>
+<li>vector经常遇到迭代器失效，什么场景，你是怎么理解的</li>
+<li>insert和erase之后有什么方法让迭代器继续有效吗</li>
+<li>vector添加元素的接口，这两个有什么区别</li>
+<li>你经常使用OpenCv，对于动态库和静态库是怎么理解的</li>
+<li>你使用什么编译器，为了使用OpenCV需要做什么配置，编译的时候可以找到那运行的时候怎么找到动态库呢？</li>
+<li>反问</li>
+</ul>
+<h3 id="10-9-同花顺C-开发-HR面-30min"><a href="#10-9-同花顺C-开发-HR面-30min" class="headerlink" title="10.9 同花顺C++开发 HR面 30min"></a>10.9 同花顺C++开发 HR面 30min</h3><ul>
+<li>自我介绍</li>
+<li>你一直是使用C++吗</li>
+<li>怎么评价自己</li>
+<li>生活中有没有特别感谢的人</li>
+<li>三个性格特征</li>
+<li>有炒股或者基金吗</li>
+<li>怎么了解到我们公司的</li>
+<li>最近有在学习什么专业技术之外的东西吗，学习方法</li>
+<li>评价自己的专业能力</li>
+<li>认为做的最好的一个互联网产品，成功在哪里</li>
+<li>最看重一个公司的哪三个方面</li>
+<li>最熟悉的一个业务方向</li>
+<li>怎么看待996，卷</li>
+<li>其他offer，流程中的公司，薪资问题</li>
+<li>工作地点</li>
+<li>家庭情况</li>
+<li>反问</li>
+</ul>
+<h3 id="10-11-锐明-C-开发工程师-一面-28min"><a href="#10-11-锐明-C-开发工程师-一面-28min" class="headerlink" title="10.11 锐明 C++开发工程师 一面 28min"></a>10.11 锐明 C++开发工程师 一面 28min</h3><ul>
+<li>闲聊，学校没课程了把</li>
+<li>做的项目是导师的项目还是去公司接项目</li>
+<li>去华为实习做了哪些你比较满意的工作呢</li>
+<li>写代码花多长时间呢</li>
+<li>主要是实现了什么样的业务，用到了什么开发模式之类的嘛，主要功能介绍</li>
+<li>web服务器是基于开源代码修改还是哪个模块自己重写的，具体举一下自己改进的一个例子</li>
+<li>返回的资源占用的空间内存有限制嘛？</li>
+<li>研究生项目介绍，主要负责模块，功能介绍，平常采用什么方法计算出来的，图像积累了多少，鲁棒性影响，目前处于什么阶段，有没有什么处理失败的场景</li>
+<li>在项目中有没有采用什么专业知识解决了什么难题</li>
+<li>除了主要的任务，还有在其他生活工作中采用专业知识开发工具解决问题</li>
+<li>经常遇到比较多的代码调试的问题，举两个例子，经常出错的地方有哪些</li>
+<li>进程间的通信有没有用过</li>
+<li>线程池怎么通信的，采用什么机制保护边界资源</li>
+<li>未来3年的职业规划</li>
+</ul>
+<h3 id="10-11-虹软-C-开发工程师-二面-15min"><a href="#10-11-虹软-C-开发工程师-二面-15min" class="headerlink" title="10.11 虹软 C++开发工程师 二面 15min"></a>10.11 虹软 C++开发工程师 二面 15min</h3><ul>
+<li>自我介绍</li>
+<li>C++static的作用</li>
+<li>static和const的差别</li>
+<li>define和const的差别</li>
+<li>虚函数和纯虚函数的差别</li>
+<li>介绍一下内存泄漏，检测之类的</li>
+<li>有用过多线程把，锁机制使用过嘛</li>
+<li>互斥和同步的区别</li>
+<li>信号量的使用</li>
+<li>研究生项目相关问题，HDR相机原理，QT界面设计，项目工作量安排等</li>
+</ul>
+<h3 id="10-12-发那科-软件开发工程师-一面7min"><a href="#10-12-发那科-软件开发工程师-一面7min" class="headerlink" title="10.12 发那科 软件开发工程师 一面7min"></a>10.12 发那科 软件开发工程师 一面7min</h3><ul>
+<li>自我介绍</li>
+<li>职业规划</li>
+<li>实习部门情况</li>
+<li>实习经历最大收获</li>
+<li>最熟悉的语言</li>
+<li>反问</li>
+</ul>
+<h3 id="10-12-客户端开发工程师—番茄小说-二面-45min"><a href="#10-12-客户端开发工程师—番茄小说-二面-45min" class="headerlink" title="10.12 客户端开发工程师—番茄小说 二面 45min"></a>10.12 客户端开发工程师—番茄小说 二面 45min</h3><ul>
+<li>自我介绍</li>
+<li>介绍一下TCP&#x2F;IP的四层模型</li>
+<li>假设浏览器访问网址，这四层分别会发生什么事情呢</li>
+<li>网络层会涉及到什么协议呢（ARP）</li>
+<li>网络IP地址转化流程，外网IP和内网IP是怎么转换的</li>
+<li>比如说平时用路由器，多个手机连接同个路由器，那手机获取到的地址是什么地址呢</li>
+<li>路由器是否会经过内网和外网的IP转换呢</li>
+<li>这个IP转换是怎么实现的，主要通过端口号是吗</li>
+<li>假设手机a和手机b都在同一个wifi下，想要手机a通过wifi向手机b发生一个文件，你觉得在网络上面可以用什么协议做这个事情</li>
+<li>比如说HTTP协议可以做嘛？（我回答没必要，不需要应用层的传输，在网络层就可以了，但是其中的协议不太了解）</li>
+<li>那TCP协议可以处理嘛？（要传输肯定也是可以的）</li>
+<li>那为什么说HTTP不可以（。。我不是说不可以，就是说可以不用，使用HTTP也是可以交互的）</li>
+<li>假设现在有两个路由器，手机a只能连接路由器a，手机b只能连接路由器b，那路由器a和b要如何配置呢，从网络原理如何分析呢（回答通过路由器表配置mac地址啥的，不会，乱说）</li>
+<li>那假设现在手机a ping一下手机b会发生什么事情？他的IP传输过程是怎么样的（ICMP）</li>
+<li>动态规划、贪心和搜索这三个的区别</li>
+<li>那你觉得动态规划最关键的要素是什么（子问题，相互独立）</li>
+<li>那贪心有什么特点呢</li>
+<li>搜索的算法有哪些呢</li>
+<li>深度和宽度分别解决什么问题呢</li>
+<li>搜索的剪枝是什么呢</li>
+<li>字典树是怎么样的一个数据结构呢</li>
+<li>字典树构造的复杂度是多少</li>
+<li>三个算法题。。。</li>
+<li>第一道题目是给你一个字符串，可以讲任意一个字符转为任意一个小写字符，这个操作可有m次，问转化后的字符串中最长的相等子串长度，比如”abcdac” ，2次操作，可以转化为”abcccc” ，最长是4，返回4（我思路不太对，用的滑动窗口做，没做出来）</li>
+<li>第二个题目感觉我有点菜送了个分，实现二进制字符串的相加，比如”10001” + “1101” &#x3D; “11110”</li>
+<li>第三个题目还蛮有意思，给你一个数字n，有两种操作，（n + 1）% 1024, （n * 2） % 1024，求将n转化为0的最小操作次数（讲了一下用二进制的思想求解，+1就是+1，*2变成左移，转为1024的最少次数；然后让我想一下dp是否能做，问子问题怎么定义）</li>
+</ul>
+<h3 id="10-13-华为AI工程师-主管面-15min"><a href="#10-13-华为AI工程师-主管面-15min" class="headerlink" title="10.13 华为AI工程师 主管面 15min"></a>10.13 华为AI工程师 主管面 15min</h3><ul>
+<li>自我介绍</li>
+<li>你有华为的实习经历啊，实习的部门是哪个，四级部门呢</li>
+<li>实习的感受怎么样，能学到东西你觉得</li>
+<li>做的东西和你的兴趣相匹配嘛</li>
+<li>把实习阶段的工作稍微详细的介绍一下，工作内容，角色</li>
+<li>你在华为实习期间感受到华为的企业文化和价值观是什么</li>
+<li>你适应华为工作的强度嘛</li>
+<li>你是一个什么性格的人</li>
+<li>你自己觉得学习能力怎么样，举个例子，比如项目中有没有起过什么作用</li>
+<li>你的家乡在哪里</li>
+<li>在学校期间还担任过什么学生工作吗</li>
+<li>你的技能是偏软件一些是吗</li>
+<li>反问，新人培养机制</li>
+</ul>
+<h3 id="10-13-欣旺达-BMS软件开发工程师-一面-15min"><a href="#10-13-欣旺达-BMS软件开发工程师-一面-15min" class="headerlink" title="10.13 欣旺达 BMS软件开发工程师 一面  15min"></a>10.13 欣旺达 BMS软件开发工程师 一面  15min</h3><ul>
+<li>上来没有自我介绍就开始说岗位不匹配</li>
+<li>了解我们公司吗</li>
+<li>了解BMS嘛，做什么的</li>
+<li>为什么想做这个，不去做机器人的（就说看重软件开发，有较好的语言基础，然后被说C++基础对我们没用。。）</li>
+<li>之后的职业规划是哪个领域（说目前觉得都可以被狂怼）</li>
+<li>项目随便介绍了下，结束了</li>
+</ul>
+<h3 id="10-13-深信服-C-x2F-C-软件开发工程师-一面-30min"><a href="#10-13-深信服-C-x2F-C-软件开发工程师-一面-30min" class="headerlink" title="10.13 深信服 C&#x2F;C++软件开发工程师 一面 30min"></a>10.13 深信服 C&#x2F;C++软件开发工程师 一面 30min</h3><ul>
+<li>自我介绍</li>
+<li>研究生项目介绍，功能如何实现，代码出现问题，开发环境</li>
+<li>为什么做一个web服务器，项目功能，改进点</li>
+<li>定时器怎么起作用的，时间你设定的多少</li>
+<li>为什么不用HTTPS</li>
+<li>并发量达到多少</li>
+<li>实习工作介绍，功能实习，接口如何封装</li>
+<li>C++内存管理介绍一下</li>
+<li>全局变量和静态局部变量的差别</li>
+<li>多态介绍一下</li>
+<li>虚函数表的一个顺序是怎么样的</li>
+<li>如果派生类不重写，顺序是怎么样的</li>
+<li>多继承你了解嘛</li>
+<li>多继承下的虚函数表是怎么样的</li>
+<li>TCP和UDP的优缺点</li>
+<li>怎么使得UDP具备可靠的性质（扯了下QUIC，但是记不清）</li>
+<li>看过QUIC的代码吗（没有，就了解了一下）</li>
+<li>进程间通信方式，各个方式的特点、使用场景</li>
+<li>反问</li>
+</ul>
+<h3 id="10-13-锐明科技-HR面-15min"><a href="#10-13-锐明科技-HR面-15min" class="headerlink" title="10.13 锐明科技 HR面 15min"></a>10.13 锐明科技 HR面 15min</h3><ul>
+<li>自我介绍</li>
+<li>家乡，工作地点倾向</li>
+<li>offer情况</li>
+<li>为什么byd和广汽倾向于广汽，闲聊了byd很水</li>
+<li>工作倾向还是纯软件开发是吗</li>
+<li>期望的薪资是多少</li>
+<li>你了解我们公司吗，简单介绍一下</li>
+<li>找工作的时候对行业有什么要求嘛</li>
+<li>主要是看重岗位地点薪资是吗</li>
+<li>你的成绩都还可以，保研还是</li>
+<li>前10%在华工奖学金是怎么样</li>
+<li>有投华为嘛，什么阶段，其他流程中有哪些</li>
+<li>整个大学期间你个人认为比较有挑战的事情</li>
+<li>为了冲刺保研做了哪些准备</li>
+<li>用三个词形容你自己</li>
+<li>你觉得开发这个岗位需要的特质是什么</li>
+<li>反问，工作氛围、时间</li>
+</ul>
+<h3 id="10-14-中电海康（中电52所）HR面-15min"><a href="#10-14-中电海康（中电52所）HR面-15min" class="headerlink" title="10.14 中电海康（中电52所）HR面 15min"></a>10.14 中电海康（中电52所）HR面 15min</h3><ul>
+<li>自我介绍</li>
+<li>家乡，工作地点选择，父母要求</li>
+<li>你对我们公司有过一些了解嘛</li>
+<li>你是硬件软件都可以嘛还是</li>
+<li>Web项目是自己找的小项目是吗</li>
+<li>研究生项目背景，为什么要有，几个人在做呢，实验室主要就做这个项目吗</li>
+<li>实验室研究方向，好像和软件开发无关？</li>
+<li>论文写到哪一个阶段呢，论文题目</li>
+<li>华为实习在哪个城市，除了技术方面的提升还有哪些收获，有实习转正名额嘛，有投递嘛</li>
+<li>现在的投递有进展的介绍下，都在哪些公司，拿到哪些offer</li>
+<li>既然现在以及走完了那么多流程，现在还在面试的原因是什么呢</li>
+<li>三方下来了嘛，你同学他们的进展怎么样呢</li>
+<li>对于公司的性质有一些偏好嘛</li>
+<li>期望薪资是多少呢？其他offer的薪资呢</li>
+<li>你的行业投递很广泛啊，为什么呢</li>
+<li>向我们研究所你是怎么了解到的</li>
+<li>可能需要出差，你对出差怎么考虑</li>
+<li>加班这边可以接受到几点呢</li>
+<li>竞赛项目较少，是为什么呢</li>
+<li>父母做什么呢，独生嘛</li>
+<li>反问，工作氛围工作时间</li>
+</ul>
+<h3 id="10-14-深信服C-x2F-C-软件开发工程师-二面-35min"><a href="#10-14-深信服C-x2F-C-软件开发工程师-二面-35min" class="headerlink" title="10.14 深信服C&#x2F;C++软件开发工程师 二面 35min"></a>10.14 深信服C&#x2F;C++软件开发工程师 二面 35min</h3><ul>
+<li>研究生项目介绍，背景，规模，工作介绍</li>
+<li>是远程操作还是</li>
+<li>信号是怎么传输的</li>
+<li>你的工作编码部分主要体现在哪里</li>
+<li>焊接过程中会拍摄嘛（我就是处理焊接图像呀哈哈哈。。）</li>
+<li>对相机有要求嘛</li>
+<li>最后有验收吗</li>
+<li>实验室其他人负责什么工作呢</li>
+<li>算法这部分是你现学嘛还是之前就学的</li>
+<li>是现成的算法嘛还是自己写的</li>
+<li>如果遇到结果明显不对，怎么调试呢（方法继续介绍）</li>
+<li>花时间最长的问题大概是多久呢</li>
+<li>主要是解决什么样的问题</li>
+<li>你这个处理过程中怎么调整呢，中间状态还是可追踪的嘛</li>
+<li>这一个调试周期是多少，一般多久可以测试一次</li>
+<li>除了图像的你还学习了哪些整本书的学习呢</li>
+<li>磁盘上有100亿个正整数，找到最大的1万个你应该怎么操作（分治+堆）</li>
+<li>有没有更省内存的方法呢</li>
+<li>增删改查频繁的场景下使用什么数据结构</li>
+<li>链表查找性能好嘛</li>
+<li>map查找性能怎么样，增加删除呢</li>
+<li>还有没有数据结构比Ologn更快</li>
+<li>哈希冲突怎么办</li>
+<li>中国象棋“马” 走法在10X9的格子里从一点到达另一点的最小步数（bfs）</li>
+<li>墙壁涂色方案数，首尾不能相同，涂3个颜色（处理首尾的时候没理清）</li>
+<li>3个人玩斗地主，设计一个洗牌发牌算法，效率尽可能高（蓄水池抽样，但是交换部分没说好。。）</li>
+<li>1 2 5 8就是4个人过桥需要的时间，只有一个手电筒，每次可以两个人一起走，按照慢的那个人计算时间，然后回来的时间就单人的时间，问最短的时间（只想到了贪心处理，没说对）</li>
+<li>第二个项目写的人太多了，你还有其他项目自己写了嘛，自己练手的项目</li>
+<li>代码量到多少了</li>
+<li>平时会刷题嘛，算法类的问题有系统的学习过吗，有看什么书籍系统学习嘛</li>
+<li>反问，工作氛围，闲聊</li>
+</ul>
+<h3 id="10-15-三一重机-软件工程师（C-x2F-C-方向）一面-15min"><a href="#10-15-三一重机-软件工程师（C-x2F-C-方向）一面-15min" class="headerlink" title="10.15 三一重机 软件工程师（C&#x2F;C++方向）一面 15min"></a>10.15 三一重机 软件工程师（C&#x2F;C++方向）一面 15min</h3><ul>
+<li>自我介绍</li>
+<li>了解我们公司吗，介绍主要业务，感兴趣吗</li>
+<li>工作地点选择，昆山接受吗</li>
+<li>QT这边懂得多吗（简单搭了个人机交互界面，了解）</li>
+<li>CAN了解吗（不懂）</li>
+<li>本科期间没有项目嘛（机械相关没往上写）</li>
+<li>你的优势在哪里（技术方面介绍C++基础，个人方面介绍学习能力等）</li>
+<li>我们这边也经常需要学习新技术，可以适应把</li>
+<li>你对出差怎么看</li>
+<li>反问，业务具体，技术栈，建议</li>
+</ul>
+<h3 id="10-17-客户端开发工程师—番茄小说-三面-60min"><a href="#10-17-客户端开发工程师—番茄小说-三面-60min" class="headerlink" title="10.17 客户端开发工程师—番茄小说 三面 60min"></a>10.17 客户端开发工程师—番茄小说 三面 60min</h3><ul>
+<li>自我介绍</li>
+<li>研究生项目介绍</li>
+<li>里面使用到了什么技术呢</li>
+<li>为什么不全部用神经网络呢</li>
+<li>为什么不全用OpenCV呢</li>
+<li>焊接不同的焊缝的话怎么办呢</li>
+<li>你们这套系统怎么衡量他的效果和性能呢</li>
+<li>衡量焊接精度是后验验证还是</li>
+<li>实时性的保证是怎么做到的，是根据每一帧图像的进行运算嘛，那有没有考虑前后帧的影响，是不是可以根据前后帧特征的关系进行加速?</li>
+<li>在工业界有没有了解其他自动焊接的技术，窄间隙场景是否还有其他算法</li>
+<li>平时C++用的比较多是吧，介绍一下一个C++代码从源文件到可执行文件的过程</li>
+<li>编译这个步骤都做什么工作了解吗</li>
+<li>做一个设计题吧，设计一个类似力扣的网站考察系统，支持提交代码，屏幕端运行后输出结果，可能产生很多中结果，比如编译错误，运行错误，运行超时，运行超内存，主要就是介绍如何设计代码，如何在服务端将代码编译后运行将结果传递给客户端，主要就是介绍每个模块怎么设计（捕捉各个信号，传递给指定的处理模块，利用定时器记录是否超时以及记录内存空间）</li>
+<li>代码怎么提交到服务器呢，选用什么通信协议呢（HTTPS）</li>
+<li>选用GET还是POST呢（POST吧）</li>
+<li>为什么GET不行呢，如果抛开语义是否可以呢（应该可以的）</li>
+<li>是否有什么场景GET无法请求呢（URL超长传递大小限制）</li>
+<li>定时器你这边怎么设计呢（维护定时器的堆）</li>
+<li>死循环的话你怎么计算时间呢（主线程一直循环处理事件，看是否超时）</li>
+<li>为什么你使用两个线程而不是进程呢？（进程通信开销大）</li>
+<li>撇开进程通信的开销的话，进程通信有什么优势嘛（空间相互独立）</li>
+<li>针对堆内存和栈内存你怎么去获取呢？（堆的话重载new，将开辟的内存空间放置在一个链表上，栈的话利用系统查看）</li>
+<li>记录到链表上的话也需要新建一个节点，那不会导致无线递归调用new嘛？（按照类进行重载new）</li>
+<li>万一说别人的代码里面新创了一个类你也需要针对该类进行重载new了？</li>
+<li>那你记录的这个链表还需要记录时哪个类开辟的？</li>
+<li>设计模式你有了解吗</li>
+<li>用C++实现一个单例模式吧</li>
+<li>static对象第一次初始化在什么时候呢（懒汉模式，判断是否初始调用，是的话利用new开辟）</li>
+<li>多线程下是不是有问题（加锁，或者弄成饿汉模式）</li>
+<li>饿汉模式下是否就不是第一次调用的时候开辟了</li>
+<li>平时写代码的话有用到这些设计模式吗</li>
+<li>算法题，深拷贝一个带random指针的链表</li>
+<li>反问，工作氛围，学习建议</li>
+</ul>
+<h3 id="10-18-新华三-智能终端-嵌入式软件工程师（网络终端）二面23min"><a href="#10-18-新华三-智能终端-嵌入式软件工程师（网络终端）二面23min" class="headerlink" title="10.18 新华三 智能终端-嵌入式软件工程师（网络终端）二面23min"></a>10.18 新华三 智能终端-嵌入式软件工程师（网络终端）二面23min</h3><ul>
+<li>自我介绍</li>
+<li>介绍一个投入精力比较多，比较有挑战的一个项目，详细介绍一下</li>
+<li>整个开发过程中有没有遇到困难，怎么解决的</li>
+<li>在实际场景中的效率或时间上的要求和提升嘛</li>
+<li>整个项目整个开发的一个环境是什么样的呢，实际环境以及算法运行下什么样的环境下</li>
+<li>能介绍一下在web服务器项目中做了什么样的测试和学习，有什么样的体会</li>
+<li>这个web服务器是运行在PC上还是嵌入式上</li>
+<li>比如说现在在多线程下调试会出现一些错误，可以说一下需要注意哪些地方，出错的原因一般在哪里</li>
+<li>多线程中出现的问题，一般通过什么途径进行debug呢</li>
+<li>在linux下还有进程，进程和线程有什么区别，为什么你选择采用线程</li>
+<li>web服务器最主要的一个考量指标是并发处理能力，想问你为了提高并发量做了怎么样的操作</li>
+<li>华为实习经历的主要工作</li>
+<li>介绍下除了目标完成后，哪块的一个指标是更重要一些的</li>
+<li>你对自己想做的这个职业技能上面有什么想法或者要求嘛，想要在哪个领域工作呢，自己是怎么样考虑的是</li>
+<li>软件开发也分为了很多方向，你对哪一部分是更感兴趣呢？ </li>
+<li>工作地点的倾向</li>
+<li>反问，新人培养机制</li>
+</ul>
+<h3 id="10-18-三一-软件开发工程师-二面15min（群面）"><a href="#10-18-三一-软件开发工程师-二面15min（群面）" class="headerlink" title="10.18 三一 软件开发工程师 二面15min（群面）"></a>10.18 三一 软件开发工程师 二面15min（群面）</h3><ul>
+<li>自我介绍</li>
+<li>职业规划</li>
+<li>个人应聘岗位的优势</li>
+<li>反问</li>
+</ul>
+<h3 id="10-18-锐明-C-开发工程师-三面-16min"><a href="#10-18-锐明-C-开发工程师-三面-16min" class="headerlink" title="10.18 锐明 C++开发工程师 三面 16min"></a>10.18 锐明 C++开发工程师 三面 16min</h3><ul>
+<li>自我介绍</li>
+<li>华为实习工作介绍，使用场景，具体说一下怎么实现的</li>
+<li>根据摄像头拍摄的视频流进行处理是吗？</li>
+<li>运行在PC端还是在摄像机</li>
+<li>拍摄图片再分析还是实时分析</li>
+<li>图像识别算法这边是怎么完成的</li>
+<li>实习期间是2个月啊，好像也不是很长，你是怎么完成这个任务的</li>
+<li>这里面用了几个线程，linux还是windows</li>
+<li>你的动态链接库是用C++，java调用dll的时候有出现什么问题嘛</li>
+<li>动态链接库是怎么找到函数地址的（瞎扯，扯了下和静态的区别）</li>
+<li>extern C的作用？加和不加的差异在哪？你有加吗，不加应该跑不了啊（不了解）</li>
+<li>web服务器是用来练习的吗还是</li>
+<li>研究生项目是干嘛的</li>
+<li>视频流你是怎么处理的，采用什么格式</li>
+<li>实时性要求是咋样的，每秒分析几帧</li>
+<li>图片是什么格式</li>
+<li>JPEG是编码的图片可能无法分析把，需要解码（单通道分析）</li>
+<li>web服务器你采用的是1.0还是2.0</li>
+<li>HTTP1.0和1.1的区别是啥</li>
+<li>线程是怎么处理的，哪些是临时开辟的哪些是常驻的（线程池介绍，没说清）</li>
+<li>8个线程是同时并发八个socket还是八个用户？（不知道咋答，撤了epoll监听多个事件）</li>
+<li>创建一个listen socket的步骤有哪些</li>
+<li>accept一个新的socket往往回设定一个收发缓存区的大小，你往往设定为多大</li>
+<li>这个大小你觉得应该是多大</li>
+<li>这个缓冲区是设定到哪里去了</li>
+<li>你对自己评价一下技术上的专长（牢固的C++编程基础）</li>
+</ul>
+<h3 id="10-18-虹软C-开发工程师三面-15min"><a href="#10-18-虹软C-开发工程师三面-15min" class="headerlink" title="10.18 虹软C++开发工程师三面 15min"></a>10.18 虹软C++开发工程师三面 15min</h3><ul>
+<li>自我介绍</li>
+<li>南航到华工是考研还是保研，为什么会选择华工，感觉也可以选择长江三角洲这边的学校</li>
+<li>工作地点的倾向呢</li>
+<li>你选择了不能实习，是为什么呢？</li>
+<li>华为实习没有转正嘛？</li>
+<li>你的期望月薪是15~20k，请问你是怎么考虑的，从自己的offer情况还是别人的</li>
+<li>年度总包的考虑呢</li>
+<li>目前是有拿到哪些地方的offer呢</li>
+<li>你针对我们公司你投递的岗位怎么看，发展趋势之类的</li>
+<li>反问，新人培养机制</li>
+</ul>
+<h3 id="10-19-新华三-智能终端-嵌入式软件工程师（网络终端）三面25min"><a href="#10-19-新华三-智能终端-嵌入式软件工程师（网络终端）三面25min" class="headerlink" title="10.19 新华三 智能终端-嵌入式软件工程师（网络终端）三面25min"></a>10.19 新华三 智能终端-嵌入式软件工程师（网络终端）三面25min</h3><ul>
+<li>自我介绍</li>
+<li>研究生考研还是保研</li>
+<li>三个项目里最有挑战的项目</li>
+<li>研究生项目介绍，项目周期，时间节点设定，主要工作，除了技术上还有什么收获</li>
+<li>华为实习问题，转正，工作介绍，最大收获</li>
+<li>web项目性质</li>
+<li>薪资问题，年总包期望多少</li>
+<li>其他offer情况，目前还在面试的原因</li>
+<li>怎么看待我们公司，你投递的这个岗位，之前有了解过我们公司吗</li>
+<li>有没有偏好的工作方向</li>
+<li>有没有参与什么竞赛</li>
+<li>英文自我介绍一下？</li>
+<li>如果发放offer，你有多大倾向来我们公司</li>
+<li>工作地点倾向</li>
+<li>反问，工作氛围，base地</li>
+</ul>
+<h3 id="10-19-地平线C-研发工程师-一面-35min"><a href="#10-19-地平线C-研发工程师-一面-35min" class="headerlink" title="10.19 地平线C++研发工程师 一面 35min"></a>10.19 地平线C++研发工程师 一面 35min</h3><ul>
+<li>自我介绍</li>
+<li>详细介绍下研究生项目</li>
+<li>基于YOLOv5你主要是负责算法层面还是模型部署</li>
+<li>从标定到训练都是你个人完成是吗</li>
+<li>有什么优化点吗？</li>
+<li>那部署的时候是基于什么框架和芯片呢</li>
+<li>落地的主要是这个传统图像处理？</li>
+<li>这个opencv算法是直接调用还是自己设计的</li>
+<li>这个时间50FPS是比不上深度学习的方法，为什么不直接采用YOLOv5进行处理?</li>
+<li>华为实习项目介绍，整个项目也是图像处理相关的，但我们岗位是开发岗，不知道你这里有什么考虑吗？</li>
+<li>C++11新特性介绍一下</li>
+<li>右值引用是什么？简单介绍下</li>
+<li>比如说拷贝函数，左值引用和右值引用的有什么区别？</li>
+<li>C++多态你可以介绍下吗</li>
+<li>构造函数和析构函数需要加virtual吗</li>
+<li>为什么说构造不可以加virtual</li>
+<li>学习项目中有遇到什么印象深刻的错误吗，你又是怎么解决的呢</li>
+<li>实现三维卷积，可以先写二维卷积（尺寸那边有点乱，直接摆了说想不清了）</li>
+<li>写一个生产者消费者模式把（烂，直接摆了）</li>
+</ul>
+<p>后面还面了发那科一二三面，深信服主管面、HR面，摆了懒得整理了哈哈哈</p>
+</article><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192211377.png" target="_blank"><img class="post-qr-code-img" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192211377.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192207910.png" target="_blank"><img class="post-qr-code-img" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/202307192207910.png" alt="alipayautoh"/></a><div class="post-qr-code-desc">alipayautoh</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://acall.love/2023/05/01/%E7%A7%8B%E6%8B%9B%E9%9D%A2%E8%AF%95%E8%AE%B0%E5%BD%95/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=undefined&amp;url=http://acall.love/2023/05/01/%E7%A7%8B%E6%8B%9B%E9%9D%A2%E8%AF%95%E8%AE%B0%E5%BD%95/&amp;pic=undefined" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/C/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>C++<span class="tagsPageCount">23</span></a><a class="post-meta__box__tags" href="/tags/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>后端开发<span class="tagsPageCount">22</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/iTab-p92mj3%20(2).webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div></div><div class="post-copyright"><i class="anzhiyufont anzhiyu-icon-copyright"></i><div class="post-copyright__author"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://acall.love/2023/05/01/%E7%A7%8B%E6%8B%9B%E9%9D%A2%E8%AF%95%E8%AE%B0%E5%BD%95/">原创</a><a class="post-copyright-title"><span>秋招面试记录</span></a></div><div class="post-copyright-info-box"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"></span><a class="link" href="http://acall.love">🎵张小佑♪</a></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a class="link" href="http://acall.love/2023/05/01/%E7%A7%8B%E6%8B%9B%E9%9D%A2%E8%AF%95%E8%AE%B0%E5%BD%95/">http://acall.love/2023/05/01/%E7%A7%8B%E6%8B%9B%E9%9D%A2%E8%AF%95%E8%AE%B0%E5%BD%95/</a></span><span class="copy-button" onclick="rm.copyPageUrl('http://acall.love/2023/05/01/%E7%A7%8B%E6%8B%9B%E9%9D%A2%E8%AF%95%E8%AE%B0%E5%BD%95/')"><i class="anzhiyufont anzhiyu-icon-copy"></i></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://acall.love" target="_blank">♪张小佑</a>！</span></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/04/05/2.%E7%B3%BB%E5%88%97%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/"><img class="prev-cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/mpxy18.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">2.系统知识点整理</div></div></a></div><div class="next-post pull-right"><a href="/2023/05/01/1.%E4%B8%AA%E4%BA%BA%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/"><img class="next-cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/p9918p.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">1.个人问题</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/06/01/1.C++%E5%B2%97%E4%BD%8D%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E5%AE%9D%E5%85%B8/" title="1.C++岗位面试真题宝典"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/iTab-p92mj3%20(2).webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-06-01</div><div class="title">1.C++岗位面试真题宝典</div></div></a></div><div><a href="/2023/05/01/1.%E4%B8%AA%E4%BA%BA%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/" title="1.个人问题"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/p9918p.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-05-01</div><div class="title">1.个人问题</div></div></a></div><div><a href="/2023/06/05/2.C++%20%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" title="2.C++读书笔记"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/gp5k23.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-06-05</div><div class="title">2.C++读书笔记</div></div></a></div><div><a href="/2023/06/10/3.C++%20%E9%9D%A2%E8%AF%95%E7%AA%81%E7%A0%B4/" title="3.面试突破"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/d6g1gl.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-06-10</div><div class="title">3.面试突破</div></div></a></div><div><a href="/2023/01/10/day03%E7%AC%94%E8%AE%B0/" title="3.C++入门"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/1pqq1w.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-01-10</div><div class="title">3.C++入门</div></div></a></div><div><a href="/2023/01/05/day02%E7%AC%94%E8%AE%B0/" title="2.C++入门"><img class="cover" src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/001.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-01-05</div><div class="title">2.C++入门</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-29-%E5%85%83%E5%83%8F%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91%EF%BC%8850min%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">8.29 元像后台开发（50min）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-7-%E7%BE%8E%E5%9B%A2%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E4%B8%80%E9%9D%A2%EF%BC%8830min%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">9.7 美团软件开发工程师一面（30min）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-14-%E5%90%8C%E8%8A%B1%E9%A1%BAC-%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E2%80%94B2B-%E4%B8%80%E9%9D%A2%EF%BC%8852min%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">9.14 同花顺C++开发工程师—B2B 一面（52min）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-15-%E5%AE%89%E5%85%8B%E5%88%9B%E6%96%B0-%E5%88%9D%E7%BA%A7%E7%BB%88%E7%AB%AF%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%B8%80%E9%9D%A2-50min"><span class="toc-number">4.</span> <span class="toc-text">9.15 安克创新 初级终端软件开发工程师 一面 50min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-16-%E5%8D%8E%E4%B8%BAAI%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%B8%80%E9%9D%A2-40min"><span class="toc-number">5.</span> <span class="toc-text">9.16 华为AI工程师 一面 40min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-16-%E5%8D%8E%E5%AD%90%E4%BA%8C%E9%9D%A245min"><span class="toc-number">6.</span> <span class="toc-text">9.16 华子二面45min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-20-%E4%BA%AC%E4%B8%9C%E6%96%B9%E7%BE%A4%E9%9D%A2-50min"><span class="toc-number">7.</span> <span class="toc-text">9.20 京东方群面 50min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-20-%E5%AE%89%E5%85%8B%E5%88%9B%E6%96%B0-HR%E9%9D%A2-25min"><span class="toc-number">8.</span> <span class="toc-text">9.20 安克创新 HR面 25min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-20-%E7%BE%8E%E7%9A%84%E7%BE%A4%E9%9D%A2-45min"><span class="toc-number">9.</span> <span class="toc-text">9.20 美的群面 45min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-20-4399-C-%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%B8%80%E9%9D%A215min"><span class="toc-number">10.</span> <span class="toc-text">9.20 4399 C++游戏开发工程师 一面15min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-21-%E6%8B%9B%E5%95%86%E7%BD%91%E9%93%B6%E4%B8%80%E9%9D%A2-20min"><span class="toc-number">11.</span> <span class="toc-text">9.21 招商网银一面 20min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-21-%E5%AD%97%E8%8A%82%E6%8A%96%E9%9F%B3%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%80%E9%9D%A2-55min"><span class="toc-number">12.</span> <span class="toc-text">9.21 字节抖音客户端一面 55min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-22-%E6%B1%87%E5%B7%9D%E6%8A%80%E6%9C%AFC-%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%B8%80%E9%9D%A2-25min"><span class="toc-number">13.</span> <span class="toc-text">9.22 汇川技术C++开发工程师 一面 25min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-22-%E7%A6%8F%E7%91%9E%E6%B3%B0%E5%85%8B%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%EF%BC%88C-%EF%BC%89-%E4%B8%80%E9%9D%A2-25min"><span class="toc-number">14.</span> <span class="toc-text">9.22 福瑞泰克嵌入式软件开发工程师（C++） 一面 25min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-23-%E6%8B%9B%E5%95%86%E7%BD%91%E9%93%B6%E4%BA%8C%E9%9D%A2-22min"><span class="toc-number">15.</span> <span class="toc-text">9.23 招商网银二面 22min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-24-%E7%99%BE%E5%BA%A6C-%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E4%B8%80%E9%9D%A2-50min"><span class="toc-number">16.</span> <span class="toc-text">9.24 百度C++开发工程师一面 50min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-25-%E4%B8%AD%E5%85%B4%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E4%B8%80%E9%9D%A2-%E7%BA%BF%E4%B8%8B-40min"><span class="toc-number">17.</span> <span class="toc-text">9.25 中兴软件开发工程师一面 线下 40min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-26-%E6%B5%AA%E6%BD%AE%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%B8%80%E9%9D%A2-15min"><span class="toc-number">18.</span> <span class="toc-text">9.26 浪潮嵌入式软件开发一面 15min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-26-%E5%AD%97%E8%8A%82%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E4%BA%8C%E9%9D%A2-1h10min"><span class="toc-number">19.</span> <span class="toc-text">9.26 字节客户端开发工程师二面 1h10min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-26-%E5%90%8C%E8%8A%B1%E9%A1%BAC-%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%BA%8C%E9%9D%A2-35min"><span class="toc-number">20.</span> <span class="toc-text">9.26 同花顺C++开发工程师 二面 35min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-27-%E8%8D%A3%E8%80%80%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E4%B8%80%E9%9D%A2-30min"><span class="toc-number">21.</span> <span class="toc-text">9.27 荣耀软件开发工程师一面 30min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-28-%E8%93%9D%E6%9C%88%E4%BA%AEIT%E7%A0%94%E5%8F%91-60min-%E7%BE%A4%E9%9D%A2"><span class="toc-number">22.</span> <span class="toc-text">9.28 蓝月亮IT研发 60min 群面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-28-%E6%B1%87%E5%B7%9D%E6%8A%80%E6%9C%AF-C-%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-HR%E9%9D%A2-20min"><span class="toc-number">23.</span> <span class="toc-text">9.28 汇川技术 C++开发工程师 HR面 20min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-28-%E8%BF%88%E7%91%9E%E5%8C%BB%E7%96%97-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-30min"><span class="toc-number">24.</span> <span class="toc-text">9.28 迈瑞医疗 软件开发工程师 30min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-28-%E8%99%B9%E8%BD%AFC-x2F-C-%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-20min"><span class="toc-number">25.</span> <span class="toc-text">9.28 虹软C&#x2F;C++开发工程师 20min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-28-%E6%8B%9B%E9%93%B6%E7%BD%91%E7%BB%9C%E7%A7%91%E6%8A%80-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-HR%E9%9D%A2-15min"><span class="toc-number">26.</span> <span class="toc-text">9.28 招银网络科技 软件开发工程师 HR面 15min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-29-%E5%B9%BF%E6%B1%BD%E7%A0%94%E7%A9%B6%E6%89%80-%E6%99%BA%E8%83%BD%E7%BD%91%E8%81%94%E7%B1%BB-%E4%BA%8C%E9%9D%A2-HR%E9%9D%A2-35min"><span class="toc-number">27.</span> <span class="toc-text">9.29 广汽研究所 智能网联类 二面+HR面 35min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-29-%E8%8D%A3%E8%80%80%E9%80%9A%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E7%BB%BC%E5%90%88%E9%9D%A2-22min"><span class="toc-number">28.</span> <span class="toc-text">9.29 荣耀通用软件开发工程师 综合面 22min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-29-%E5%AD%97%E8%8A%82-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E2%80%94%E7%95%AA%E8%8C%84%E5%B0%8F%E8%AF%B4-%E4%B8%80%E9%9D%A2-1h"><span class="toc-number">29.</span> <span class="toc-text">9.29 字节 客户端开发工程师—番茄小说 一面 1h</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-29-%E6%96%B0%E5%8D%8E%E4%B8%89-%E6%99%BA%E8%83%BD%E7%BB%88%E7%AB%AF-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%EF%BC%88%E7%BD%91%E7%BB%9C%E7%BB%88%E7%AB%AF%EF%BC%89%E4%B8%80%E9%9D%A225min"><span class="toc-number">30.</span> <span class="toc-text">9.29 新华三 智能终端-嵌入式软件工程师（网络终端）一面25min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-29-%E4%B8%AD%E5%85%B4-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E7%BB%BC%E5%90%88%E9%9D%A2-12min"><span class="toc-number">31.</span> <span class="toc-text">9.29 中兴 软件开发工程师 综合面 12min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-9-%E4%B8%AD%E6%9C%9B%E8%BD%AF%E4%BB%B6C-%E7%A0%94%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E4%B8%80%E9%9D%A2-30min"><span class="toc-number">32.</span> <span class="toc-text">10.9 中望软件C++研发工程师一面 30min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-9-%E5%90%8C%E8%8A%B1%E9%A1%BAC-%E5%BC%80%E5%8F%91-HR%E9%9D%A2-30min"><span class="toc-number">33.</span> <span class="toc-text">10.9 同花顺C++开发 HR面 30min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-11-%E9%94%90%E6%98%8E-C-%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%B8%80%E9%9D%A2-28min"><span class="toc-number">34.</span> <span class="toc-text">10.11 锐明 C++开发工程师 一面 28min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-11-%E8%99%B9%E8%BD%AF-C-%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%BA%8C%E9%9D%A2-15min"><span class="toc-number">35.</span> <span class="toc-text">10.11 虹软 C++开发工程师 二面 15min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-12-%E5%8F%91%E9%82%A3%E7%A7%91-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%B8%80%E9%9D%A27min"><span class="toc-number">36.</span> <span class="toc-text">10.12 发那科 软件开发工程师 一面7min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-12-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E2%80%94%E7%95%AA%E8%8C%84%E5%B0%8F%E8%AF%B4-%E4%BA%8C%E9%9D%A2-45min"><span class="toc-number">37.</span> <span class="toc-text">10.12 客户端开发工程师—番茄小说 二面 45min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-13-%E5%8D%8E%E4%B8%BAAI%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%B8%BB%E7%AE%A1%E9%9D%A2-15min"><span class="toc-number">38.</span> <span class="toc-text">10.13 华为AI工程师 主管面 15min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-13-%E6%AC%A3%E6%97%BA%E8%BE%BE-BMS%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%B8%80%E9%9D%A2-15min"><span class="toc-number">39.</span> <span class="toc-text">10.13 欣旺达 BMS软件开发工程师 一面  15min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-13-%E6%B7%B1%E4%BF%A1%E6%9C%8D-C-x2F-C-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%B8%80%E9%9D%A2-30min"><span class="toc-number">40.</span> <span class="toc-text">10.13 深信服 C&#x2F;C++软件开发工程师 一面 30min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-13-%E9%94%90%E6%98%8E%E7%A7%91%E6%8A%80-HR%E9%9D%A2-15min"><span class="toc-number">41.</span> <span class="toc-text">10.13 锐明科技 HR面 15min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-14-%E4%B8%AD%E7%94%B5%E6%B5%B7%E5%BA%B7%EF%BC%88%E4%B8%AD%E7%94%B552%E6%89%80%EF%BC%89HR%E9%9D%A2-15min"><span class="toc-number">42.</span> <span class="toc-text">10.14 中电海康（中电52所）HR面 15min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-14-%E6%B7%B1%E4%BF%A1%E6%9C%8DC-x2F-C-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%BA%8C%E9%9D%A2-35min"><span class="toc-number">43.</span> <span class="toc-text">10.14 深信服C&#x2F;C++软件开发工程师 二面 35min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-15-%E4%B8%89%E4%B8%80%E9%87%8D%E6%9C%BA-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%EF%BC%88C-x2F-C-%E6%96%B9%E5%90%91%EF%BC%89%E4%B8%80%E9%9D%A2-15min"><span class="toc-number">44.</span> <span class="toc-text">10.15 三一重机 软件工程师（C&#x2F;C++方向）一面 15min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-17-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E2%80%94%E7%95%AA%E8%8C%84%E5%B0%8F%E8%AF%B4-%E4%B8%89%E9%9D%A2-60min"><span class="toc-number">45.</span> <span class="toc-text">10.17 客户端开发工程师—番茄小说 三面 60min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-18-%E6%96%B0%E5%8D%8E%E4%B8%89-%E6%99%BA%E8%83%BD%E7%BB%88%E7%AB%AF-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%EF%BC%88%E7%BD%91%E7%BB%9C%E7%BB%88%E7%AB%AF%EF%BC%89%E4%BA%8C%E9%9D%A223min"><span class="toc-number">46.</span> <span class="toc-text">10.18 新华三 智能终端-嵌入式软件工程师（网络终端）二面23min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-18-%E4%B8%89%E4%B8%80-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%BA%8C%E9%9D%A215min%EF%BC%88%E7%BE%A4%E9%9D%A2%EF%BC%89"><span class="toc-number">47.</span> <span class="toc-text">10.18 三一 软件开发工程师 二面15min（群面）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-18-%E9%94%90%E6%98%8E-C-%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%B8%89%E9%9D%A2-16min"><span class="toc-number">48.</span> <span class="toc-text">10.18 锐明 C++开发工程师 三面 16min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-18-%E8%99%B9%E8%BD%AFC-%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E4%B8%89%E9%9D%A2-15min"><span class="toc-number">49.</span> <span class="toc-text">10.18 虹软C++开发工程师三面 15min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-19-%E6%96%B0%E5%8D%8E%E4%B8%89-%E6%99%BA%E8%83%BD%E7%BB%88%E7%AB%AF-%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88%EF%BC%88%E7%BD%91%E7%BB%9C%E7%BB%88%E7%AB%AF%EF%BC%89%E4%B8%89%E9%9D%A225min"><span class="toc-number">50.</span> <span class="toc-text">10.19 新华三 智能终端-嵌入式软件工程师（网络终端）三面25min</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-19-%E5%9C%B0%E5%B9%B3%E7%BA%BFC-%E7%A0%94%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88-%E4%B8%80%E9%9D%A2-35min"><span class="toc-number">51.</span> <span class="toc-text">10.19 地平线C++研发工程师 一面 35min</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By 🎵张小佑♪</div></div></footer></div></div></div><div id="sidebar"><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://acallcf.oss-cn-qingdao.aliyuncs.com/images/1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:17px;"><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-dice-d20 faa-tada" style="font-size: 0.9em;"></i><span> 我的装备</span></a></li></ul></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script><div><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.4.0/source/js/utils.js"></script><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.4.0/source/js/main.js"></script><script src="https://npm.elemecdn.com/hexo-theme-anzhiyu@1.4.0/source/js/tw_cn.js"></script><script src="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.umd.js"></script><script src="https://npm.elemecdn.com/instant.page@5.1.1/instantpage.js" type="module"></script><script src="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://npm.elemecdn.com/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("09/01/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2022 By 安知鱼 1.4.0",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 🎵张小佑♪ 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "visitor@anheyu.com";</script><script>//动态标题
+let leaveTitle = '♪张小佑 - 分享思考与科技生活';
+let backTitle = '♪张小佑 - 分享思考与科技生活';
+let OriginTitile = document.title
+let titleTime
+document.addEventListener('visibilitychange', function () {
+  if (document.hidden) {
+    //离开当前页面时标签显示内容
+    document.title = leaveTitle
+    clearTimeout(titleTime)
+  } else {
+    //返回当前页面时标签显示内容
+    document.title = backTitle + OriginTitile
+    //两秒后变回正常标题
+    titleTime = setTimeout(function () {
+      document.title = OriginTitile
+    }, 2000)
+  }
+})</script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script>// 初始化函数
+let rm = {};
+
+//禁止图片与超链接拖拽
+let aElements = document.getElementsByTagName("a");
+for (let i = 0; i < aElements.length; i++) {
+  aElements[i].setAttribute("draggable", "false");
+  let imgElements = aElements[i].getElementsByTagName("img");
+  for (let j = 0; j < imgElements.length; j++) {
+    imgElements[j].setAttribute("draggable", "false");
+  }
+}
+
+// 显示菜单
+rm.showRightMenu = function (isTrue, x = 0, y = 0) {
+  console.info(x, y)
+  let rightMenu = document.getElementById("rightMenu");
+  rightMenu.style.top = x + "px";
+  rightMenu.style.left = y + "px";
+  if (isTrue) {
+    rightMenu.style.display = "block";
+    stopMaskScroll();
+  } else {
+    rightMenu.style.display = "none";
+  }
+};
+
+// 隐藏菜单
+rm.hideRightMenu = function () {
+  rm.showRightMenu(false);
+  let rightMenuMask = document.querySelector("#rightmenu-mask");
+  rightMenuMask.style.display = "none";
+};
+
+// 尺寸
+let rmWidth = document.getElementById("rightMenu").offsetWidth;
+let rmHeight = document.getElementById("rightMenu").offsetHeight;
+
+// 重新定义尺寸
+rm.reloadrmSize = function () {
+  rightMenu.style.visibility = "hidden";
+  rightMenu.style.display = "block";
+  // 获取宽度和高度
+  rmWidth = document.getElementById("rightMenu").offsetWidth;
+  rmHeight = document.getElementById("rightMenu").offsetHeight;
+  rightMenu.style.visibility = "visible";
+};
+
+// 获取点击的href
+let domhref = "";
+let domImgSrc = "";
+let globalEvent = null;
+
+var oncontextmenuFunction = function (event) {
+  if (document.body.clientWidth > 768) {
+    let pageX = event.clientX + 10; //加10是为了防止显示时鼠标遮在菜单上
+    let pageY = event.clientY;
+
+    //其他额外菜单
+    const $rightMenuOther = document.querySelector(".rightMenuOther");
+    const $rightMenuPlugin = document.querySelector(".rightMenuPlugin");
+    const $rightMenuCopyText = document.querySelector("#menu-copytext");
+    const $rightMenuPasteText = document.querySelector("#menu-pastetext");
+    const $rightMenuCommentText = document.querySelector("#menu-commenttext");
+    const $rightMenuNewWindow = document.querySelector("#menu-newwindow");
+    const $rightMenuNewWindowImg = document.querySelector("#menu-newwindowimg");
+    const $rightMenuCopyLink = document.querySelector("#menu-copylink");
+    const $rightMenuCopyImg = document.querySelector("#menu-copyimg");
+    const $rightMenuDownloadImg = document.querySelector("#menu-downloadimg");
+    const $rightMenuSearch = document.querySelector("#menu-search");
+    const $rightMenuSearchBaidu = document.querySelector("#menu-searchBaidu");
+    const $rightMenuMusicToggle = document.querySelector("#menu-music-toggle");
+    const $rightMenuMusicBack = document.querySelector("#menu-music-back");
+    const $rightMenuMusicForward = document.querySelector("#menu-music-forward");
+    const $rightMenuMusicPlaylist = document.querySelector("#menu-music-playlist");
+    const $rightMenuMusicCopyMusicName = document.querySelector("#menu-music-copyMusicName");
+
+    let href = event.target.href;
+    let imgsrc = event.target.currentSrc;
+
+    // 判断模式 扩展模式为有事件
+    let pluginMode = false;
+    $rightMenuOther.style.display = "block";
+    globalEvent = event;
+
+    // 检查是否需要复制 是否有选中文本
+    if (selectTextNow && window.getSelection()) {
+      pluginMode = true;
+      $rightMenuCopyText.style.display = "block";
+      $rightMenuCommentText.style.display = "block";
+      $rightMenuSearch.style.display = "block";
+      $rightMenuSearchBaidu.style.display = "block";
+    } else {
+      $rightMenuCopyText.style.display = "none";
+      $rightMenuCommentText.style.display = "none";
+      $rightMenuSearchBaidu.style.display = "none";
+      $rightMenuSearch.style.display = "none";
+    }
+
+    //检查是否右键点击了链接a标签
+    if (href) {
+      pluginMode = true;
+      $rightMenuNewWindow.style.display = "block";
+      $rightMenuCopyLink.style.display = "block";
+      domhref = href;
+    } else {
+      $rightMenuNewWindow.style.display = "none";
+      $rightMenuCopyLink.style.display = "none";
+    }
+
+    //检查是否需要复制图片
+    if (imgsrc) {
+      pluginMode = true;
+      $rightMenuCopyImg.style.display = "block";
+      $rightMenuDownloadImg.style.display = "block";
+      $rightMenuNewWindowImg.style.display = "block";
+      document.getElementById("rightMenu").style.width="12rem"
+      domImgSrc = imgsrc;
+    } else {
+      $rightMenuCopyImg.style.display = "none";
+      $rightMenuDownloadImg.style.display = "none";
+      $rightMenuNewWindowImg.style.display = "none";
+    }
+
+    // 判断是否为输入框
+    if (event.target.tagName.toLowerCase() === "input" || event.target.tagName.toLowerCase() === "textarea") {
+      pluginMode = true;
+      $rightMenuPasteText.style.display = "block";
+    } else {
+      $rightMenuPasteText.style.display = "none";
+    }
+    const navMusicEl = document.querySelector("#nav-music");
+    //判断是否是音乐
+    if (navMusicEl && navMusicEl.contains(event.target)) {
+      pluginMode = true;
+      $rightMenuMusicToggle.style.display = "block";
+      $rightMenuMusicBack.style.display = "block";
+      $rightMenuMusicForward.style.display = "block";
+      $rightMenuMusicPlaylist.style.display = "block";
+      $rightMenuMusicCopyMusicName.style.display = "block";
+    } else {
+      $rightMenuMusicToggle.style.display = "none";
+      $rightMenuMusicBack.style.display = "none";
+      $rightMenuMusicForward.style.display = "none";
+      $rightMenuMusicPlaylist.style.display = "none";
+      $rightMenuMusicCopyMusicName.style.display = "none";
+    }
+
+    // 如果不是扩展模式则隐藏扩展模块
+    if (pluginMode) {
+      $rightMenuOther.style.display = "none";
+      $rightMenuPlugin.style.display = "block";
+    } else {
+      $rightMenuPlugin.style.display = "none";
+    }
+
+    rm.reloadrmSize();
+
+    // 鼠标默认显示在鼠标右下方，当鼠标靠右或靠下时，将菜单显示在鼠标左方\上方
+    if (pageX + rmWidth > window.innerWidth) {
+      pageX -= rmWidth + 10;
+    }
+    if (pageY + rmHeight > window.innerHeight) {
+      pageY -= pageY + rmHeight - window.innerHeight;
+    }
+
+    rm.showRightMenu(true, pageY, pageX);
+    document.getElementById("rightmenu-mask").style.display = "flex";
+    return false;
+  }
+};
+
+// 监听右键初始化
+window.oncontextmenu = oncontextmenuFunction
+
+// 下载图片状态
+rm.downloadimging = false;
+
+// 复制图片到剪贴板
+rm.writeClipImg = function (imgsrc) {
+  console.log("按下复制");
+  rm.hideRightMenu();
+  anzhiyu.snackbarShow("正在下载中，请稍后", false, 10000);
+  if (rm.downloadimging == false) {
+    rm.downloadimging = true;
+    setTimeout(function () {
+      copyImage(imgsrc);
+      anzhiyu.snackbarShow("复制成功！图片已添加盲水印，请遵守版权协议");
+      rm.downloadimging = false;
+    }, "10000");
+  }
+};
+
+function imageToBlob(imageURL) {
+  const img = new Image();
+  const c = document.createElement("canvas");
+  const ctx = c.getContext("2d");
+  img.crossOrigin = "";
+  img.src = imageURL;
+  return new Promise(resolve => {
+    img.onload = function () {
+      c.width = this.naturalWidth;
+      c.height = this.naturalHeight;
+      ctx.drawImage(this, 0, 0);
+      c.toBlob(
+        blob => {
+          // here the image is a blob
+          resolve(blob);
+        },
+        "image/png",
+        0.75
+      );
+    };
+  });
+}
+
+async function copyImage(imageURL) {
+  const blob = await imageToBlob(imageURL);
+  const item = new ClipboardItem({ "image/png": blob });
+  navigator.clipboard.write([item]);
+}
+
+rm.copyUrl = function (id) {
+  const input = document.createElement("input"); // Create a new <input> element
+  input.id = "copyVal"; // Set the id of the new element to "copyVal"
+  document.body.appendChild(input); // Append the new element to the end of the <body> element
+  
+  const text = id;
+  input.value = text;
+  input.select();
+  input.setSelectionRange(0, input.value.length);
+  document.execCommand("copy");
+  
+  input.remove(); // Remove the <input> element from the DOM
+};
+
+function stopMaskScroll() {
+  if (document.getElementById("rightmenu-mask")) {
+    let xscroll = document.getElementById("rightmenu-mask");
+    xscroll.addEventListener(
+      "mousewheel",
+      function (e) {
+        //阻止浏览器默认方法
+        rm.hideRightMenu();
+        // e.preventDefault();
+      },
+      { passive: true }
+    );
+  }
+  if (document.getElementById("rightMenu")) {
+    let xscroll = document.getElementById("rightMenu");
+    xscroll.addEventListener(
+      "mousewheel",
+      function (e) {
+        //阻止浏览器默认方法
+        rm.hideRightMenu();
+        // e.preventDefault();
+      },
+      { passive: true }
+    );
+  }
+}
+
+rm.rightmenuCopyText = function (txt) {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(txt);
+  }
+  rm.hideRightMenu();
+};
+
+rm.copyPageUrl = function (url) {
+  if (!url) {
+    url = window.location.href;
+  }
+  rm.copyUrl(url);
+  anzhiyu.snackbarShow("复制本页链接地址成功", false, 2000);
+  rm.hideRightMenu();
+};
+
+rm.sharePage = function () {
+  var content = window.location.href;
+  rm.copyUrl(url);
+  anzhiyu.snackbarShow("复制本页链接地址成功", false, 2000);
+  rm.hideRightMenu();
+};
+
+// 复制当前选中文本
+var selectTextNow = "";
+document.onmouseup = document.ondblclick = selceText;
+
+function selceText() {
+  var txt;
+  if (document.selection) {
+    txt = document.selection.createRange().text;
+  } else {
+    txt = window.getSelection().toString();
+  }
+  selectTextNow = txt !== "" ? txt : "";
+}
+
+// 读取剪切板
+rm.readClipboard = function () {
+  if (navigator.clipboard) {
+    navigator.clipboard.readText().then(clipText => rm.insertAtCaret(globalEvent.target, clipText));
+  }
+};
+
+// 粘贴文本到焦点
+rm.insertAtCaret = function (elemt, value) {
+  const startPos = elemt.selectionStart,
+    endPos = elemt.selectionEnd;
+  if (document.selection) {
+    elemt.focus();
+    var sel = document.selection.createRange();
+    sel.text = value;
+    elemt.focus();
+  } else {
+    if (startPos || startPos == "0") {
+      var scrollTop = elemt.scrollTop;
+      elemt.value = elemt.value.substring(0, startPos) + value + elemt.value.substring(endPos, elemt.value.length);
+      elemt.focus();
+      elemt.selectionStart = startPos + value.length;
+      elemt.selectionEnd = startPos + value.length;
+      elemt.scrollTop = scrollTop;
+    } else {
+      elemt.value += value;
+      elemt.focus();
+    }
+  }
+};
+
+//粘贴文本
+rm.pasteText = function () {
+  const result = rm.readClipboard() || "";
+  rm.hideRightMenu();
+};
+
+//引用到评论
+rm.rightMenuCommentText = function (txt) {
+  rm.hideRightMenu();
+  const postCommentDom = document.getElementById("post-comment");
+  var domTop = postCommentDom.offsetTop;
+  window.scrollTo(0, domTop - 80);
+  if (txt == "undefined" || txt == "null") txt = "好棒！";
+  function setText() {
+    setTimeout(() => {
+      var input = document.getElementsByClassName("el-textarea__inner")[0];
+      if (!input) setText();
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("input", true, true);
+      let inputValue = replaceAll(txt, "\n", "\n> ");
+      input.value = "> " + inputValue + "\n\n";
+      input.dispatchEvent(evt);
+      input.focus();
+      input.setSelectionRange(-1, -1);
+      if (document.getElementById("comment-tips")) {
+        document.getElementById("comment-tips").classList.add("show");
+      }
+    }, 100);
+  }
+  setText();
+};
+
+//替换所有内容
+function replaceAll(string, search, replace) {
+  return string.split(search).join(replace);
+}
+
+// 百度搜索
+rm.searchBaidu = function () {
+  anzhiyu.snackbarShow("即将跳转到百度搜索", false, 2000);
+  setTimeout(function () {
+    window.open("https://www.baidu.com/s?wd=" + selectTextNow);
+  }, "2000");
+  rm.hideRightMenu();
+};
+
+//分享链接
+rm.copyLink = function () {
+  rm.rightmenuCopyText(domhref);
+  anzhiyu.snackbarShow("已复制链接地址");
+};
+
+function addRightMenuClickEvent() {
+  // 添加点击事件
+  document.getElementById("menu-backward").addEventListener("click", function () {
+  window.history.back();
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-forward").addEventListener("click", function () {
+    window.history.forward();
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-refresh").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  document.getElementById("menu-top").addEventListener("click", function () {
+    anzhiyu.scrollToDest(0, 500);
+    rm.hideRightMenu();
+  });
+
+  const menuLinks = document.querySelectorAll(".menu-link");
+  menuLinks.forEach(function (link) {
+    link.addEventListener("click", rm.hideRightMenu);
+  });
+
+  document.getElementById("menu-darkmode").addEventListener("click", anzhiyu.switchDarkMode);
+
+  document.getElementById("menu-home") && document.getElementById("menu-home").addEventListener("click", function () {
+    window.location.href = window.location.origin;
+  });
+
+  document.getElementById("menu-randomPost").addEventListener("click", function () {
+    toRandomPost();
+  });
+
+  document.getElementById("menu-commentBarrage").addEventListener("click", anzhiyu.switchCommentBarrage);
+
+  document.getElementById("rightmenu-mask").addEventListener("click", rm.hideRightMenu);
+
+  document.getElementById("rightmenu-mask").addEventListener("contextmenu", function (event) {
+    rm.hideRightMenu();
+    event.preventDefault(); // Prevent the default context menu from appearing
+  });
+
+  document.getElementById("menu-copy").addEventListener("click", rm.copyPageUrl);
+
+  document.getElementById("menu-pastetext").addEventListener("click", rm.pasteText);
+
+  document.getElementById("menu-copytext").addEventListener("click", function () {
+    rm.rightmenuCopyText(selectTextNow);
+    anzhiyu.snackbarShow("复制成功，复制和转载请标注本文地址");
+  });
+
+  document.getElementById("menu-commenttext").addEventListener("click", function () {
+    rm.rightMenuCommentText(selectTextNow);
+  });
+
+  document.getElementById("menu-newwindow").addEventListener("click", function () {
+    window.open(domhref, "_blank");
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-copylink").addEventListener("click", rm.copyLink);
+
+  document.getElementById("menu-downloadimg").addEventListener("click", function () {
+    anzhiyu.downloadImage(domImgSrc, "anzhiyu");
+  });
+
+  document.getElementById("menu-newwindowimg").addEventListener("click", function () {
+    window.open(domImgSrc, "_blank");
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-copyimg").addEventListener("click", function () {
+    rm.writeClipImg(domImgSrc);
+  });
+
+  document.getElementById("menu-searchBaidu").addEventListener("click", rm.searchBaidu);
+
+  //音乐
+  document.getElementById("menu-music-toggle").addEventListener("click", anzhiyu.musicToggle);
+
+  document.getElementById("menu-music-back").addEventListener("click", anzhiyu.musicSkipBack);
+
+  document.getElementById("menu-music-forward").addEventListener("click", anzhiyu.musicSkipForward);
+
+  document.getElementById("menu-music-copyMusicName").addEventListener("click", function () {
+    rm.rightmenuCopyText(anzhiyu.musicGetName());
+    anzhiyu.snackbarShow("复制歌曲名称成功", false, 3000);
+  });
+
+}
+
+addRightMenuClickEvent();</script><script data-pjax>var themeColorMeta = document.querySelector('meta[name="theme-color"]');
+var pageHeaderEl = document.getElementById("page-header");
+var navMusicEl = document.getElementById("nav-music");
+var consoleEl = document.getElementById("console");
+// 已随机的歌曲
+var selectRandomSong = [];
+// 音乐默认声音大小
+var musicVolume = 0.8;
+// 是否切换了周杰伦音乐列表
+var changeMusicListFlag = false;
+// 当前默认播放列表
+var defaultPlayMusicList = [];
+
+document.getElementById("page-name").innerText = document.title.split(" | ♪张小佑")[0];
+anzhiyu.initIndexEssay();
+anzhiyu.changeTimeInEssay();
+anzhiyu.removeBodyPaceClass();
+anzhiyu.qrcodeCreate();
+anzhiyu.changeTimeInAlbumDetail();
+anzhiyu.reflashEssayWaterFall();
+anzhiyu.sayhi();
+anzhiyu.stopImgRightDrag();
+anzhiyu.addNavBackgroundInit();
+anzhiyu.setValueToBodyType();
+anzhiyu.catalogActive();
+anzhiyu.tagsPageActive();
+anzhiyu.categoriesBarActive();
+anzhiyu.topCategoriesBarScroll();
+anzhiyu.switchRightClickMenuHotReview();
+anzhiyu.getCustomPlayList();
+anzhiyu.addEventListenerConsoleMusicList(false);
+setTimeout(() => {
+  if (typeof addFriendLinksInFooter === "function") {
+    addFriendLinksInFooter();
+  }
+}, 200)</script><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.1.4/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://npm.elemecdn.com/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://npm.elemecdn.com/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://npm.elemecdn.com/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div></body></html>
